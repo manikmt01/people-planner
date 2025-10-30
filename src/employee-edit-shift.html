@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee – Edit shift</title>
+    <!-- facicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="bg-brand-gray-bg">
+    <div class="min-h-screen hidden md:block">
+      <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
+        <!-- Header -->
+        <header
+          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
+        >
+          <div class="w-full mx-auto px-5 flex items-center justify-between">
+            <!-- Left section -->
+            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+              <!-- Icon -->
+              <img
+                src="./assets/svg/logo.svg"
+                alt="logo"
+                class="w-5 h-5 xl:w-6 xl:h-6"
+              />
+              <span class="font-bold text-xl xl:text-2xl">People planner</span>
+            </a>
+
+            <!-- Center navigation -->
+            <nav
+              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
+            >
+              <a
+                href="./production-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Production</a
+              >
+
+              <a
+                href="./maintenance-position.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Maintenance</a
+              >
+
+              <a
+                href="./people-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >People Roster</a
+              >
+
+              <a
+                href="./employee-edit-shift.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
+                >Employee</a
+              >
+
+              <a
+                href="./leave-requests.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Leave Requests</a
+              >
+
+              <a
+                href="./report-export.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Report</a
+              >
+
+              <a
+                href="./log.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Log</a
+              >
+            </nav>
+
+            <!-- Right user section -->
+            <div class="flex items-center space-x-2">
+              <button type="button" class="flex items-center space-x-2">
+                <img
+                  src="./assets/img/avaters-demos.png"
+                  alt="User"
+                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
+                />
+                <div class="flex flex-col text-start leading-tight">
+                  <span class="text-[8px] font-normal text-gray-200 uppercase"
+                    >Welcome</span
+                  >
+                  <span class="text-sm xl:text-base font-normal"
+                    >Bas Meijerink</span
+                  >
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Left Content -->
+        <main class="">
+          <!-- top filter -->
+          <section
+            class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
+          >
+            <!-- left side -->
+            <div class="flex flex-row items-center gap-4">
+              <img
+                src="./assets/img/homepage_careers_card_avater.png"
+                alt="homepage_careers_card_avater"
+                class="w-9 h-9 rounded-full"
+              />
+              <h1>Anne Buissink</h1>
+            </div>
+
+            <!-- right side -->
+            <div class="flex items-center space-x-7">
+              <button
+                type="button"
+                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                >
+                  <g id="user" transform="translate(-2 -2)">
+                    <path
+                      id="Path_144"
+                      data-name="Path 144"
+                      d="M11.5,2A9.5,9.5,0,1,0,21,11.5,9.5,9.5,0,0,0,11.5,2Zm0,1.357a8.143,8.143,0,0,1,6.284,13.314A7.607,7.607,0,0,0,11.5,13.536a7.614,7.614,0,0,0-6.284,3.142A8.143,8.143,0,0,1,11.5,3.357Zm-5.306,14.3A6.223,6.223,0,0,1,11.5,14.893a6.3,6.3,0,0,1,5.306,2.769,8.1,8.1,0,0,1-10.613,0Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_145"
+                      data-name="Path 145"
+                      d="M14.571,15.143A3.571,3.571,0,1,0,11,11.571,3.571,3.571,0,0,0,14.571,15.143Zm0-5.714a2.143,2.143,0,1,1-2.143,2.143A2.143,2.143,0,0,1,14.571,9.429Z"
+                      transform="translate(-3.071 -2.048)"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17.83"
+                  height="17.83"
+                  viewBox="0 0 17.83 17.83"
+                >
+                  <path
+                    id="calendar"
+                    d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
+                    transform="translate(-1 -1)"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16.83"
+                  height="16.83"
+                  viewBox="0 0 16.83 16.83"
+                >
+                  <g id="o" transform="translate(-2.25 -2.25)">
+                    <g
+                      id="Group_91"
+                      data-name="Group 91"
+                      transform="translate(2.25 2.25)"
+                    >
+                      <path
+                        id="Path_138"
+                        data-name="Path 138"
+                        d="M5.486,2.25H3.76A1.518,1.518,0,0,0,2.25,3.76V5.486A1.518,1.518,0,0,0,3.76,7H5.486A1.518,1.518,0,0,0,7,5.486V3.76A1.518,1.518,0,0,0,5.486,2.25ZM5.7,5.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V3.76a.214.214,0,0,1,.216-.216H5.486A.214.214,0,0,1,5.7,3.76Z"
+                        transform="translate(-2.25 -2.25)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_139"
+                        data-name="Path 139"
+                        d="M5.486,9.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,14H5.486A1.518,1.518,0,0,0,7,12.486V10.76A1.518,1.518,0,0,0,5.486,9.25ZM5.7,12.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V10.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                        transform="translate(-2.25 -3.209)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_140"
+                        data-name="Path 140"
+                        d="M5.486,16.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,21H5.486A1.518,1.518,0,0,0,7,19.486V17.76A1.518,1.518,0,0,0,5.486,16.25ZM5.7,19.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V17.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                        transform="translate(-2.25 -4.167)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_141"
+                        data-name="Path 141"
+                        d="M9.9,5.545h9.494a.647.647,0,0,0,0-1.295H9.9a.647.647,0,1,0,0,1.295Z"
+                        transform="translate(-3.209 -2.524)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_142"
+                        data-name="Path 142"
+                        d="M19.391,11.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                        transform="translate(-3.209 -3.482)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_143"
+                        data-name="Path 143"
+                        d="M19.391,18.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                        transform="translate(-3.209 -4.441)"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.999"
+                  height="17.611"
+                  viewBox="0 0 13.999 17.611"
+                >
+                  <g id="j" transform="translate(-4.25 -2.25)">
+                    <g
+                      id="Group_92"
+                      data-name="Group 92"
+                      transform="translate(4.25 2.25)"
+                    >
+                      <path
+                        id="Path_146"
+                        data-name="Path 146"
+                        d="M18.249,7.443a.621.621,0,0,0-.045-.217,3.432,3.432,0,0,0-.948-1.96L15.232,3.243A3.321,3.321,0,0,0,13.263,2.3a.773.773,0,0,0-.208-.045.213.213,0,0,0-.072.018c-.054,0-.1-.018-.145-.018h-5.2A3.388,3.388,0,0,0,4.25,5.637V16.475a3.388,3.388,0,0,0,3.387,3.387h7.225a3.388,3.388,0,0,0,3.387-3.387V7.66a.79.79,0,0,0-.018-.145c0-.027.018-.045.018-.072ZM16.3,6.224a2.088,2.088,0,0,1,.379.542H13.959a.224.224,0,0,1-.226-.226V3.821a2.025,2.025,0,0,1,.542.379ZM14.862,18.507H7.637A2.035,2.035,0,0,1,5.6,16.475V5.637A2.035,2.035,0,0,1,7.637,3.6h4.742V6.54A1.588,1.588,0,0,0,13.959,8.12h2.935v8.354A2.035,2.035,0,0,1,14.862,18.507Z"
+                        transform="translate(-4.25 -2.25)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_147"
+                        data-name="Path 147"
+                        d="M15.153,10.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,1,0,0-1.355Z"
+                        transform="translate(-4.541 -3.025)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_148"
+                        data-name="Path 148"
+                        d="M15.153,13.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,0,0,0-1.355Z"
+                        transform="translate(-4.541 -3.315)"
+                        fill="currentColor"
+                      />
+                      <path
+                        id="Path_149"
+                        data-name="Path 149"
+                        d="M11.54,16.25H7.927a.677.677,0,1,0,0,1.355H11.54a.677.677,0,0,0,0-1.355Z"
+                        transform="translate(-4.541 -3.606)"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18.111"
+                  height="18.111"
+                  viewBox="0 0 18.111 18.111"
+                >
+                  <path
+                    id="Path_150"
+                    data-name="Path 150"
+                    d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
+                    transform="translate(-2.25 -2.25)"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="relative inline-block" bis_skin_checked="1">
+                <!-- Hidden toggle -->
+                <input
+                  type="checkbox"
+                  id="settingDropdown"
+                  class="dropdown-toggle hidden peer"
+                />
+
+                <!-- Label (acts as toggle button) -->
+                <label
+                  for="settingDropdown"
+                  class="flex items-center justify-center hover:bg-brand-light w-[27px] h-[27px] text-xs text-brand-mid-gray hover:text-brand-dark cursor-pointer select-none rounded-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="4"
+                    viewBox="0 0 16 4"
+                  >
+                    <g
+                      id="Group_84"
+                      data-name="Group 84"
+                      transform="translate(-984 -93)"
+                    >
+                      <circle
+                        id="Ellipse_483"
+                        data-name="Ellipse 483"
+                        cx="2"
+                        cy="2"
+                        r="2"
+                        transform="translate(984 93)"
+                        fill="currentColor"
+                      />
+                      <circle
+                        id="Ellipse_484"
+                        data-name="Ellipse 484"
+                        cx="2"
+                        cy="2"
+                        r="2"
+                        transform="translate(990 93)"
+                        fill="currentColor"
+                      />
+                      <circle
+                        id="Ellipse_485"
+                        data-name="Ellipse 485"
+                        cx="2"
+                        cy="2"
+                        r="2"
+                        transform="translate(996 93)"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </svg>
+                </label>
+
+                <!-- Dropdown -->
+                <ul
+                  class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[142px]"
+                >
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                  >
+                    <img
+                      src="./assets/svg/Undo.svg"
+                      alt="Undo"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Reset data</span>
+                  </li>
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] border-y border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs"
+                  >
+                    <img
+                      src="./assets/svg/Add.svg"
+                      alt="add"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Add new position</span>
+                  </li>
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                  >
+                    <img
+                      src="./assets/svg/date-from.svg"
+                      alt="date"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Export roster</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- main content -->
+          <section class="pt-8.5 pt-10 w-full">
+            <div
+              class="max-w-[980px] mx-auto rounded-lg bg-white pt-3 px-[14px] pb-7 min-h-[430px]"
+            >
+              <!-- Calendar content goes here -->
+              <div class="flex justify-between items-center">
+                <!-- header -->
+                <span class="text-xl font-bold text-brand-dark">Rooster</span>
+                <!-- menu -->
+                <div
+                  class="relative inline-block w-[126px] min-h-[27px]"
+                  bis_skin_checked="1"
+                >
+                  <!-- Hidden toggle -->
+                  <input
+                    type="checkbox"
+                    id="shiftDropdown"
+                    class="dropdown-toggle hidden peer"
+                  />
+
+                  <!-- Label (acts like the button) -->
+                  <label
+                    for="shiftDropdown"
+                    class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
+                  >
+                    <!-- Left content -->
+                    <span class="flex items-center gap-[7px] px-2 py-[6px]">
+                      Februari 2023
+                    </span>
+
+                    <!-- Right icon section (dark background full height) -->
+                    <span
+                      class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="5"
+                        viewBox="0 0 8 5"
+                        class="fill-white"
+                      >
+                        <path
+                          d="M1 1l3 3 3-3"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                    </span>
+                  </label>
+
+                  <!-- Dropdown menu -->
+                  <ul
+                    class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
+                  >
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                    >
+                      Februari 2023
+                    </li>
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                    >
+                      Februari 2023
+                    </li>
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                    >
+                      Februari 2023
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Calendar content goes here -->
+              <div class="pt-[35px] grid grid-cols-8 gap-3">
+                <!-- days -->
+                <div></div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Zondag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Maandag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Dinsdag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Woensdag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Donderdag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Vrijdag
+                </div>
+                <div class="text-sm text-brand-dark font-bold text-center">
+                  Zaterdag
+                </div>
+                <!-- dates 1 -->
+                <div
+                  class="flex flex-col items-start justify-center text-xs text-brand-dark"
+                >
+                  Week 5
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">30</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">31</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">1</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">2</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">3</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">4</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="n"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21.273"
+                        height="18"
+                        viewBox="0 0 21.273 18"
+                      >
+                        <path
+                          id="Path_38"
+                          data-name="Path 38"
+                          d="M21.8,13.833a6.279,6.279,0,0,0,1.6-3.055.771.771,0,0,0-.164-.665.865.865,0,0,0-.611-.316,5,5,0,0,1-3.644-1.865A4.873,4.873,0,0,1,18.057,4.2a.819.819,0,0,0-.185-.665.808.808,0,0,0-.622-.295,6.281,6.281,0,0,0-6.273,6.273,4.945,4.945,0,0,0,.033.567,6.3,6.3,0,0,0-3.687,3.109,4.176,4.176,0,0,0-.982-.131,4.091,4.091,0,1,0,0,8.182H19.432A4.085,4.085,0,0,0,21.8,13.822ZM12.614,9.524a4.636,4.636,0,0,1,3.753-4.549A6.47,6.47,0,0,0,17.7,8.935a6.551,6.551,0,0,0,3.84,2.367,4.567,4.567,0,0,1-1.407,1.844,3.751,3.751,0,0,0-1.68.065,6.257,6.257,0,0,0-5.564-3.4,1.634,1.634,0,0,0-.24.022c0-.1-.033-.2-.033-.295Zm6.818,10.091H6.341a2.455,2.455,0,1,1,0-4.909,2.43,2.43,0,0,1,1.069.24h.044c.011,0,.022.011.033.022a.371.371,0,0,0,.153.022c.033,0,.076.022.109.022h.011a.64.64,0,0,0,.251-.044c.033-.011.065-.033.1-.044a.619.619,0,0,0,.142-.087.706.706,0,0,0,.1-.087l.1-.131c.011-.022.044-.044.055-.065a.066.066,0,0,1,.011-.044.11.11,0,0,0,.011-.033,4.643,4.643,0,0,1,4.364-3.055,4.552,4.552,0,0,1,4.276,2.836c.011.033.044.055.055.087a.8.8,0,0,0,.055.218.82.82,0,0,0,1.091.382,2.364,2.364,0,0,1,1.069-.24,2.455,2.455,0,1,1,0,4.909Z"
+                          transform="translate(-2.25 -3.24)"
+                          fill="#a4b5bf"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#A4B5BF]">5</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <!-- dates 2 -->
+                <div
+                  class="flex flex-col items-start justify-center text-xs text-brand-dark"
+                >
+                  Week 6
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">6</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#2B2D41] shadow-[0px_3px_6px_rgba(0,0,0,0.16)] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">7</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">8</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">9</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">10</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <h4 class="text-brand-dark pt-1">Tot 14:30 cursus</h4>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">11</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">12</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <!-- dates 3 -->
+                <div
+                  class="flex flex-col items-start justify-center text-xs text-brand-dark"
+                >
+                  Week 7
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">13</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">14</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">15</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        id="u"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <g
+                          id="Group_1"
+                          data-name="Group 1"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_1"
+                            data-name="Path 1"
+                            d="M15.681,8.695a4.938,4.938,0,1,0,0,6.986,4.951,4.951,0,0,0,0-6.986Zm-1.1,5.884a3.379,3.379,0,1,1,0-4.782A3.382,3.382,0,0,1,14.579,14.579Z"
+                            transform="translate(-2.052 -2.052)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_2"
+                            data-name="Path 2"
+                            d="M16.98,7.915a.771.771,0,0,0,.551-.229L19,6.221a.779.779,0,0,0-1.1-1.1L16.429,6.584a.784.784,0,0,0,0,1.1A.771.771,0,0,0,16.98,7.915Z"
+                            transform="translate(-1.697 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_3"
+                            data-name="Path 3"
+                            d="M17.531,16.429a.779.779,0,1,0-1.1,1.1L17.894,19A.778.778,0,0,0,19,19a.784.784,0,0,0,0-1.1l-1.466-1.466Z"
+                            transform="translate(-1.697 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_4"
+                            data-name="Path 4"
+                            d="M6.584,16.429,5.119,17.894a.784.784,0,0,0,0,1.1.778.778,0,0,0,1.1,0l1.466-1.466a.779.779,0,0,0-1.1-1.1Z"
+                            transform="translate(-2.145 -1.697)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_5"
+                            data-name="Path 5"
+                            d="M6.584,7.686a.778.778,0,0,0,1.1,0,.784.784,0,0,0,0-1.1L6.221,5.119a.779.779,0,0,0-1.1,1.1Z"
+                            transform="translate(-2.145 -2.145)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_6"
+                            data-name="Path 6"
+                            d="M12.03,5.889a.785.785,0,0,0,.78-.78V3.03a.78.78,0,0,0-1.559,0V5.109A.785.785,0,0,0,12.03,5.889Z"
+                            transform="translate(-1.893 -2.25)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_7"
+                            data-name="Path 7"
+                            d="M21.109,11.25H19.03a.78.78,0,0,0,0,1.559h2.079a.78.78,0,0,0,0-1.559Z"
+                            transform="translate(-1.616 -1.893)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_8"
+                            data-name="Path 8"
+                            d="M12.03,18.25a.785.785,0,0,0-.78.78v2.079a.78.78,0,0,0,1.559,0V19.03A.785.785,0,0,0,12.03,18.25Z"
+                            transform="translate(-1.893 -1.616)"
+                            fill="#01a0d2"
+                          />
+                          <path
+                            id="Path_9"
+                            data-name="Path 9"
+                            d="M5.889,12.03a.785.785,0,0,0-.78-.78H3.03a.78.78,0,0,0,0,1.559H5.109A.785.785,0,0,0,5.889,12.03Z"
+                            transform="translate(-2.25 -1.893)"
+                            fill="#01a0d2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">16</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">17</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">18</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">19</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <!-- dates 4 -->
+                <div
+                  class="flex flex-col items-start justify-center text-xs text-brand-dark"
+                >
+                  Week 8
+                </div>
+
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">20</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">21</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">22</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">23</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#C9EFDF]/40 ring ring-[#C9EFDF]/40 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20.273"
+                        height="20.273"
+                        viewBox="0 0 20.273 20.273"
+                      >
+                        <path
+                          id="Path_63"
+                          data-name="Path 63"
+                          d="M21.774,15.443a2,2,0,0,0-2.5-3.119L17.2,13.987a3.386,3.386,0,0,1-2.11.738H13.166V10.047h5.51A1.766,1.766,0,0,0,20.443,8.28a6.034,6.034,0,0,0-6.03-6.03H10.369A6.034,6.034,0,0,0,4.34,8.28a1.766,1.766,0,0,0,1.767,1.767h5.51v4.678H4.246a2,2,0,0,0-2,2v.686a2,2,0,0,0,2,2H5.733l-1.268,1.9a.776.776,0,0,0,.218,1.081.83.83,0,0,0,.437.135.781.781,0,0,0,.645-.343L7.614,19.4H15.1L16.95,22.18a.756.756,0,0,0,.645.343.77.77,0,0,0,.437-.135.785.785,0,0,0,.218-1.081l-1.466-2.2a5.009,5.009,0,0,0,1.4-.78l3.6-2.88ZM10.962,5.525a6.112,6.112,0,0,1,1.424-1.549,5.943,5.943,0,0,1,1.424,1.549,6.149,6.149,0,0,1,.925,2.963H10.047a6.149,6.149,0,0,1,.925-2.963ZM18.884,8.28a.209.209,0,0,1-.208.208H16.285a7.7,7.7,0,0,0-1.164-3.795,7.739,7.739,0,0,0-.665-.873,4.482,4.482,0,0,1,4.429,4.47Zm-13,0a4.482,4.482,0,0,1,4.429-4.47,8.8,8.8,0,0,0-.665.873A7.7,7.7,0,0,0,8.488,8.477H6.1a.209.209,0,0,1-.208-.208Zm9.2,9.565H4.246a.439.439,0,0,1-.437-.437v-.686a.439.439,0,0,1,.437-.437H15.089A4.983,4.983,0,0,0,18.177,15.2l2.079-1.663a.442.442,0,0,1,.468-.052.423.423,0,0,1,.25.4.439.439,0,0,1-.166.343h0l-3.6,2.88a3.386,3.386,0,0,1-2.11.738Z"
+                          transform="translate(-2.25 -2.25)"
+                          fill="#2bc083"
+                        />
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">24</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div><h4 class="text-brand-dark pt-1">Weekje vrij</h4></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">25</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">26</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <!-- dates 5 -->
+                <div
+                  class="flex flex-col items-start justify-center text-xs text-brand-dark"
+                >
+                  Week 9
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">27</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23.034"
+                        height="12.403"
+                        viewBox="0 0 23.034 12.403"
+                      >
+                        <g id="s" transform="translate(1)">
+                          <g
+                            id="Group_2"
+                            data-name="Group 2"
+                            transform="translate(-1 0)"
+                          >
+                            <path
+                              id="Path_10"
+                              data-name="Path 10"
+                              d="M12.861,11.25A5.616,5.616,0,0,0,7.25,16.861a.892.892,0,0,0,.886.886h9.45a.892.892,0,0,0,.886-.886A5.616,5.616,0,0,0,12.861,11.25ZM9.128,15.975a3.836,3.836,0,0,1,7.465,0H9.116Z"
+                              transform="translate(-1.344 -5.344)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_11"
+                              data-name="Path 11"
+                              d="M19.377,9.149a.891.891,0,0,0-1.252,0l-1.666,1.666a.891.891,0,0,0,0,1.252.884.884,0,0,0,1.252,0L19.377,10.4a.891.891,0,0,0,0-1.252Z"
+                              transform="translate(0.279 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_12"
+                              data-name="Path 12"
+                              d="M8.067,10.815,6.4,9.149A.885.885,0,0,0,5.149,10.4l1.666,1.666a.884.884,0,0,0,1.252,0A.891.891,0,0,0,8.067,10.815Z"
+                              transform="translate(-1.771 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_13"
+                              data-name="Path 13"
+                              d="M12.136,10.384a.892.892,0,0,0,.886-.886V7.136a.886.886,0,0,0-1.772,0V9.5A.892.892,0,0,0,12.136,10.384Z"
+                              transform="translate(-0.619 -6.25)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_14"
+                              data-name="Path 14"
+                              d="M21.5,15.25H19.136a.886.886,0,0,0,0,1.772H21.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(0.65 -4.619)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_15"
+                              data-name="Path 15"
+                              d="M5.5,15.25H3.136a.886.886,0,0,0,0,1.772H5.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(-2.25 -4.619)"
+                              fill="#ea6608"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">28</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23.034"
+                        height="12.403"
+                        viewBox="0 0 23.034 12.403"
+                      >
+                        <g id="s" transform="translate(1)">
+                          <g
+                            id="Group_2"
+                            data-name="Group 2"
+                            transform="translate(-1 0)"
+                          >
+                            <path
+                              id="Path_10"
+                              data-name="Path 10"
+                              d="M12.861,11.25A5.616,5.616,0,0,0,7.25,16.861a.892.892,0,0,0,.886.886h9.45a.892.892,0,0,0,.886-.886A5.616,5.616,0,0,0,12.861,11.25ZM9.128,15.975a3.836,3.836,0,0,1,7.465,0H9.116Z"
+                              transform="translate(-1.344 -5.344)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_11"
+                              data-name="Path 11"
+                              d="M19.377,9.149a.891.891,0,0,0-1.252,0l-1.666,1.666a.891.891,0,0,0,0,1.252.884.884,0,0,0,1.252,0L19.377,10.4a.891.891,0,0,0,0-1.252Z"
+                              transform="translate(0.279 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_12"
+                              data-name="Path 12"
+                              d="M8.067,10.815,6.4,9.149A.885.885,0,0,0,5.149,10.4l1.666,1.666a.884.884,0,0,0,1.252,0A.891.891,0,0,0,8.067,10.815Z"
+                              transform="translate(-1.771 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_13"
+                              data-name="Path 13"
+                              d="M12.136,10.384a.892.892,0,0,0,.886-.886V7.136a.886.886,0,0,0-1.772,0V9.5A.892.892,0,0,0,12.136,10.384Z"
+                              transform="translate(-0.619 -6.25)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_14"
+                              data-name="Path 14"
+                              d="M21.5,15.25H19.136a.886.886,0,0,0,0,1.772H21.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(0.65 -4.619)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_15"
+                              data-name="Path 15"
+                              d="M5.5,15.25H3.136a.886.886,0,0,0,0,1.772H5.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(-2.25 -4.619)"
+                              fill="#ea6608"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">1</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-white ring ring-[#EDF0F2] flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23.034"
+                        height="12.403"
+                        viewBox="0 0 23.034 12.403"
+                      >
+                        <g id="s" transform="translate(1)">
+                          <g
+                            id="Group_2"
+                            data-name="Group 2"
+                            transform="translate(-1 0)"
+                          >
+                            <path
+                              id="Path_10"
+                              data-name="Path 10"
+                              d="M12.861,11.25A5.616,5.616,0,0,0,7.25,16.861a.892.892,0,0,0,.886.886h9.45a.892.892,0,0,0,.886-.886A5.616,5.616,0,0,0,12.861,11.25ZM9.128,15.975a3.836,3.836,0,0,1,7.465,0H9.116Z"
+                              transform="translate(-1.344 -5.344)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_11"
+                              data-name="Path 11"
+                              d="M19.377,9.149a.891.891,0,0,0-1.252,0l-1.666,1.666a.891.891,0,0,0,0,1.252.884.884,0,0,0,1.252,0L19.377,10.4a.891.891,0,0,0,0-1.252Z"
+                              transform="translate(0.279 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_12"
+                              data-name="Path 12"
+                              d="M8.067,10.815,6.4,9.149A.885.885,0,0,0,5.149,10.4l1.666,1.666a.884.884,0,0,0,1.252,0A.891.891,0,0,0,8.067,10.815Z"
+                              transform="translate(-1.771 -5.771)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_13"
+                              data-name="Path 13"
+                              d="M12.136,10.384a.892.892,0,0,0,.886-.886V7.136a.886.886,0,0,0-1.772,0V9.5A.892.892,0,0,0,12.136,10.384Z"
+                              transform="translate(-0.619 -6.25)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_14"
+                              data-name="Path 14"
+                              d="M21.5,15.25H19.136a.886.886,0,0,0,0,1.772H21.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(0.65 -4.619)"
+                              fill="#ea6608"
+                            />
+                            <path
+                              id="Path_15"
+                              data-name="Path 15"
+                              d="M5.5,15.25H3.136a.886.886,0,0,0,0,1.772H5.5a.886.886,0,0,0,0-1.772Z"
+                              transform="translate(-2.25 -4.619)"
+                              fill="#ea6608"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">2</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+
+                <div
+                  class="min-h-[68px] bg-[#E4223C]/25 ring ring-[#E4223C]/25 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22.322"
+                        height="22.322"
+                        viewBox="0 0 22.322 22.322"
+                      >
+                        <g
+                          id="q"
+                          transform="translate(-3.246 11.231) rotate(-45)"
+                        >
+                          <g
+                            id="Group_3"
+                            data-name="Group 3"
+                            transform="translate(2.341 2.25)"
+                          >
+                            <path
+                              id="Path_17"
+                              data-name="Path 17"
+                              d="M18.124,5.3a3.048,3.048,0,0,0-5.2-2.155L7.374,8.691a4.7,4.7,0,0,0-4.212,2.025,4.646,4.646,0,0,0-.073,5.164A4.708,4.708,0,0,0,6.544,18q.244.024.488.024a4.679,4.679,0,0,0,3.3-1.366A4.632,4.632,0,0,0,11.692,13l5.546-5.546A3.027,3.027,0,0,0,18.132,5.3ZM16.368,6.592l-5.749,5.749a.589.589,0,0,0-.171.52A3.448,3.448,0,0,1,9.472,15.8a3.413,3.413,0,0,1-2.8.992,3.484,3.484,0,0,1-2.562-1.578,3.432,3.432,0,0,1,.057-3.8A3.48,3.48,0,0,1,7.032,9.9a3.279,3.279,0,0,1,.488.033.648.648,0,0,0,.52-.171L13.79,4.015a1.828,1.828,0,0,1,1.293-.537,1.794,1.794,0,0,1,1.293.537,1.828,1.828,0,0,1,.537,1.293A1.794,1.794,0,0,1,16.376,6.6Z"
+                              transform="translate(-2.341 -2.25)"
+                              fill="#e4223c"
+                            />
+                            <path
+                              id="Path_18"
+                              data-name="Path 18"
+                              d="M15.2,5.429,8.666,11.968A2.235,2.235,0,0,0,5.34,13.911a2.235,2.235,0,0,0,2.236,2.228,2.235,2.235,0,0,0,2.236-2.228,2.155,2.155,0,0,0-.293-1.082l6.546-6.538a.61.61,0,1,0-.862-.862Zm-6.9,9.2a1.016,1.016,0,0,1-1.439,0,1,1,0,0,1-.3-.716.99.99,0,0,1,.3-.716,1.018,1.018,0,0,1,.716-.3.984.984,0,0,1,.716.3,1,1,0,0,1,.3.716.99.99,0,0,1-.3.716Z"
+                              transform="translate(-2.901 -2.811)"
+                              fill="#e4223c"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">3</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <h4 class="text-brand-dark pt-1">
+                        Operatie rug: twee weken uit de running
+                      </h4>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#E4223C]/25 ring ring-[#E4223C]/25 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22.322"
+                        height="22.322"
+                        viewBox="0 0 22.322 22.322"
+                      >
+                        <g
+                          id="q"
+                          transform="translate(-3.246 11.231) rotate(-45)"
+                        >
+                          <g
+                            id="Group_3"
+                            data-name="Group 3"
+                            transform="translate(2.341 2.25)"
+                          >
+                            <path
+                              id="Path_17"
+                              data-name="Path 17"
+                              d="M18.124,5.3a3.048,3.048,0,0,0-5.2-2.155L7.374,8.691a4.7,4.7,0,0,0-4.212,2.025,4.646,4.646,0,0,0-.073,5.164A4.708,4.708,0,0,0,6.544,18q.244.024.488.024a4.679,4.679,0,0,0,3.3-1.366A4.632,4.632,0,0,0,11.692,13l5.546-5.546A3.027,3.027,0,0,0,18.132,5.3ZM16.368,6.592l-5.749,5.749a.589.589,0,0,0-.171.52A3.448,3.448,0,0,1,9.472,15.8a3.413,3.413,0,0,1-2.8.992,3.484,3.484,0,0,1-2.562-1.578,3.432,3.432,0,0,1,.057-3.8A3.48,3.48,0,0,1,7.032,9.9a3.279,3.279,0,0,1,.488.033.648.648,0,0,0,.52-.171L13.79,4.015a1.828,1.828,0,0,1,1.293-.537,1.794,1.794,0,0,1,1.293.537,1.828,1.828,0,0,1,.537,1.293A1.794,1.794,0,0,1,16.376,6.6Z"
+                              transform="translate(-2.341 -2.25)"
+                              fill="#e4223c"
+                            />
+                            <path
+                              id="Path_18"
+                              data-name="Path 18"
+                              d="M15.2,5.429,8.666,11.968A2.235,2.235,0,0,0,5.34,13.911a2.235,2.235,0,0,0,2.236,2.228,2.235,2.235,0,0,0,2.236-2.228,2.155,2.155,0,0,0-.293-1.082l6.546-6.538a.61.61,0,1,0-.862-.862Zm-6.9,9.2a1.016,1.016,0,0,1-1.439,0,1,1,0,0,1-.3-.716.99.99,0,0,1,.3-.716,1.018,1.018,0,0,1,.716-.3.984.984,0,0,1,.716.3,1,1,0,0,1,.3.716.99.99,0,0,1-.3.716Z"
+                              transform="translate(-2.901 -2.811)"
+                              fill="#e4223c"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">4</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <h4 class="text-brand-dark pt-1">
+                        Operatie rug: twee weken uit de running
+                      </h4>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div
+                  class="min-h-[68px] bg-[#E4223C]/25 ring ring-[#E4223C]/25 flex flex-col justify-between p-2 rounded-[5px]"
+                >
+                  <!-- 1 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22.322"
+                        height="22.322"
+                        viewBox="0 0 22.322 22.322"
+                      >
+                        <g
+                          id="q"
+                          transform="translate(-3.246 11.231) rotate(-45)"
+                        >
+                          <g
+                            id="Group_3"
+                            data-name="Group 3"
+                            transform="translate(2.341 2.25)"
+                          >
+                            <path
+                              id="Path_17"
+                              data-name="Path 17"
+                              d="M18.124,5.3a3.048,3.048,0,0,0-5.2-2.155L7.374,8.691a4.7,4.7,0,0,0-4.212,2.025,4.646,4.646,0,0,0-.073,5.164A4.708,4.708,0,0,0,6.544,18q.244.024.488.024a4.679,4.679,0,0,0,3.3-1.366A4.632,4.632,0,0,0,11.692,13l5.546-5.546A3.027,3.027,0,0,0,18.132,5.3ZM16.368,6.592l-5.749,5.749a.589.589,0,0,0-.171.52A3.448,3.448,0,0,1,9.472,15.8a3.413,3.413,0,0,1-2.8.992,3.484,3.484,0,0,1-2.562-1.578,3.432,3.432,0,0,1,.057-3.8A3.48,3.48,0,0,1,7.032,9.9a3.279,3.279,0,0,1,.488.033.648.648,0,0,0,.52-.171L13.79,4.015a1.828,1.828,0,0,1,1.293-.537,1.794,1.794,0,0,1,1.293.537,1.828,1.828,0,0,1,.537,1.293A1.794,1.794,0,0,1,16.376,6.6Z"
+                              transform="translate(-2.341 -2.25)"
+                              fill="#e4223c"
+                            />
+                            <path
+                              id="Path_18"
+                              data-name="Path 18"
+                              d="M15.2,5.429,8.666,11.968A2.235,2.235,0,0,0,5.34,13.911a2.235,2.235,0,0,0,2.236,2.228,2.235,2.235,0,0,0,2.236-2.228,2.155,2.155,0,0,0-.293-1.082l6.546-6.538a.61.61,0,1,0-.862-.862Zm-6.9,9.2a1.016,1.016,0,0,1-1.439,0,1,1,0,0,1-.3-.716.99.99,0,0,1,.3-.716,1.018,1.018,0,0,1,.716-.3.984.984,0,0,1,.716.3,1,1,0,0,1,.3.716.99.99,0,0,1-.3.716Z"
+                              transform="translate(-2.901 -2.811)"
+                              fill="#e4223c"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="text-sm font-semibold text-[#2B2D41]">5</div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="flex flex-row justify-between items-center">
+                    <div>
+                      <h4 class="text-brand-dark pt-1">
+                        Operatie rug: twee weken uit de running
+                      </h4>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- Right Sidebar -->
+        <aside class="bg-white border-l-1 border-brand-mid-dark p-5 relative">
+          <!-- header of sidebar -->
+          <div>
+            <div class="mb-[9px] flex flex-row items-center justify-between">
+              <span class="max-w-[173px] text-xl font-bold">Edit shift</span>
+              <button
+                class="group transition duration-300 ease-in-out cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 stroke-brand-mid-gray group-hover:stroke-brand-dark"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-row items-center space-x-[10px]">
+              <img src="./assets/svg/clouds.svg" alt="clouds" />
+              <p class="font-semibold">Maandag 7 februari</p>
+            </div>
+          </div>
+          <!-- Status of sidebar -->
+          <div class="space-y-[14px] mt-10">
+            <h3>Dienst</h3>
+            <!-- menu -->
+            <div class="relative inline-block w-full min-h-[27px]">
+              <!-- Hidden toggle -->
+              <input
+                type="checkbox"
+                id="dienstDropdown"
+                class="dropdown-toggle hidden peer"
+              />
+
+              <!-- Label (acts like the button) -->
+              <label
+                for="dienstDropdown"
+                class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
+              >
+                <!-- Left content -->
+                <span class="flex items-center gap-[7px] px-2 py-[6px]">
+                  <img
+                    src="./assets/svg/day shift.svg"
+                    alt="day shift"
+                    class="w-[14px] h-[14px]"
+                  />
+                  Day shift
+                </span>
+
+                <!-- Right icon section (dark background full height) -->
+                <span
+                  class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    class="fill-white"
+                  >
+                    <path
+                      d="M1 1l3 3 3-3"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+              </label>
+
+              <!-- Dropdown menu -->
+              <ul
+                class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
+              >
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                >
+                  <img
+                    src="./assets/svg/morning shift.svg"
+                    alt="morning shift"
+                    class="w-[14px] h-[14px]"
+                  />
+                  <span>Morning shift</span>
+                </li>
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                >
+                  <img
+                    src="./assets/svg/day shift.svg"
+                    alt="day shift"
+                    class="w-[14px] h-[14px]"
+                  />
+                  <span>Day shift</span>
+                </li>
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                >
+                  <img
+                    src="./assets/svg/night shift.svg"
+                    alt="night shift"
+                    class="w-[14px] h-[14px]"
+                  />
+                  <span>Night shift</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Toegewezen of sidebar -->
+          <div class="py-[36px] space-y-3">
+            <h3>Opmerking</h3>
+            <textarea
+              placeholder=""
+              class="mt-2 text-xs h-[66px] resize-none outline-none placeholder:text-[12px] placeholder:text-[#2B2D41] w-full rounded-[5px] border border-[#EDF0F2] focus:border-brand-dark px-[9px] pt-[5px]"
+            ></textarea>
+          </div>
+          <!-- av of sidebar -->
+          <div
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[100%] bg-white flex flex-col py-3 px-5 gap-4"
+            bis_skin_checked="1"
+          >
+            <div class="flex justify-center items-center gap-2">
+              <button
+                type="button"
+                class="py-2 inline-block text-[12px] font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 w-full"
+              >
+                Save
+              </button>
+              <button
+                type="button"
+                class="py-2 inline-block text-[12px] font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 w-full"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
+    >
+      <div
+        class="flex flex-col justify-center items-center text-center space-y-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#F04C46"
+          class="size-12"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+          />
+        </svg>
+        <span class="text-lg font-bold capitalize"
+          >user is requested to show on a larger screen</span
+        >
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

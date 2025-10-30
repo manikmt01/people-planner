@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log</title>
+    <!-- facicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="bg-brand-gray-bg">
+    <div class="min-h-screen hidden md:block">
+      <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
+        <!-- Header -->
+        <header
+          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
+        >
+          <div class="w-full mx-auto px-5 flex items-center justify-between">
+            <!-- Left section -->
+            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+              <!-- Icon -->
+              <img
+                src="./assets/svg/logo.svg"
+                alt="logo"
+                class="w-5 h-5 xl:w-6 xl:h-6"
+              />
+              <span class="font-bold text-xl xl:text-2xl">People planner</span>
+            </a>
+
+            <!-- Center navigation -->
+            <nav
+              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
+            >
+              <a
+                href="./production-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Production</a
+              >
+
+              <a
+                href="./maintenance-position.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Maintenance</a
+              >
+
+              <a
+                href="./people-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >People Roster</a
+              >
+
+              <a
+                href="./employee-edit-shift.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Employee</a
+              >
+
+              <a
+                href="./leave-requests.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Leave Requests</a
+              >
+
+              <a
+                href="./report-export.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Report</a
+              >
+
+              <a
+                href="./log.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
+                >Log</a
+              >
+            </nav>
+
+            <!-- Right user section -->
+            <div class="flex items-center space-x-2">
+              <button type="button" class="flex items-center space-x-2">
+                <img
+                  src="./assets/img/avaters-demos.png"
+                  alt="User"
+                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
+                />
+                <div class="flex flex-col text-start leading-tight">
+                  <span class="text-[8px] font-normal text-gray-200 uppercase"
+                    >Welcome</span
+                  >
+                  <span class="text-sm xl:text-base font-normal"
+                    >Bas Meijerink</span
+                  >
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Left Content -->
+        <main class="">
+          <!-- top filter -->
+          <section
+            class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
+          >
+            <!-- left side -->
+            <h1 class="">Logs</h1>
+
+            <!-- right side -->
+            <div class="flex flex-row items-center gap-5">
+              <div class="flex flex-row items-center gap-[10px]">
+                <span
+                  class="font-semibold text-xs text-brand-dark inline-block min-w-[60px]"
+                  >Starting date:</span
+                >
+                <div
+                  class="custom-date-picker w-[102px] h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
+                >
+                  <input
+                    type="date"
+                    class="date-input absolute opacity-0 w-0 h-0"
+                    value="2025-12-31"
+                  />
+                  <span
+                    class="date-display text-xs font-semibold text-brand-dark"
+                  >
+                    31-12-2025
+                  </span>
+                  <img
+                    src="./assets/svg/calendar.svg"
+                    alt="calendar"
+                    class="w-[13px] h-[13px]"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-row items-center gap-[10px]">
+                <span
+                  class="font-semibold text-xs text-brand-dark inline-block min-w-[50px]"
+                  >End date:</span
+                >
+                <div
+                  class="custom-date-picker w-[102px] h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
+                >
+                  <input
+                    type="date"
+                    class="date-input absolute opacity-0 w-0 h-0"
+                    value="2025-12-31"
+                  />
+                  <span
+                    class="date-display text-xs font-semibold text-brand-dark"
+                  >
+                    31-12-2025
+                  </span>
+                  <img
+                    src="./assets/svg/calendar.svg"
+                    alt="calendar"
+                    class="w-[13px] h-[13px]"
+                  />
+                </div>
+              </div>
+              <div class="relative inline-block w-[8.313rem] min-h-[27px]">
+                <!-- Hidden toggle -->
+                <input
+                  type="checkbox"
+                  id="shiftDropdown"
+                  class="dropdown-toggle hidden peer"
+                />
+
+                <!-- Label (acts like the button) -->
+                <label
+                  for="shiftDropdown"
+                  class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
+                >
+                  <!-- Left content -->
+                  <span class="flex items-center gap-[7px] px-2 py-[6px]">
+                    <img
+                      src="./assets/svg/day shift.svg"
+                      alt="day shift"
+                      class="w-[14px] h-[14px]"
+                    />
+                    Day shift
+                  </span>
+
+                  <!-- Right icon section (dark background full height) -->
+                  <span
+                    class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="5"
+                      viewBox="0 0 8 5"
+                      class="fill-white"
+                    >
+                      <path
+                        d="M1 1l3 3 3-3"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                </label>
+
+                <!-- Dropdown menu -->
+                <ul
+                  class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
+                >
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                  >
+                    <img
+                      src="./assets/svg/morning shift.svg"
+                      alt="morning shift"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Morning shift</span>
+                  </li>
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                  >
+                    <img
+                      src="./assets/svg/day shift.svg"
+                      alt="day shift"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Day shift</span>
+                  </li>
+                  <li
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                  >
+                    <img
+                      src="./assets/svg/night shift.svg"
+                      alt="night shift"
+                      class="w-[14px] h-[14px]"
+                    />
+                    <span>Night shift</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="flex flex-row items-center gap-[10px]">
+                <span class="font-semibold text-xs text-brand-dark"
+                  >Filter name:</span
+                >
+                <div class="relative inline-block" bis_skin_checked="1">
+                  <!-- Hidden toggle -->
+                  <input
+                    type="checkbox"
+                    id="settingDropdown"
+                    class="dropdown-toggle hidden peer"
+                  />
+
+                  <!-- Label (acts as toggle button) -->
+                  <label
+                    for="settingDropdown"
+                    class="flex items-center justify-center w-[11.313rem] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm"
+                  >
+                    <div
+                      class="w-[11.313rem] flex items-center space-x-4 border border-brand-light rounded-[5px]"
+                    >
+                      <div
+                        class="flex items-center gap-[10px] px-3 py-[9px] bg-white"
+                      >
+                        <input
+                          type="text"
+                          placeholder="Search"
+                          class="w-full text-xs font-semibold text-brand-dark placeholder-[#A4B5BF] focus:outline-none"
+                        />
+                      </div>
+                      <button class="px-3 cursor-pointer">
+                        <img
+                          src="./assets/svg/magnify.svg"
+                          alt="magnify"
+                          class="w-3 h-3"
+                        />
+                      </button>
+                    </div>
+                  </label>
+
+                  <!-- Dropdown -->
+                  <ul
+                    class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[11.313rem]"
+                  >
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                    >
+                      <span>Reset data</span>
+                    </li>
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                    >
+                      <span>Add new position</span>
+                    </li>
+                    <li
+                      class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                    >
+                      <span>Export roster</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13.929"
+                  height="12.5"
+                  viewBox="0 0 13.929 12.5"
+                >
+                  <g id="d" transform="translate(-2.25 -3.25)">
+                    <g
+                      id="Group_108"
+                      data-name="Group 108"
+                      transform="translate(2.25 3.25)"
+                    >
+                      <path
+                        id="Path_168"
+                        data-name="Path 168"
+                        d="M15.643,14.25a.54.54,0,0,0-.536.536v2.143a.893.893,0,0,1-.893.893h-10a.893.893,0,0,1-.893-.893V14.786a.536.536,0,1,0-1.071,0v2.143a1.963,1.963,0,0,0,1.964,1.964h10a1.963,1.963,0,0,0,1.964-1.964V14.786A.54.54,0,0,0,15.643,14.25Z"
+                        transform="translate(-2.25 -6.393)"
+                        fill="#2b2d41"
+                      />
+                      <path
+                        id="Path_169"
+                        data-name="Path 169"
+                        d="M10.265,12.736a.535.535,0,0,0,.757,0l2.857-2.857a.535.535,0,0,0-.757-.757l-1.943,1.943V3.786a.536.536,0,1,0-1.071,0v7.279L8.165,9.121a.535.535,0,0,0-.757.757l2.857,2.857Z"
+                        transform="translate(-3.679 -3.25)"
+                        fill="#2b2d41"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <!-- main content -->
+          <section class="px-8.5 pt-10 w-full">
+            <div class="max-w-[1100px] mx-auto bg-white">
+              <div class="bg-white rounded-lg min-h-[594px] overflow-x-auto">
+                <table
+                  class="min-w-full border-collapse text-sm text-left text-brand-dark"
+                >
+                  <thead>
+                    <tr
+                      class="border-b border-gray-200 text-brand-dark text-sm font-semibold"
+                    >
+                      <th class="px-3 py-4">Datum</th>
+                      <th class="px-3 py-4">Tijd</th>
+                      <th class="px-3 py-4">Medewerker</th>
+                      <th class="px-3 py-4">Positie</th>
+                      <th class="px-3 py-4">Dienst</th>
+                      <th class="px-3 py-4">Opmerking</th>
+                      <th class="px-3 py-4">Oude waarde</th>
+                      <th class="px-3 py-4">Nieuwe waarde</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-gray-100 text-brand-dark text-xs">
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-3 py-4">2012-02-12</td>
+                      <td class="px-3 py-4">12:03</td>
+                      <td class="px-3 py-4">Ruben Noom</td>
+                      <td class="px-3 py-4">Extrusie SMK</td>
+                      <td class="px-3 py-4">2012-03-03 Nacht</td>
+                      <td class="px-3 py-4">
+                        Positie Extrusie Smk voor dienst maandag 21-12-2023
+                        gedeactiveerd
+                      </td>
+                      <td class="px-3 py-2">&lt;geen&gt;</td>
+                      <td class="px-3 py-2">Dubbele dienst</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-3 py-2">2012-02-12</td>
+                      <td class="px-3 py-4">12:03</td>
+                      <td class="px-3 py-4">Ruben Noom</td>
+                      <td class="px-3 py-4">Extrusie SMK</td>
+                      <td class="px-3 py-4">2012-03-03 Nacht</td>
+                      <td class="px-3 py-4">
+                        Positie Extrusie Smk voor dienst maandag 21-12-2023
+                        gedeactiveerd
+                      </td>
+                      <td class="px-3 py-2">&lt;geen&gt;</td>
+                      <td class="px-3 py-2">Dubbele dienst</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-3 py-2">2012-02-12</td>
+                      <td class="px-3 py-4">12:03</td>
+                      <td class="px-3 py-4">Ruben Noom</td>
+                      <td class="px-3 py-4">Extrusie SMK</td>
+                      <td class="px-3 py-4">2012-03-03 Nacht</td>
+                      <td class="px-3 py-4">
+                        Positie Extrusie Smk voor dienst maandag 21-12-2023
+                        gedeactiveerd
+                      </td>
+                      <td class="px-3 py-2">&lt;geen&gt;</td>
+                      <td class="px-3 py-2">Dubbele dienst</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-3 py-2">2012-02-12</td>
+                      <td class="px-3 py-4">12:03</td>
+                      <td class="px-3 py-4">Ruben Noom</td>
+                      <td class="px-3 py-4">Extrusie SMK</td>
+                      <td class="px-3 py-4">2012-03-03 Nacht</td>
+                      <td class="px-3 py-4">
+                        Positie Extrusie Smk voor dienst maandag 21-12-2023
+                        gedeactiveerd
+                      </td>
+                      <td class="px-3 py-2">&lt;geen&gt;</td>
+                      <td class="px-3 py-2">Dubbele dienst</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                      <td class="px-3 py-2">2012-02-12</td>
+                      <td class="px-3 py-4">12:03</td>
+                      <td class="px-3 py-4">Ruben Noom</td>
+                      <td class="px-3 py-4">Extrusie SMK</td>
+                      <td class="px-3 py-4">2012-03-03 Nacht</td>
+                      <td class="px-3 py-4">
+                        Positie Extrusie Smk voor dienst maandag 21-12-2023
+                        gedeactiveerd
+                      </td>
+                      <td class="px-3 py-2">&lt;geen&gt;</td>
+                      <td class="px-3 py-2">Dubbele dienst</td>
+                    </tr>
+                    <!-- Repeat rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
+    >
+      <div
+        class="flex flex-col justify-center items-center text-center space-y-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#F04C46"
+          class="size-12"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+          />
+        </svg>
+        <span class="text-lg font-bold capitalize"
+          >user is requested to show on a larger screen</span
+        >
+      </div>
+    </div>
+    <script src="./js/dateinput.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

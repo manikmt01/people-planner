@@ -1,0 +1,3148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Roster - ToolsTips</title>
+    <!-- facicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="bg-brand-gray-bg">
+    <div class="min-h-screen hidden md:block">
+      <div class="min-h-screen">
+        <!-- Header -->
+        <header
+          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
+        >
+          <div class="w-full mx-auto px-5 flex items-center justify-between">
+            <!-- Left section -->
+            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+              <!-- Icon -->
+              <img
+                src="./assets/svg/logo.svg"
+                alt="logo"
+                class="w-5 h-5 xl:w-6 xl:h-6"
+              />
+              <span class="font-bold text-xl xl:text-2xl">People planner</span>
+            </a>
+
+            <!-- Center navigation -->
+            <nav
+              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
+            >
+              <a
+                href="./production-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Production</a
+              >
+
+              <a
+                href="./maintenance-position.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Maintenance</a
+              >
+
+              <a
+                href="./people-roster.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
+                >People Roster</a
+              >
+
+              <a
+                href="./employee-edit-shift.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Employee</a
+              >
+
+              <a
+                href="./leave-requests.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Leave Requests</a
+              >
+
+              <a
+                href="./report-export.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Report</a
+              >
+
+              <a
+                href="./log.html"
+                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+                >Log</a
+              >
+            </nav>
+
+            <!-- Right user section -->
+            <div class="flex items-center space-x-2">
+              <button type="button" class="flex items-center space-x-2">
+                <img
+                  src="./assets/img/avaters-demos.png"
+                  alt="User"
+                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
+                />
+                <div class="flex flex-col text-start leading-tight">
+                  <span class="text-[8px] font-normal text-gray-200 uppercase"
+                    >Welcome</span
+                  >
+                  <span class="text-sm xl:text-base font-normal"
+                    >Bas Meijerink</span
+                  >
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Left Content -->
+        <main class="">
+          <!-- top filter -->
+
+          <!-- main content -->
+          <section>
+            <div class="flex flex-row">
+              <!-- Board Container -->
+              <div class="flex-1 flex flex-col h-[calc(100vh-64px)]">
+                <!-- header -->
+                <div
+                  class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
+                >
+                  <!-- left side -->
+                  <div class="flex items-center gap-1">
+                    <span class="text-xl font-bold text-brand-dark"
+                      >Maandag 30 januari 2023</span
+                    >
+                    <!-- 2 -->
+                    <div class="relative inline-block">
+                      <!-- Hidden toggle -->
+                      <input
+                        type="checkbox"
+                        id="calsDropdown"
+                        class="dropdown-toggle hidden peer"
+                      />
+
+                      <!-- Label (acts as toggle button) -->
+                      <label
+                        for="calsDropdown"
+                        class="flex items-center justify-center hover:bg-brand-light w-[27px] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm"
+                      >
+                        <img
+                          src="./assets/svg/calendar.svg"
+                          alt="calendar"
+                          class="w-[14px] h-[14px]"
+                        />
+                      </label>
+
+                      <!-- Dropdown -->
+                      <div
+                        class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[275px] p-[15px]"
+                      >
+                        <div class="">
+                          <!-- Header -->
+                          <div class="flex items-center justify-between mb-4">
+                            <button
+                              id="prevMonth"
+                              class="text-gray-500 hover:text-brand-dark cursor-pointer"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="4.326"
+                                height="7.006"
+                                viewBox="0 0 4.326 7.006"
+                                class="w-[10px] h-[10px]"
+                              >
+                                <path
+                                  id="Path_chevron-left"
+                                  data-name="Path / chevron-left"
+                                  d="M4.326.829,1.652,3.5l2.674,2.68L3.5,7.006,0,3.5,3.5,0Z"
+                                  fill="#2b2d41"
+                                />
+                              </svg>
+                            </button>
+                            <h2
+                              id="monthYear"
+                              class="font-bold text-brand-dark text-xs"
+                            ></h2>
+                            <button
+                              id="nextMonth"
+                              class="text-gray-500 hover:text-brand-dark cursor-pointer"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="4.326"
+                                height="7.006"
+                                viewBox="0 0 4.326 7.006"
+                                class="w-[10px] h-[10px]"
+                              >
+                                <path
+                                  id="Path_chevron-left"
+                                  data-name="Path / chevron-left"
+                                  d="M0,.829,2.674,3.5,0,6.183l.823.823,3.5-3.5L.823,0Z"
+                                  fill="#2b2d41"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+
+                          <!-- Weekdays -->
+                          <div
+                            class="grid grid-cols-7 text-center text-[10px] font-bold text-brand-dark mb-2"
+                          >
+                            <div>MO</div>
+                            <div>TU</div>
+                            <div>WE</div>
+                            <div>TH</div>
+                            <div>FR</div>
+                            <div>SA</div>
+                            <div>SU</div>
+                          </div>
+
+                          <!-- Days -->
+                          <div
+                            id="calendarDays"
+                            class="grid grid-cols-7 text-center gap-2 text-[10px]"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- right side -->
+                  <div class="flex items-center gap-3">
+                    <!-- 0 -->
+                    <button
+                      class="text-xs font-bold rounded-[5px] bg-[#3AA5A0] px-3 py-1 text-white min-h-[26px] cursor-pointer hover:underline hover:bg-[#3AA5A0] mr-1"
+                    >
+                      Fill open positions
+                    </button>
+                    <!-- 1 -->
+                    <div
+                      class="relative inline-block w-[8.313rem] min-h-[27px]"
+                    >
+                      <!-- Hidden toggle -->
+                      <input
+                        type="checkbox"
+                        id="shiftDropdown"
+                        class="dropdown-toggle hidden peer"
+                      />
+
+                      <!-- Label (acts like the button) -->
+                      <label
+                        for="shiftDropdown"
+                        class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
+                      >
+                        <!-- Left content -->
+                        <span class="flex items-center gap-[7px] px-2 py-[6px]">
+                          <img
+                            src="./assets/svg/day shift.svg"
+                            alt="day shift"
+                            class="w-[14px] h-[14px]"
+                          />
+                          Day shift
+                        </span>
+
+                        <!-- Right icon section (dark background full height) -->
+                        <span
+                          class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="8"
+                            height="5"
+                            viewBox="0 0 8 5"
+                            class="fill-white"
+                          >
+                            <path
+                              d="M1 1l3 3 3-3"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </span>
+                      </label>
+
+                      <!-- Dropdown menu -->
+                      <ul
+                        class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
+                      >
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                        >
+                          <img
+                            src="./assets/svg/morning shift.svg"
+                            alt="morning shift"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Morning shift</span>
+                        </li>
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                        >
+                          <img
+                            src="./assets/svg/day shift.svg"
+                            alt="day shift"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Day shift</span>
+                        </li>
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
+                        >
+                          <img
+                            src="./assets/svg/night shift.svg"
+                            alt="night shift"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Night shift</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- 2 -->
+                    <div class="relative inline-block">
+                      <!-- Hidden toggle -->
+                      <input
+                        type="checkbox"
+                        id="settingDropdown"
+                        class="dropdown-toggle hidden peer"
+                      />
+
+                      <!-- Label (acts as toggle button) -->
+                      <label
+                        for="settingDropdown"
+                        class="flex items-center justify-center hover:bg-brand-light w-[27px] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm"
+                      >
+                        <svg
+                          fill="#2B2D41"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 342.382 342.382"
+                          class="w-4 h-4"
+                        >
+                          <g>
+                            <path
+                              d="M45.225,125.972C20.284,125.972,0,146.256,0,171.191c0,24.94,20.284,45.219,45.225,45.219
+          c24.926,0,45.219-20.278,45.219-45.219C90.444,146.256,70.151,125.972,45.225,125.972z"
+                            ></path>
+                            <path
+                              d="M173.409,125.972c-24.938,0-45.225,20.284-45.225,45.219c0,24.94,20.287,45.219,45.225,45.219
+          c24.936,0,45.226-20.278,45.226-45.219C218.635,146.256,198.345,125.972,173.409,125.972z"
+                            ></path>
+                            <path
+                              d="M297.165,125.972c-24.932,0-45.222,20.284-45.222,45.219c0,24.94,20.29,45.219,45.222,45.219
+          c24.926,0,45.217-20.278,45.217-45.219C342.382,146.256,322.091,125.972,297.165,125.972z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </label>
+
+                      <!-- Dropdown -->
+                      <ul
+                        class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[142px]"
+                      >
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                        >
+                          <img
+                            src="./assets/svg/Undo.svg"
+                            alt="Undo"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Reset data</span>
+                        </li>
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] border-y border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs"
+                        >
+                          <img
+                            src="./assets/svg/Add.svg"
+                            alt="add"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Add new position</span>
+                        </li>
+                        <li
+                          class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
+                        >
+                          <img
+                            src="./assets/svg/date-from.svg"
+                            alt="date"
+                            class="w-[14px] h-[14px]"
+                          />
+                          <span>Export roster</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- main scroll -->
+                <div
+                  class="flex-1 flex flex-col overflow-x-auto max-w-[calc(100vw-210px)] h-[calc(100vh-140px)] scrollbar-cst"
+                >
+                  <div
+                    class="flex flex-row gap-6 min-w-max px-5 bg-white border-b border-brand-light min-h-[40px]"
+                  >
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      PC packaging
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      PC processing
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      SNX Packaging
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      SNX Processing
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                    <div
+                      class="w-44 flex-col space-y-3 flex justify-center items-center text-base"
+                    >
+                      Warehouse
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-6 min-w-max p-5">
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-mid-gray shadow-[0_3px_6px_rgba(0,0,0,0.16)] rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Column 1 -->
+                    <div class="w-44 flex flex-col space-y-3">
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Card 1 -->
+                      <div
+                        class="bg-white border border-brand-light rounded-[5px]"
+                      >
+                        <div
+                          class="rounded-t-[5px] px-2 py-1 border-b border-brand-light"
+                        >
+                          <h3 class="text-brand-dark -mb-2">AO Palletizer</h3>
+                          <span class="text-[10px] text-[#A4B5BF]"
+                            >Opmerking</span
+                          >
+                        </div>
+                        <div
+                          class="rounded-b-[5px] px-2 py-1 flex justify-between items-center"
+                        >
+                          <span class="text-xs text-brand-dark"
+                            >Palletizer</span
+                          >
+                          <div class="flex space-x-[2px]">
+                            <img
+                              src="./assets/img/avater-01.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                            <img
+                              src="./assets/img/avter-02.png"
+                              alt="avatar"
+                              class="w-5 h-5 rounded-full border border-white"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Sidebar -->
+              <div
+                class="bg-white border-l-1 border-brand-mid-dark p-5 relative"
+              >
+                <!-- body of sidebar -->
+                <div class="">
+                  <div
+                    class="mb-[9px] flex flex-row items-center justify-between"
+                  >
+                    <h1>Extrusie Smk</h1>
+                    <button
+                      class="group transition duration-300 ease-in-out cursor-pointer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6 stroke-brand-mid-gray group-hover:stroke-brand-dark"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18 18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex flex-row items-center space-x-[10px]">
+                    <img src="./assets/svg/clouds.svg" alt="clouds" />
+                    <p class="font-semibold">Zondag 11 februari</p>
+                  </div>
+                </div>
+                <!-- Status of sidebar -->
+                <div class="pt-[30px]">
+                  <h3>Status</h3>
+                  <ul class="flex flex-col space-y-2 mt-3">
+                    <li class="">
+                      <button
+                        class="flex flex-row items-center space-x-[13px] cursor-pointer group"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16.637"
+                          height="16.637"
+                          viewBox="0 0 16.637 16.637"
+                          class="text-brand-dark group-hover:text-brand-blue-teal transition-colors w-4 h-4"
+                        >
+                          <path
+                            id="Path_cog-off-outline"
+                            data-name="Path / cog-off-outline"
+                            d="M17.747,17.361,2.124,1.73,1.11,2.736,3.4,5.018,2.084,7.276a.391.391,0,0,0,.1.507L3.851,9.074,3.8,9.866l.055.768L2.18,11.95a.391.391,0,0,0-.1.507L3.669,15.2a.4.4,0,0,0,.483.174l1.973-.8a5.5,5.5,0,0,0,1.339.784l.293,2.1a.4.4,0,0,0,.4.333h3.169a.4.4,0,0,0,.4-.333l.293-2.1a5.328,5.328,0,0,0,1.1-.618l3.628,3.628,1.006-1.006M8.153,9.787l1.664,1.664H9.737A1.584,1.584,0,0,1,8.153,9.866V9.787m2.48,4.349L10.339,16.2h-1.2l-.293-2.076a4.313,4.313,0,0,1-2.385-1.394l-1.925.824-.594-1.03,1.68-1.236a4.4,4.4,0,0,1,0-2.852L3.946,7.212l.594-1.03.048.016,2.3,2.313a3.072,3.072,0,0,0-.317,1.355,3.168,3.168,0,0,0,3.169,3.169,2.967,2.967,0,0,0,1.355-.317l.887.887a4.428,4.428,0,0,1-1.347.531M8.2,5.794,7,4.6c.151-.071.3-.158.459-.222l.293-2.1a.4.4,0,0,1,.4-.333h3.169a.4.4,0,0,1,.4.333l.293,2.1a5.743,5.743,0,0,1,1.339.776l1.973-.792a.389.389,0,0,1,.483.174L17.39,7.276a.391.391,0,0,1-.1.507L15.624,9.074l.055.792-.055.792L17.3,11.95a.391.391,0,0,1,.1.507l-.919,1.6-1.157-1.149.222-.38L13.857,11.3a4.421,4.421,0,0,0,0-2.86l1.672-1.228-.594-1.03-1.909.824a4.294,4.294,0,0,0-2.4-1.4l-.293-2.076H9.143L8.85,5.6a3.625,3.625,0,0,0-.65.2m1.537.9a3.168,3.168,0,0,1,3.169,3.169,3.409,3.409,0,0,1-.055.578L9.159,6.753A3.409,3.409,0,0,1,9.737,6.7Z"
+                            transform="translate(-1.11 -1.73)"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <p class="group-hover:text-brand-blue-teal">Inactief</p>
+                      </button>
+                    </li>
+                    <li class="">
+                      <button
+                        class="flex flex-row items-center space-x-[13px] cursor-pointer group"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15.416"
+                          height="15.845"
+                          viewBox="0 0 15.416 15.845"
+                          class="text-brand-blue-teal transition-colors w-4 h-4"
+                        >
+                          <path
+                            id="Path_cog-outline"
+                            data-name="Path / cog-outline"
+                            d="M9.978,6.753A3.169,3.169,0,1,1,6.81,9.922,3.169,3.169,0,0,1,9.978,6.753m0,1.584a1.584,1.584,0,1,0,1.584,1.584A1.584,1.584,0,0,0,9.978,8.338M8.394,17.845a.4.4,0,0,1-.4-.333l-.293-2.1a5.5,5.5,0,0,1-1.339-.784l-1.973.8a.4.4,0,0,1-.483-.174L2.326,12.513a.391.391,0,0,1,.1-.507l1.672-1.315-.055-.768.055-.792L2.421,7.839a.391.391,0,0,1-.1-.507L3.91,4.591a.389.389,0,0,1,.483-.174l1.973.792A5.743,5.743,0,0,1,7.7,4.432L8,2.333A.4.4,0,0,1,8.394,2h3.169a.4.4,0,0,1,.4.333l.293,2.1a5.743,5.743,0,0,1,1.339.776l1.973-.792a.389.389,0,0,1,.483.174l1.584,2.741a.391.391,0,0,1-.1.507L15.865,9.13l.055.792-.055.792,1.672,1.291a.391.391,0,0,1,.1.507l-1.584,2.741a.389.389,0,0,1-.483.174l-1.973-.792a5.743,5.743,0,0,1-1.339.776l-.293,2.1a.4.4,0,0,1-.4.333H8.394m.99-14.26L9.091,5.652a4.351,4.351,0,0,0-2.4,1.41L4.781,6.238l-.594,1.03L5.859,8.5a4.4,4.4,0,0,0,0,2.852l-1.68,1.236.594,1.03L6.7,12.79a4.313,4.313,0,0,0,2.385,1.394l.293,2.076h1.2l.293-2.068a4.371,4.371,0,0,0,2.385-1.4l1.925.824.594-1.03L14.1,11.356a4.421,4.421,0,0,0,0-2.86L15.77,7.268l-.594-1.03-1.909.824a4.294,4.294,0,0,0-2.4-1.4l-.293-2.076Z"
+                            transform="translate(-2.271 -2)"
+                            fill="currentColor"
+                          />
+                        </svg>
+
+                        <p class="text-brand-blue-teal">Actief</p>
+                      </button>
+                    </li>
+                    <li class="">
+                      <button
+                        class="flex flex-row items-center space-x-[13px] cursor-pointer group"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15.942"
+                          height="16"
+                          viewBox="0 0 15.942 16"
+                          class="text-brand-dark group-hover:text-brand-blue-teal transition-colors w-4 h-4"
+                        >
+                          <path
+                            id="Path_wrench-outline"
+                            data-name="Path / wrench-outline"
+                            d="M16.727,14.1,10.119,7.487A4.728,4.728,0,0,0,2.935,1.919l2.795,2.8L4.7,5.733,1.909,2.96A4.724,4.724,0,0,0,7.4,10.165l6.63,6.63a.725.725,0,0,0,1.026,0l1.674-1.674a.716.716,0,0,0,0-1.019M14.544,15.26,7.659,8.375a3.182,3.182,0,0,1-1.456.6A3.265,3.265,0,0,1,2.455,5.558L4.7,7.807,7.79,4.721,5.541,2.458a3.329,3.329,0,0,1,2.5.968,3.252,3.252,0,0,1,.9,2.882,3.165,3.165,0,0,1-.64,1.426l6.885,6.878Z"
+                            transform="translate(-0.998 -1.008)"
+                            fill="currentColor"
+                          />
+                        </svg>
+
+                        <p class="group-hover:text-brand-blue-teal">
+                          In onderhoud
+                        </p>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Toegewezen of sidebar -->
+                <div class="pt-[46px] pb-[54px]">
+                  <h3>Toegewezen medewerkers</h3>
+                  <ul class="flex flex-col space-y-[10px] mt-3">
+                    <li class="flex flex-row items-center justify-between">
+                      <div class="flex flex-row items-center space-x-3">
+                        <div
+                          class="w-[25px] h-[25px] rounded-full ring-1 ring-transparent overflow-hidden"
+                        >
+                          <img
+                            src="./assets/img/avaters-demos.png"
+                            alt="avater"
+                          />
+                        </div>
+                        <p>Adriaan van Dis</p>
+                      </div>
+                      <button type="button" class="cursor-pointer">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12.744"
+                          height="13.828"
+                          viewBox="0 0 12.744 13.828"
+                          class="text-brand-mid-gray hover:text-brand-dark transition-colors"
+                        >
+                          <g id="h" transform="translate(-3.25 -2.753)">
+                            <g
+                              id="Group_90"
+                              data-name="Group 90"
+                              transform="translate(3.25 2.753)"
+                            >
+                              <path
+                                id="Path_134"
+                                data-name="Path 134"
+                                d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
+                                transform="translate(-3.25 -2.753)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_135"
+                                data-name="Path 135"
+                                d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
+                                transform="translate(-3.658 -5.061)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_136"
+                                data-name="Path 136"
+                                d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
+                                transform="translate(-4.609 -5.065)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_137"
+                                data-name="Path 137"
+                                d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
+                                transform="translate(-6.013 -5.061)"
+                                fill="currentColor"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="flex flex-row items-center justify-between">
+                      <div class="flex flex-row items-center space-x-3">
+                        <div
+                          class="w-[25px] h-[25px] rounded-full ring-1 ring-brand-teal overflow-hidden"
+                        >
+                          <img
+                            src="./assets/img/avaters-demos.png"
+                            alt="avater"
+                          />
+                        </div>
+                        <p class="text-brand-teal">Adriaan van Dis</p>
+                      </div>
+                      <button type="button" class="cursor-pointer">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12.744"
+                          height="13.828"
+                          viewBox="0 0 12.744 13.828"
+                          class="text-brand-mid-gray hover:text-brand-dark transition-colors"
+                        >
+                          <g id="h" transform="translate(-3.25 -2.753)">
+                            <g
+                              id="Group_90"
+                              data-name="Group 90"
+                              transform="translate(3.25 2.753)"
+                            >
+                              <path
+                                id="Path_134"
+                                data-name="Path 134"
+                                d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
+                                transform="translate(-3.25 -2.753)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_135"
+                                data-name="Path 135"
+                                d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
+                                transform="translate(-3.658 -5.061)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_136"
+                                data-name="Path 136"
+                                d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
+                                transform="translate(-4.609 -5.065)"
+                                fill="currentColor"
+                              />
+                              <path
+                                id="Path_137"
+                                data-name="Path 137"
+                                d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
+                                transform="translate(-6.013 -5.061)"
+                                fill="currentColor"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="flex flex-row items-center justify-between">
+                      <div class="flex flex-row items-center space-x-3">
+                        <button
+                          type="button"
+                          class="cursor-pointer w-[25px] h-[25px] rounded-full overflow-hidden"
+                        >
+                          <img src="./assets/svg/add-plus.svg" alt="add-plus" />
+                        </button>
+                        <input
+                          type="text"
+                          placeholder="Typ naam"
+                          class="w-[51px] text-xs placeholder:text-[12px] placeholder:text-[#A4B5BF] outline-none"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Opmerking of sidebar -->
+                <div>
+                  <h3>Opmerking</h3>
+                  <div>
+                    <div class="flex items-center space-x-6 py-3">
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="status"
+                          value="active"
+                          class="w-4 h-4 border-2 border-[#EDF0F2] accent-[#00A38C] rounded-full"
+                        />
+                        <span class="text-xs text-gray-800">Intern</span>
+                      </label>
+
+                      <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                          type="radio"
+                          name="status"
+                          value="inactive"
+                          class="w-4 h-4 border-2 border-[#EDF0F2] accent-[#00A38C] rounded-full"
+                        />
+                        <span class="text-xs text-gray-800">Publiek</span>
+                      </label>
+                    </div>
+                    <textarea
+                      placeholder="Dubbele dienst"
+                      class="text-xs h-[66px] resize-none outline-none placeholder:text-[12px] placeholder:text-[#2B2D41] w-full rounded-[5px] border border-[#EDF0F2] focus:border-brand-dark px-[9px] pt-[5px]"
+                    ></textarea>
+                  </div>
+                </div>
+                <!-- av of sidebar -->
+                <div
+                  class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[100%] bg-white flex flex-col py-3 px-5 gap-4"
+                  bis_skin_checked="1"
+                >
+                  <div class="flex justify-center items-center gap-2">
+                    <button
+                      type="button"
+                      class="py-2 inline-block text-[12px] font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 w-full"
+                    >
+                      Save
+                    </button>
+                    <button
+                      type="button"
+                      class="py-2 inline-block text-[12px] font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 w-full"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
+    >
+      <div
+        class="flex flex-col justify-center items-center text-center space-y-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#F04C46"
+          class="size-12"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+          />
+        </svg>
+        <span class="text-lg font-bold capitalize"
+          >user is requested to show on a larger screen</span
+        >
+      </div>
+    </div>
+    <script src="./js/calander.js"></script>
+  </body>
+</html>
