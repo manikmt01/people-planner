@@ -1,686 +1,399 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maintenance - Skill</title>
-    <!-- facicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <!-- font -->
-    <link
-      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
-      rel="stylesheet"
-    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance - Skill</title>
+  <!-- facicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <!-- font -->
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet" />
 
-  <body class="bg-brand-gray-bg">
-    <div class="min-h-screen hidden md:block">
-      <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
-        <!-- Header -->
-        <header
-          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
-        >
-          <div class="w-full mx-auto px-5 flex items-center justify-between">
-            <!-- Left section -->
-            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
-              <!-- Icon -->
-              <img
-                src="./assets/svg/logo.svg"
-                alt="logo"
-                class="w-5 h-5 xl:w-6 xl:h-6"
-              />
-              <span class="font-bold text-xl xl:text-2xl">People planner</span>
-            </a>
+  <!-- css -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
 
-            <!-- Center navigation -->
-        <nav
-              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
-            >
-              <a
-                href="./production-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Production</a
-              >
+<body class="bg-brand-gray-bg">
+  <div class="min-h-screen hidden md:block">
+    <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
+      <!-- Header -->
+      <header class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2">
+        <div class="w-full mx-auto px-5 flex items-center justify-between">
+          <!-- Left section -->
+          <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+            <!-- Icon -->
+            <img src="./assets/svg/logo.svg" alt="logo" class="w-5 h-5 xl:w-6 xl:h-6" />
+            <span class="font-bold text-xl xl:text-2xl">People planner</span>
+          </a>
 
-              <a
-                href="./maintenance-position.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
-                >Maintenance</a
-              >
+          <!-- Center navigation -->
+          <nav class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm">
+            <a href="./production-roster.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
 
-              <a
-                href="./people-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >People Roster</a
-              >
+            <a href="./maintenance-position.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold">Maintenance</a>
 
-              <a
-                href="./employee-edit-shift.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Employee</a
-              >
+            <a href="./people-roster.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">People
+              Roster</a>
 
-              <a
-                href="./leave-requests.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Leave Requests</a
-              >
+            <a href="./employee-edit-shift.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Employee</a>
 
-              <a
-                href="./report-export.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Report</a
-              >
+            <a href="./leave-requests.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Leave
+              Requests</a>
 
-              <a
-                href="./log.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Log</a
-              >
-            </nav>
+            <a href="./report-export.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Report</a>
 
-            <!-- Right user section -->
-            <div class="flex items-center space-x-2">
-              <button type="button" class="flex items-center space-x-2">
-                <img
-                  src="./assets/img/avaters-demos.png"
-                  alt="User"
-                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
-                />
-                <div class="flex flex-col text-start leading-tight">
-                  <span class="text-[8px] font-normal text-gray-200 uppercase"
-                    >Welcome</span
-                  >
-                  <span class="text-sm xl:text-base font-normal"
-                    >Bas Meijerink</span
-                  >
+            <a href="./log.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Log</a>
+          </nav>
+
+          <!-- Right user section -->
+          <div class="flex items-center space-x-2">
+            <button type="button" class="flex items-center space-x-2">
+              <img src="./assets/img/avaters-demos.png" alt="User"
+                class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
+              <div class="flex flex-col text-start leading-tight">
+                <span class="text-[8px] font-normal text-gray-200 uppercase">Welcome</span>
+                <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Left Content -->
+      <main class="">
+        <!-- top filter -->
+        <section
+          class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark">
+          <!-- left side -->
+          <div class="flex items-center space-x-12 text-sm text-brand-dark">
+            <a href="#"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Department</a>
+            <a href="./maintenance-position.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Position</a>
+            <a href="#"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Team</a>
+            <a href="./maintenance-skill.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 font-bold">Skill</a>
+            <a href="./maintenance-leave-type.html"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Leave
+              type</a>
+            <a href="#"
+              class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Group</a>
+          </div>
+
+          <!-- right side -->
+          <div class="flex items-center space-x-4">
+            <button type="button" class="cursor-pointer w-[25px] h-[25px] rounded-full overflow-hidden">
+              <img src="./assets/svg/add-plus.svg" alt="add-plus" class="w-full" />
+            </button>
+            <div class="relative inline-block" bis_skin_checked="1">
+              <!-- Hidden toggle -->
+              <input type="checkbox" id="settingDropdown" class="dropdown-toggle hidden peer" />
+
+              <!-- Label (acts as toggle button) -->
+              <label for="settingDropdown"
+                class="flex items-center justify-center hover:bg-brand-light w-[11.313rem] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="flex items-center w-[11.313rem] border border-brand-light rounded-[5px] gap-[10px] px-3 py-[9px] bg-white">
+                    <img src="./assets/svg/magnify.svg" alt="magnify" class="w-3 h-3" />
+
+                    <input type="text" placeholder="Search"
+                      class="w-full text-xs font-semibold text-brand-dark placeholder-[#A4B5BF] focus:outline-none" />
+                  </div>
                 </div>
-              </button>
+              </label>
+
+              <!-- Dropdown -->
+              <ul
+                class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[11.313rem]">
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                  <span>Reset data</span>
+                </li>
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                  <span>Add new position</span>
+                </li>
+                <li
+                  class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                  <span>Export roster</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </header>
-
-        <!-- Left Content -->
-        <main class="">
-          <!-- top filter -->
-          <section
-            class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
-          >
-            <!-- left side -->
-            <div class="flex items-center space-x-12 text-sm text-brand-dark">
-              <a
-                href="#"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Department</a
-              >
-              <a
-                href="./maintenance-position.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Position</a
-              >
-              <a
-                href="#"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Team</a
-              >
-              <a
-                href="./maintenance-skill.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 font-bold"
-                >Skill</a
-              >
-              <a
-                href="./maintenance-leave-type.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Leave type</a
-              >
-              <a
-                href="#"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Group</a
-              >
-            </div>
-
-            <!-- right side -->
-            <div class="flex items-center space-x-4">
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] rounded-full overflow-hidden"
-              >
-                <img
-                  src="./assets/svg/add-plus.svg"
-                  alt="add-plus"
-                  class="w-full"
-                />
-              </button>
-              <div class="relative inline-block" bis_skin_checked="1">
-                <!-- Hidden toggle -->
-                <input
-                  type="checkbox"
-                  id="settingDropdown"
-                  class="dropdown-toggle hidden peer"
-                />
-
-                <!-- Label (acts as toggle button) -->
-                <label
-                  for="settingDropdown"
-                  class="flex items-center justify-center hover:bg-brand-light w-[11.313rem] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm"
-                >
-                  <div class="flex items-center space-x-4">
-                    <div
-                      class="flex items-center w-[11.313rem] border border-brand-light rounded-[5px] gap-[10px] px-3 py-[9px] bg-white"
-                    >
-                      <img
-                        src="./assets/svg/magnify.svg"
-                        alt="magnify"
-                        class="w-3 h-3"
-                      />
-
-                      <input
-                        type="text"
-                        placeholder="Search"
-                        class="w-full text-xs font-semibold text-brand-dark placeholder-[#A4B5BF] focus:outline-none"
-                      />
+        </section>
+        <!-- main content -->
+        <section class="px-8.5 pt-10 pb-24 w-full">
+          <div class="max-w-[980px] mx-auto rounded-lg bg-white px-5 pt-4 pb-8">
+            <!-- Calendar content goes here -->
+            <h1>Skill</h1>
+            <!-- Calendar content goes here -->
+            <div class="pt-10 flex flex-row justify-between gap-[8rem]">
+              <ul class="w-[370px]">
+                <li>
+                  <div class="flex items-center w-full gap-[22px]">
+                    <div class="w-[80px] shrink-0">
+                      <h3>Department</h3>
                     </div>
-                  </div>
-                </label>
+                    <div class="flex-1">
+                      <div class="relative inline-block w-full min-h-[27px]">
+                        <!-- Hidden toggle -->
+                        <input type="checkbox" id="shiftDropdownTwo" class="dropdown-toggle hidden peer" />
 
-                <!-- Dropdown -->
-                <ul
-                  class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[11.313rem]"
-                >
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Reset data</span>
-                  </li>
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Add new position</span>
-                  </li>
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Export roster</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <!-- main content -->
-          <section class="px-8.5 pt-10 pb-24 w-full">
-            <div
-              class="max-w-[980px] mx-auto rounded-lg bg-white px-5 pt-4 pb-8"
-            >
-              <!-- Calendar content goes here -->
-              <h1>Skill</h1>
-              <!-- Calendar content goes here -->
-              <div class="pt-10 flex flex-row justify-between gap-[8rem]">
-                <ul class="w-[370px]">
-                  <li>
-                    <div class="flex items-center w-full gap-[22px]">
-                      <div class="w-[80px] shrink-0">
-                        <h3>Department</h3>
-                      </div>
-                      <div class="flex-1">
-                        <div class="relative inline-block w-full min-h-[27px]">
-                          <!-- Hidden toggle -->
-                          <input
-                            type="checkbox"
-                            id="shiftDropdownTwo"
-                            class="dropdown-toggle hidden peer"
-                          />
+                        <!-- Label (acts like the button) -->
+                        <label for="shiftDropdownTwo"
+                          class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden">
+                          <!-- Left content -->
+                          <span class="flex items-center px-2 py-[6px]">
+                            AGV
+                          </span>
 
-                          <!-- Label (acts like the button) -->
-                          <label
-                            for="shiftDropdownTwo"
-                            class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
-                          >
-                            <!-- Left content -->
-                            <span class="flex items-center px-2 py-[6px]">
-                              AGV
-                            </span>
-
-                            <!-- Right icon section (dark background full height) -->
-                            <span
-                              class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="8"
-                                height="5"
-                                viewBox="0 0 8 5"
-                                class="fill-white"
-                              >
-                                <path
-                                  d="M1 1l3 3 3-3"
-                                  stroke="white"
-                                  stroke-width="1.5"
-                                  stroke-linecap="round"
-                                />
-                              </svg>
-                            </span>
-                          </label>
-
-                          <!-- Dropdown menu -->
-                          <ul
-                            class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
-                          >
-                            <li
-                              class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg"
-                            >
-                              <span>AGV 1</span>
-                            </li>
-                            <li
-                              class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg"
-                            >
-                              <span>AGV 2</span>
-                            </li>
-                            <li
-                              class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg"
-                            >
-                              <span>AGV 3</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center w-full gap-[22px] mt-[22px]">
-                      <div class="w-[80px]">
-                        <h3>Active</h3>
-                      </div>
-                      <div class="flex justify-center items-center">
-                        <!-- Make sure 'brand-primary' exists in your Tailwind config -->
-                        <label
-                          class="inline-flex items-center cursor-pointer select-none"
-                        >
-                          <!-- hidden native checkbox but still focusable -->
-                          <input type="checkbox" class="peer sr-only" />
-
-                          <!-- visual box that reacts to the input (peer) -->
-                          <span
-                            class="h-[18px] w-[18px] inline-flex items-center justify-center border-1 border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
-                            aria-hidden="true"
-                          >
-                            <!-- checkmark: hidden by default, shown when peer is checked -->
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke-width="1.5"
-                              stroke="currentColor"
-                              class="size-6 text-white"
-                            >
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="m4.5 12.75 6 6 9-13.5"
-                              />
+                          <!-- Right icon section (dark background full height) -->
+                          <span class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5"
+                              class="fill-white">
+                              <path d="M1 1l3 3 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                           </span>
                         </label>
+
+                        <!-- Dropdown menu -->
+                        <ul
+                          class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden">
+                          <li
+                            class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg">
+                            <span>AGV 1</span>
+                          </li>
+                          <li
+                            class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg">
+                            <span>AGV 2</span>
+                          </li>
+                          <li
+                            class="inline-flex items-center px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs font-semibold first:rounded-t-lg last:rounded-b-lg">
+                            <span>AGV 3</span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                  </li>
-                  <li>
-                    <div
-                      class="flex flex-col items-start w-full gap-[12px] mt-[32px]"
-                    >
-                      <div class="">
-                        <h3>Minimal occupancy:</h3>
-                      </div>
-                      <div class="w-full">
-                        <div class="flex flex-row justify-between gap-[30px]">
-                          <div class="w-1/2">
-                            <p>Starting date</p>
-                            <ul class="space-y-[10px] mt-[7px]">
-                              <li>
-                           <div
-  class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
->
-  <input
-    type="date"
-    class="date-input absolute opacity-0 w-0 h-0"
-    value="2025-01-17"
-  />
-  <span class="date-display text-xs font-semibold text-brand-dark">
-    17-01-2025
-  </span>
-  <img
-    src="./assets/svg/calendar.svg"
-    alt="calendar"
-    class="w-[13px] h-[13px]"
-  />
-</div>
-
-                              </li>
-                              <li>
-                              <div
-  class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
->
-  <input
-    type="date"
-    class="date-input absolute opacity-0 w-0 h-0"
-    value="2025-01-17"
-  />
-  <span class="date-display text-xs font-semibold text-brand-dark">
-    17-01-2025
-  </span>
-  <img
-    src="./assets/svg/calendar.svg"
-    alt="calendar"
-    class="w-[13px] h-[13px]"
-  />
-</div>
-
-                              </li>
-                              <li>
-                                <button
-                                  type="button"
-                                  class="cursor-pointer w-[25px] h-[25px] rounded-full overflow-hidden"
-                                >
-                                  <img
-                                    src="./assets/svg/add-plus.svg"
-                                    alt="add-plus"
-                                    class="w-full"
-                                  />
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="w-1/2">
-                            <p>Minimal occupancy</p>
-                            <ul class="space-y-[10px] mt-[7px]">
-                              <li class="flex items-center gap-[10px]">
-                                <div
-                                  class="flex w-full items-center border border-brand-light rounded-[5px] px-2 py-[5px] min-h-[27px] bg-white text-xs font-semibold text-brand-dark"
-                                >
-                                  <input
-                                    type="number"
-                                    id="mumners"
-                                    placeholder="3"
-                                    class="w-full focus:outline-none"
-                                  />
-                                </div>
-                                <button
-                                  class="text-[#A4B5BF] hover:text-brand-dark cursor-pointer"
-                                >
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="9.5"
-                                    height="10.307"
-                                    viewBox="0 0 9.5 10.307"
-                                    class="w-[12px] h-[12px]"
-                                  >
-                                    <g
-                                      id="h"
-                                      transform="translate(-3.25 -2.753)"
-                                    >
-                                      <g
-                                        id="Group_90"
-                                        data-name="Group 90"
-                                        transform="translate(3.25 2.753)"
-                                      >
-                                        <path
-                                          id="Path_134"
-                                          data-name="Path 134"
-                                          d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
-                                          transform="translate(-3.25 -2.753)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_135"
-                                          data-name="Path 135"
-                                          d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
-                                          transform="translate(-3.936 -6.637)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_136"
-                                          data-name="Path 136"
-                                          d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
-                                          transform="translate(-5.536 -6.642)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_137"
-                                          data-name="Path 137"
-                                          d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
-                                          transform="translate(-7.899 -6.637)"
-                                          fill="currentColor"
-                                        />
-                                      </g>
-                                    </g>
-                                  </svg>
-                                </button>
-                              </li>
-                              <li class="flex items-center gap-[10px]">
-                                <div
-                                  class="flex w-full items-center border border-brand-light rounded-[5px] px-2 py-[5px] min-h-[27px] bg-white text-xs font-semibold text-brand-dark"
-                                >
-                                  <input
-                                    type="number"
-                                    id="mumners"
-                                    placeholder="3"
-                                    class="w-full focus:outline-none"
-                                  />
-                                </div>
-                                <button
-                                  class="text-[#A4B5BF] hover:text-brand-dark cursor-pointer"
-                                >
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="9.5"
-                                    height="10.307"
-                                    viewBox="0 0 9.5 10.307"
-                                    class="w-[12px] h-[12px]"
-                                  >
-                                    <g
-                                      id="h"
-                                      transform="translate(-3.25 -2.753)"
-                                    >
-                                      <g
-                                        id="Group_90"
-                                        data-name="Group 90"
-                                        transform="translate(3.25 2.753)"
-                                      >
-                                        <path
-                                          id="Path_134"
-                                          data-name="Path 134"
-                                          d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
-                                          transform="translate(-3.25 -2.753)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_135"
-                                          data-name="Path 135"
-                                          d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
-                                          transform="translate(-3.936 -6.637)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_136"
-                                          data-name="Path 136"
-                                          d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
-                                          transform="translate(-5.536 -6.642)"
-                                          fill="currentColor"
-                                        />
-                                        <path
-                                          id="Path_137"
-                                          data-name="Path 137"
-                                          d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
-                                          transform="translate(-7.899 -6.637)"
-                                          fill="currentColor"
-                                        />
-                                      </g>
-                                    </g>
-                                  </svg>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center w-full gap-[22px] mt-[22px]">
+                    <div class="w-[80px]">
+                      <h3>Active</h3>
                     </div>
-                  </li>
-                  <li>
-                    <div class="flex items-center w-full gap-[22px] mt-[27px]">
+                    <div class="flex justify-center items-center">
                       <!-- Make sure 'brand-primary' exists in your Tailwind config -->
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
+                      <label class="inline-flex items-center cursor-pointer select-none">
                         <!-- hidden native checkbox but still focusable -->
                         <input type="checkbox" class="peer sr-only" />
 
                         <!-- visual box that reacts to the input (peer) -->
                         <span
-                          class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
-                          aria-hidden="true"
-                        >
+                          class="h-[18px] w-[18px] inline-flex items-center justify-center border-1 border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
+                          aria-hidden="true">
                           <!-- checkmark: hidden by default, shown when peer is checked -->
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="size-6 text-white"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="m4.5 12.75 6 6 9-13.5"
-                            />
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                           </svg>
                         </span>
-                        <p>Show older data</p>
                       </label>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex flex-col items-start w-full gap-[12px] mt-[32px]">
+                    <div class="">
+                      <h3>Minimal occupancy:</h3>
+                    </div>
+                    <div class="w-full">
+                      <div class="flex flex-row justify-between gap-[30px]">
+                        <div class="w-1/2">
+                          <p>Starting date</p>
+                          <ul class="space-y-[10px] mt-[7px]">
+                            <li>
+                              <div
+                                class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer">
+                                <input type="date" class="date-input absolute opacity-0 w-0 h-0" value="2025-01-17" />
+                                <span class="date-display text-xs font-semibold text-brand-dark">
+                                  17-01-2025
+                                </span>
+                                <img src="./assets/svg/calendar.svg" alt="calendar" class="w-[13px] h-[13px]" />
+                              </div>
+
+                            </li>
+                            <li>
+                              <div
+                                class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer">
+                                <input type="date" class="date-input absolute opacity-0 w-0 h-0" value="2025-01-17" />
+                                <span class="date-display text-xs font-semibold text-brand-dark">
+                                  17-01-2025
+                                </span>
+                                <img src="./assets/svg/calendar.svg" alt="calendar" class="w-[13px] h-[13px]" />
+                              </div>
+
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="cursor-pointer w-[25px] h-[25px] rounded-full overflow-hidden">
+                                <img src="./assets/svg/add-plus.svg" alt="add-plus" class="w-full" />
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="w-1/2">
+                          <p>Minimal occupancy</p>
+                          <ul class="space-y-[10px] mt-[7px]">
+                            <li class="flex items-center gap-[10px]">
+                              <div
+                                class="flex w-full items-center border border-brand-light rounded-[5px] px-2 py-[5px] min-h-[27px] bg-white text-xs font-semibold text-brand-dark">
+                                <input type="number" id="mumners" placeholder="3" value="3"
+                                  class="w-full focus:outline-none placeholder:text-brand-dark" />
+                              </div>
+                              <button class="text-[#A4B5BF] hover:text-brand-dark cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9.5" height="10.307"
+                                  viewBox="0 0 9.5 10.307" class="w-[12px] h-[12px]">
+                                  <g id="h" transform="translate(-3.25 -2.753)">
+                                    <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+                                      <path id="Path_134" data-name="Path 134"
+                                        d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
+                                        transform="translate(-3.25 -2.753)" fill="currentColor" />
+                                      <path id="Path_135" data-name="Path 135"
+                                        d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
+                                        transform="translate(-3.936 -6.637)" fill="currentColor" />
+                                      <path id="Path_136" data-name="Path 136"
+                                        d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
+                                        transform="translate(-5.536 -6.642)" fill="currentColor" />
+                                      <path id="Path_137" data-name="Path 137"
+                                        d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
+                                        transform="translate(-7.899 -6.637)" fill="currentColor" />
+                                    </g>
+                                  </g>
+                                </svg>
+                              </button>
+                            </li>
+                            <li class="flex items-center gap-[10px]">
+                              <div
+                                class="flex w-full items-center border border-brand-light rounded-[5px] px-2 py-[5px] min-h-[27px] bg-white text-xs font-semibold text-brand-dark">
+                                <input type="number" id="mumners" placeholder="3" value="3"
+                                  class="w-full focus:outline-none placeholder:text-brand-dark" />
+                              </div>
+                              <button class="text-[#A4B5BF] hover:text-brand-dark cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9.5" height="10.307"
+                                  viewBox="0 0 9.5 10.307" class="w-[12px] h-[12px]">
+                                  <g id="h" transform="translate(-3.25 -2.753)">
+                                    <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+                                      <path id="Path_134" data-name="Path 134"
+                                        d="M11.529,4.108H10.307L8.9,3.05a1.5,1.5,0,0,0-1.791,0L5.693,4.108H4.471a1.221,1.221,0,1,0,0,2.443h7.057a1.221,1.221,0,1,0,0-2.443ZM7.593,3.7a.684.684,0,0,1,.814,0l.543.407H7.05Zm3.936,2.036H4.471a.407.407,0,1,1,0-.814h7.057a.407.407,0,1,1,0,.814Z"
+                                        transform="translate(-3.25 -2.753)" fill="currentColor" />
+                                      <path id="Path_135" data-name="Path 135"
+                                        d="M12.28,11.255a.406.406,0,0,0-.467.337l-.586,3.523a1.215,1.215,0,0,1-1.205,1.021H7.351a1.219,1.219,0,0,1-1.205-1.021L5.56,11.592a.407.407,0,0,0-.8.13l.586,3.523a2.025,2.025,0,0,0,2.009,1.7h2.671a2.03,2.03,0,0,0,2.009-1.7l.586-3.523a.406.406,0,0,0-.337-.467Z"
+                                        transform="translate(-3.936 -6.637)" fill="currentColor" />
+                                      <path id="Path_136" data-name="Path 136"
+                                        d="M9.108,14.784h.065a.413.413,0,0,0,.337-.467L9.06,11.6a.407.407,0,0,0-.8.13l.451,2.714a.407.407,0,0,0,.4.342Z"
+                                        transform="translate(-5.536 -6.642)" fill="currentColor" />
+                                      <path id="Path_137" data-name="Path 137"
+                                        d="M13.827,14.778a.407.407,0,0,0,.4-.342l.451-2.714a.407.407,0,0,0-.8-.13l-.451,2.714a.406.406,0,0,0,.337.467h.065Z"
+                                        transform="translate(-7.899 -6.637)" fill="currentColor" />
+                                    </g>
+                                  </g>
+                                </svg>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center w-full gap-[22px] mt-[27px]">
+                    <!-- Make sure 'brand-primary' exists in your Tailwind config -->
+                    <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                      <!-- hidden native checkbox but still focusable -->
+                      <input type="checkbox" class="peer sr-only" />
+
+                      <!-- visual box that reacts to the input (peer) -->
+                      <span
+                        class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
+                        aria-hidden="true">
+                        <!-- checkmark: hidden by default, shown when peer is checked -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="size-6 text-white">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                        </svg>
+                      </span>
+                      <p>Show older data</p>
+                    </label>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </section>
-        </main>
-      </div>
-      <!-- bottom -->
-      <div
-        class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex flex-row justify-end items-center px-5 gap-2"
-      >
-        <button
-          type="button"
-          class="group inline-flex items-center gap-2 cursor-pointer transition-all duration-150 mr-[16px]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="12.744"
-            height="13.828"
-            viewBox="0 0 12.744 13.828"
-          >
-            <g id="h" transform="translate(-3.25 -2.753)">
-              <g
-                id="Group_90"
-                data-name="Group 90"
-                transform="translate(3.25 2.753)"
-              >
-                <path
-                  id="Path_134"
-                  data-name="Path 134"
-                  d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
-                  transform="translate(-3.25 -2.753)"
-                  fill="#e4223c"
-                />
-                <path
-                  id="Path_135"
-                  data-name="Path 135"
-                  d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
-                  transform="translate(-3.658 -5.061)"
-                  fill="#e4223c"
-                />
-                <path
-                  id="Path_136"
-                  data-name="Path 136"
-                  d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
-                  transform="translate(-4.609 -5.065)"
-                  fill="#e4223c"
-                />
-                <path
-                  id="Path_137"
-                  data-name="Path 137"
-                  d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
-                  transform="translate(-6.013 -5.061)"
-                  fill="#e4223c"
-                />
-              </g>
-            </g>
-          </svg>
-          <span class="text-xs text-[#E4223C] group-hover:underline"
-            >Delete</span
-          >
-        </button>
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Save
-        </button>
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Cancel
-        </button>
-      </div>
+          </div>
+        </section>
+      </main>
     </div>
+    <!-- bottom -->
     <div
-      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
-    >
-      <div
-        class="flex flex-col justify-center items-center text-center space-y-2"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#F04C46"
-          class="size-12"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-          />
+      class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex flex-row justify-end items-center px-5 gap-2">
+      <button type="button"
+        class="group inline-flex items-center gap-2 cursor-pointer transition-all duration-150 mr-[16px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12.744" height="13.828" viewBox="0 0 12.744 13.828">
+          <g id="h" transform="translate(-3.25 -2.753)">
+            <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+              <path id="Path_134" data-name="Path 134"
+                d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
+                transform="translate(-3.25 -2.753)" fill="#e4223c" />
+              <path id="Path_135" data-name="Path 135"
+                d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
+                transform="translate(-3.658 -5.061)" fill="#e4223c" />
+              <path id="Path_136" data-name="Path 136"
+                d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
+                transform="translate(-4.609 -5.065)" fill="#e4223c" />
+              <path id="Path_137" data-name="Path 137"
+                d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
+                transform="translate(-6.013 -5.061)" fill="#e4223c" />
+            </g>
+          </g>
         </svg>
-        <span class="text-lg font-bold capitalize"
-          >user is requested to show on a larger screen</span
-        >
-      </div>
+        <span class="text-xs text-[#E4223C] group-hover:underline">Delete</span>
+      </button>
+      <button type="button"
+        class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+        Save
+      </button>
+      <button type="button"
+        class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+        Cancel
+      </button>
     </div>
-    <script src="./js/dateinput.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+  </div>
+  <div class="flex items-center justify-center min-h-screen md:hidden capitalize px-5">
+    <div class="flex flex-col justify-center items-center text-center space-y-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F04C46"
+        class="size-12">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+      </svg>
+      <span class="text-lg font-bold capitalize">user is requested to show on a larger screen</span>
+    </div>
+  </div>
+  <script src="./js/dateinput.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
