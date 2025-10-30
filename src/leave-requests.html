@@ -1,812 +1,582 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leave requests</title>
-    <!-- facicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <!-- font -->
-    <link
-      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
-      rel="stylesheet"
-    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave requests</title>
+  <!-- facicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <!-- font -->
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet" />
 
-  <body class="bg-brand-gray-bg">
-    <div class="min-h-screen hidden md:block">
-      <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
-        <!-- Header -->
-        <header
-          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
-        >
-          <div class="w-full mx-auto px-5 flex items-center justify-between">
-            <!-- Left section -->
-            <a href="#" class="flex items-center space-x-3 xl:space-x-5">
-              <!-- Icon -->
-              <img
-                src="./assets/svg/logo.svg"
-                alt="logo"
-                class="w-5 h-5 xl:w-6 xl:h-6"
-              />
-              <span class="font-bold text-xl xl:text-2xl">People planner</span>
-            </a>
+  <!-- css -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
 
-            <!-- Center navigation -->
-            <nav
-              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
-            >
-              <a
-                href="./production-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Production</a
-              >
+<body class="bg-brand-gray-bg relative">
+  <!-- Header p1 -->
+  <header
+    class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 lg:flex hidden">
+    <div class="w-full mx-auto px-5 flex items-center justify-between">
+      <!-- Left section -->
+      <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+        <!-- Icon -->
+        <img src="./assets/svg/logo.svg" alt="logo" class="w-5 h-5 xl:w-6 xl:h-6" />
+        <span class="font-bold text-xl xl:text-2xl">People planner</span>
+      </a>
 
-              <a
-                href="./maintenance-position.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Maintenance</a
-              >
+      <!-- Center navigation -->
+      <nav class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm">
+        <a href="./production-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
 
-              <a
-                href="./people-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >People Roster</a
-              >
+        <a href="./maintenance-position.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Maintenance</a>
 
-              <a
-                href="./employee-edit-shift.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Employee</a
-              >
+        <a href="./people-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">People
+          Roster</a>
 
-              <a
-                href="./leave-requests.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
-                >Leave Requests</a
-              >
+        <a href="./employee-edit-shift.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Employee</a>
 
-              <a
-                href="./report-export.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Report</a
-              >
+        <a href="./leave-requests.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold">Leave
+          Requests</a>
 
-              <a
-                href="./log.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Log</a
-              >
-            </nav>
+        <a href="./report-export.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Report</a>
 
-            <!-- Right user section -->
-            <div class="flex items-center space-x-2">
-              <button type="button" class="flex items-center space-x-2">
-                <img
-                  src="./assets/img/avaters-demos.png"
-                  alt="User"
-                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
-                />
-                <div class="flex flex-col text-start leading-tight">
-                  <span class="text-[8px] font-normal text-gray-200 uppercase"
-                    >Welcome</span
-                  >
-                  <span class="text-sm xl:text-base font-normal"
-                    >Bas Meijerink</span
-                  >
-                </div>
-              </button>
-            </div>
+        <a href="./log.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Log</a>
+      </nav>
+
+      <!-- Right user section -->
+      <div class="flex items-center space-x-2">
+        <button type="button" class="flex items-center space-x-2">
+          <img src="./assets/img/avaters-demos.png" alt="User"
+            class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
+          <div class="flex flex-col text-start leading-tight">
+            <span class="text-[8px] font-normal text-gray-200 uppercase">Welcome</span>
+            <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
           </div>
-        </header>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <!-- Left Content -->
-        <main class="">
-          <!-- top filter -->
-          <section
-            class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
-          >
-            <!-- left side -->
-            <div class="flex items-center space-x-12 text-sm text-brand-dark">
-              <a
-                href="./leave-requests.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 font-bold flex flex-row items-center space-x-2"
-                ><div class="bg-brand-green rounded-full w-3 h-3"></div>
-                <span>Approve</span></a
-              >
-              <a
-                href="./Leave-requests-decline.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 flex flex-row items-center space-x-2"
-                ><div class="bg-brand-red rounded-full w-3 h-3"></div>
-                <span>Decline</span></a
-              >
-              <a
-                href="./leave-requests-manual.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 flex flex-row items-center space-x-2"
-                ><div class="bg-brand-orange rounded-full w-3 h-3"></div>
-                <span>Manual</span></a
-              >
-              <a
-                href="#"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300"
-                >Sick</a
-              >
-            </div>
+  <!-- wrapper start  p2  -->
+  <div class="w-full lg:block hidden">
+    <main class="">
+      <!-- top filter p3 -->
+      <section
+        class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark">
+        <!-- left side -->
+        <div class="flex items-center space-x-12 text-sm text-brand-dark">
+          <a href="./leave-requests.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 font-bold flex flex-row items-center space-x-2">
+            <div class="bg-brand-green rounded-full w-3 h-3"></div>
+            <span>Approve</span>
+          </a>
+          <a href="./Leave-requests-decline.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 flex flex-row items-center space-x-2">
+            <div class="bg-brand-red rounded-full w-3 h-3"></div>
+            <span>Decline</span>
+          </a>
+          <a href="./leave-requests-manual.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300 flex flex-row items-center space-x-2">
+            <div class="bg-[#EA6608] rounded-full w-3 h-3"></div>
+            <span>Manual</span>
+          </a>
+          <a href="#"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-brand-dark hover:after:w-full after:transition-all after:duration-300">Sick</a>
+        </div>
 
-            <!-- right side -->
-            <div class="flex items-center space-x-6">
-              <div class="relative inline-block" bis_skin_checked="1">
-                <!-- Hidden toggle -->
-                <input
-                  type="checkbox"
-                  id="dateDropdown"
-                  class="dropdown-toggle hidden peer"
-                />
+        <!-- right side -->
+        <div class="flex items-center space-x-6">
+          <div class="relative inline-block" bis_skin_checked="1">
+            <!-- Hidden toggle -->
+            <input type="checkbox" id="dateDropdown" class="dropdown-toggle hidden peer" />
 
-                <!-- Label (acts as toggle button) -->
-                <label
-                  for="dateDropdown"
-                  class="flex items-center justify-center text-xs text-brand-dark cursor-pointer select-none"
-                >
-                  <img
-                    src="./assets/svg/filter.svg"
-                    alt="filter"
-                    class="w-3 h-3"
-                  />
-                </label>
+            <!-- Label (acts as toggle button) -->
+            <label for="dateDropdown"
+              class="flex items-center justify-center text-xs text-brand-dark cursor-pointer select-none">
+              <img src="./assets/svg/filter.svg" alt="filter" class="w-3 h-3" />
+            </label>
 
-                <!-- Dropdown -->
-                <div
-                  class="dropdown-menu hidden absolute right-0 top-[14px] mt-[14px] bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[191px] pt-[6px] px-[13px] pb-[15px]"
-                  bis_skin_checked="1"
-                >
-                  <div bis_skin_checked="1">
-                    <button
-                      type="button"
-                      class="cursor-pointer text-xs float-end text-[#01A0D2] underline font-semibold pb-[6]"
-                    >
-                      Clear filter
-                    </button>
-                  </div>
-                  <ul class="space-y-[5px] pt-[25px]">
-                    <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
-                      Status
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Available
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          On Leave
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Pending leave request
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Sick
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
-                  <ul class="space-y-[5px] pt-[22px]">
-                    <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
-                      Dienstverband
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Vaste dienst
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Flex workers
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
-                  <ul class="space-y-[5px] pt-[22px]">
-                    <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
-                      Qualities
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Extrusie SMK
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          PNO SNX
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          GO PC
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Tester
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Mengstation
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Oven
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Messen
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Aardappelontvangst
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          TE Processing
-                        </span>
-                      </label>
-                    </li>
-                    <li>
-                      <label
-                        class="inline-flex items-center cursor-pointer select-none gap-2"
-                      >
-                        <div
-                          class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
-                          bis_skin_checked="1"
-                        >
-                          <!-- hidden checkbox -->
-                          <input
-                            type="checkbox"
-                            class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                          />
-
-                          <!-- visual inner square -->
-                          <span
-                            class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
-                            aria-hidden="true"
-                          ></span>
-                        </div>
-
-                        <span class="text-xs font-semibold text-[#4E4E4E]">
-                          Logistiek Operator
-                        </span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="relative inline-block" bis_skin_checked="1">
-                <!-- Hidden toggle -->
-                <input
-                  type="checkbox"
-                  id="settingDropdown"
-                  class="dropdown-toggle hidden peer"
-                />
-
-                <!-- Label (acts as toggle button) -->
-                <label
-                  for="settingDropdown"
-                  class="flex items-center justify-center hover:bg-brand-light w-[11.313rem] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm"
-                >
-                  <div class="flex items-center space-x-4">
-                    <div
-                      class="flex items-center w-[11.313rem] border border-brand-light rounded-[5px] gap-[10px] px-3 py-[9px] bg-white"
-                    >
-                      <img
-                        src="./assets/svg/magnify.svg"
-                        alt="magnify"
-                        class="w-3 h-3"
-                      />
-
-                      <input
-                        type="text"
-                        placeholder="Search"
-                        class="w-full text-xs font-semibold text-brand-dark placeholder-[#A4B5BF] focus:outline-none"
-                      />
-                    </div>
-                  </div>
-                </label>
-
-                <!-- Dropdown -->
-                <ul
-                  class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[11.313rem]"
-                >
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Reset data</span>
-                  </li>
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Add new position</span>
-                  </li>
-                  <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <span>Export roster</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <!-- main content -->
-          <section class="px-8.5 pt-10 w-full">
+            <!-- Dropdown -->
             <div
-              class="max-w-[980px] mx-auto rounded-lg bg-white p-5 min-h-[430px]"
-            >
-              <!-- Calendar content goes here -->
-              <div class="flex justify-between items-center">
-                <!-- header -->
-                <div class="flex flex-row items-center space-x-2">
-                  <div class="bg-brand-green rounded-full w-3 h-3"></div>
-                  <h1>Requests advised to approve</h1>
-                </div>
-                <button
-                  type="button"
-                  class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer max-w-[100px] transition-all duration-150"
-                >
-                  Approve all
+              class="dropdown-menu hidden absolute right-0 top-[14px] mt-[14px] bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[191px] pt-[6px] px-[13px] pb-[15px]"
+              bis_skin_checked="1">
+              <div bis_skin_checked="1">
+                <button type="button"
+                  class="cursor-pointer text-xs float-end text-[#01A0D2] underline font-semibold pb-[6]">
+                  Clear filter
                 </button>
               </div>
+              <ul class="space-y-[5px] pt-[25px]">
+                <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
+                  Status
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
 
-              <!-- Calendar content goes here -->
-              <div class="pt-[22px] flex flex-col space-y-5">
-                <ul class="flex flex-row items-center justify-between pb-[2px]">
-                  <li class="w-[40%]">
-                    <span class="text-xs font-bold">Aanvraag</span>
-                  </li>
-                  <li class="w-[30%]">
-                    <span class="text-xs font-bold">Data</span>
-                  </li>
-                  <li class="w-[15%]">
-                    <span class="text-xs font-bold">Status</span>
-                  </li>
-                  <li class="w-[15%]"></li>
-                </ul>
-                <ul class="flex flex-row items-center justify-between">
-                  <li class="w-[40%]">
-                    <span class="text-xs"
-                      >Verlofaanvraag van Thomas Dijkhoorn</span
-                    >
-                  </li>
-                  <li class="w-[30%]">
-                    <span class="text-xs">19 t/m 23 mei 2023</span>
-                  </li>
-                  <li class="w-[15%]">
-                    <span
-                      class="text-xs font-bold text-[#01A0D2] bg-[#E5F5FB] min-w-[110px] h-[24px] px-[22px] py-[4px] rounded-full flex items-center justify-center"
-                      >In behandeling</span
-                    >
-                  </li>
-                  <li class="w-[15%]">
-                    <button
-                      type="button"
-                      class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer min-w-[100px] float-end transition-all duration-150"
-                    >
-                      Approve
-                    </button>
-                  </li>
-                </ul>
-                <ul class="flex flex-row items-center justify-between">
-                  <li class="w-[40%]">
-                    <span class="text-xs"
-                      >Verlofaanvraag van Anne Buissink</span
-                    >
-                  </li>
-                  <li class="w-[30%]">
-                    <span class="text-xs">17 t/m 24 februari 2023</span>
-                  </li>
-                  <li class="w-[15%]">
-                    <span
-                      class="text-xs font-bold text-[#A4B5BF] bg-[#EDF0F2] min-w-[110px] h-[24px] px-[22px] py-[4px] rounded-full flex items-center justify-center"
-                      >Reserve</span
-                    >
-                  </li>
-                  <li class="w-[15%]">
-                    <button
-                      type="button"
-                      class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer min-w-[100px] float-end transition-all duration-150"
-                    >
-                      Approve
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Available
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      On Leave
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Pending leave request
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Sick
+                    </span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="space-y-[5px] pt-[22px]">
+                <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
+                  Dienstverband
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Vaste dienst
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Flex workers
+                    </span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="space-y-[5px] pt-[22px]">
+                <li class="text-[#4E4E4E] font-bold uppercase text-[10px]">
+                  Qualities
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Extrusie SMK
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      PNO SNX
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      GO PC
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Tester
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Mengstation
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Oven
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Messen
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Aardappelontvangst
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      TE Processing
+                    </span>
+                  </label>
+                </li>
+                <li>
+                  <label class="inline-flex items-center cursor-pointer select-none gap-2">
+                    <div
+                      class="relative h-[17px] w-[17px] border border-gray-300 rounded-[3px] flex items-center justify-center"
+                      bis_skin_checked="1">
+                      <!-- hidden checkbox -->
+                      <input type="checkbox" class="peer absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+
+                      <!-- visual inner square -->
+                      <span
+                        class="h-[11px] w-[11px] rounded-[3px] transition-all duration-150 peer-checked:bg-[#4E4E4E]"
+                        aria-hidden="true"></span>
+                    </div>
+
+                    <span class="text-xs font-semibold text-[#4E4E4E]">
+                      Logistiek Operator
+                    </span>
+                  </label>
+                </li>
+              </ul>
             </div>
-          </section>
-        </main>
-      </div>
-      <!-- bottom -->
-      <div
-        class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex flex-row justify-end items-center px-5 gap-2"
-      >
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Save
-        </button>
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Cancel
-        </button>
-      </div>
+          </div>
+          <div class="relative inline-block" bis_skin_checked="1">
+            <!-- Hidden toggle -->
+            <input type="checkbox" id="settingDropdown" class="dropdown-toggle hidden peer" />
+
+            <!-- Label (acts as toggle button) -->
+            <label for="settingDropdown"
+              class="flex items-center justify-center hover:bg-brand-light w-[11.313rem] h-[27px] text-xs text-brand-dark cursor-pointer select-none rounded-sm">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="flex items-center w-[11.313rem] border border-brand-light rounded-[5px] gap-[10px] px-3 py-[9px] bg-white">
+                  <img src="./assets/svg/magnify.svg" alt="magnify" class="w-3 h-3" />
+
+                  <input type="text" placeholder="Search"
+                    class="w-full text-xs font-semibold text-brand-dark placeholder-[#A4B5BF] focus:outline-none" />
+                </div>
+              </div>
+            </label>
+
+            <!-- Dropdown -->
+            <ul
+              class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[11.313rem]">
+              <li class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                <span>Reset data</span>
+              </li>
+              <li class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                <span>Add new position</span>
+              </li>
+              <li class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
+                <span>Export roster</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- main content p4 -->
+      <section class="px-8.5 pt-10 w-full">
+        <div class="max-w-[980px] mx-auto rounded-lg bg-white p-5 min-h-[430px]">
+          <!-- Calendar content goes here -->
+          <div class="flex justify-between items-center">
+            <!-- header -->
+            <div class="flex flex-row items-center space-x-2">
+              <div class="bg-brand-green rounded-full w-3 h-3"></div>
+              <h1>Requests advised to approve</h1>
+            </div>
+            <button type="button"
+              class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer max-w-[100px] transition-all duration-150">
+              Approve all
+            </button>
+          </div>
+
+          <!-- Calendar content goes here -->
+          <div class="pt-[22px] flex flex-col space-y-5">
+            <ul class="flex flex-row items-center justify-between pb-[2px]">
+              <li class="w-[40%]">
+                <span class="text-xs font-bold">Aanvraag</span>
+              </li>
+              <li class="w-[30%]">
+                <span class="text-xs font-bold">Data</span>
+              </li>
+              <li class="w-[15%]">
+                <span class="text-xs font-bold">Status</span>
+              </li>
+              <li class="w-[15%]"></li>
+            </ul>
+            <ul class="flex flex-row items-center justify-between">
+              <li class="w-[40%]">
+                <span class="text-xs">Verlofaanvraag van Thomas Dijkhoorn</span>
+              </li>
+              <li class="w-[30%]">
+                <span class="text-xs">19 t/m 23 mei 2023</span>
+              </li>
+              <li class="w-[15%]">
+                <span
+                  class="text-xs font-bold text-[#01A0D2] bg-[#E5F5FB] min-w-[110px] h-[24px] px-[22px] py-[4px] rounded-full flex items-center justify-center">In
+                  behandeling</span>
+              </li>
+              <li class="w-[15%]">
+                <button type="button"
+                  class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer min-w-[100px] float-end transition-all duration-150">
+                  Approve
+                </button>
+              </li>
+            </ul>
+            <ul class="flex flex-row items-center justify-between">
+              <li class="w-[40%]">
+                <span class="text-xs">Verlofaanvraag van Anne Buissink</span>
+              </li>
+              <li class="w-[30%]">
+                <span class="text-xs">17 t/m 24 februari 2023</span>
+              </li>
+              <li class="w-[15%]">
+                <span
+                  class="text-xs font-bold text-[#A4B5BF] bg-[#EDF0F2] min-w-[110px] h-[24px] px-[22px] py-[4px] rounded-full flex items-center justify-center">Reserve</span>
+              </li>
+              <li class="w-[15%]">
+                <button type="button"
+                  class="py-[4px] px-6 rounded-[5px] text-[10px] text-white font-bold bg-[#36BE84] hover:bg-[#3AA5A0] cursor-pointer min-w-[100px] float-end transition-all duration-150">
+                  Approve
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- main content end -->
+    </main>
+  </div>
+  <!-- wrapper end -->
+
+  <!-- Right Sidebar p5 -->
+
+  <!-- bottom -->
+  <div
+    class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex-row justify-end items-center px-5 gap-2  lg:flex hidden">
+    <button type="button"
+      class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+      Save
+    </button>
+    <button type="button"
+      class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+      Cancel
+    </button>
+  </div>
+  <!-- right side bar  end -->
+  <div class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5">
+    <div class="flex flex-col justify-center items-center text-center space-y-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F04C46"
+        class="size-12">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+      </svg>
+      <span class="text-lg font-bold capitalize">user is requested to show on a larger screen</span>
     </div>
-    <div
-      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
-    >
-      <div
-        class="flex flex-col justify-center items-center text-center space-y-2"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#F04C46"
-          class="size-12"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-          />
-        </svg>
-        <span class="text-lg font-bold capitalize"
-          >user is requested to show on a larger screen</span
-        >
-      </div>
-    </div>
-    <script src="./js/index.js"></script>
-  </body>
+  </div>
+  <!-- modal p8 -->
+
+  <!-- js p9 -->
+</body>
+
 </html>

@@ -1,1971 +1,1065 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee – Roster template</title>
-    <!-- facicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-    <!-- font -->
-    <link
-      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
-      rel="stylesheet"
-    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee – Roster template</title>
+  <!-- facicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  <!-- font -->
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet" />
 
-  <body class="bg-brand-gray-bg">
-    <div class="min-h-screen hidden md:block">
-      <div class="grid grid-rows-[auto_1fr] grid-cols-[1fr] h-screen">
-        <!-- Header -->
-        <header
-          class="bg-brand-teals text-white min-h-[3.875rem] flex justify-center items-center col-span-2"
-        >
-          <div class="w-full mx-auto px-5 flex items-center justify-between">
-            <!-- Left section -->
-            <div class="flex items-center space-x-3 xl:space-x-5">
-              <!-- Icon -->
-              <img
-                src="./assets/svg/logo.svg"
-                alt="logo"
-                class="w-5 h-5 xl:w-6 xl:h-6"
-              />
-              <span class="font-bold text-xl xl:text-2xl">People planner</span>
-            </div>
+  <!-- css -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+</head>
 
-            <!-- Center navigation -->
-           <nav
-              class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm"
-            >
-              <a
-                href="./production-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Production</a
-              >
+<body class="bg-brand-gray-bg relative">
+  <!-- Header p1 -->
+  <header
+    class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 lg:flex hidden">
+    <div class="w-full mx-auto px-5 flex items-center justify-between">
+      <!-- Left section -->
+      <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+        <!-- Icon -->
+        <img src="./assets/svg/logo.svg" alt="logo" class="w-5 h-5 xl:w-6 xl:h-6" />
+        <span class="font-bold text-xl xl:text-2xl">People planner</span>
+      </a>
 
-              <a
-                href="./maintenance-position.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Maintenance</a
-              >
+      <!-- Center navigation -->
+      <nav class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm">
+        <a href="./production-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
 
-              <a
-                href="./people-roster.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >People Roster</a
-              >
+        <a href="./maintenance-position.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Maintenance</a>
 
-              <a
-                href="./employee-edit-shift.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
-                >Employee</a
-              >
+        <a href="./people-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">People
+          Roster</a>
 
-              <a
-                href="./leave-requests.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Leave Requests</a
-              >
+        <a href="./employee-edit-shift.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold">Employee</a>
 
-              <a
-                href="./report-export.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Report</a
-              >
+        <a href="./leave-requests.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Leave
+          Requests</a>
 
-              <a
-                href="./log.html"
-                class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
-                >Log</a
-              >
-            </nav>
+        <a href="./report-export.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Report</a>
 
-            <!-- Right user section -->
-            <div class="flex items-center space-x-2">
-              <button type="button" class="flex items-center space-x-2">
-                <img
-                  src="./assets/img/avaters-demos.png"
-                  alt="User"
-                  class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
-                />
-                <div class="flex flex-col text-start leading-tight">
-                  <span class="text-[8px] font-normal text-gray-200 uppercase"
-                    >Welcome</span
-                  >
-                  <span class="text-sm xl:text-base font-normal"
-                    >Bas Meijerink</span
-                  >
-                </div>
-              </button>
-            </div>
+        <a href="./log.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Log</a>
+      </nav>
+
+      <!-- Right user section -->
+      <div class="flex items-center space-x-2">
+        <button type="button" class="flex items-center space-x-2">
+          <img src="./assets/img/avaters-demos.png" alt="User"
+            class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
+          <div class="flex flex-col text-start leading-tight">
+            <span class="text-[8px] font-normal text-gray-200 uppercase">Welcome</span>
+            <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
           </div>
-        </header>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <!-- Left Content -->
-        <main class="">
-          <!-- top filter -->
-          <section
-            class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-5 border-b-1 border-brand-mid-dark"
-          >
-            <!-- left side -->
-            <div class="flex flex-row items-center gap-4">
-              <img
-                src="./assets/img/homepage_careers_card_avater.png"
-                alt="homepage_careers_card_avater"
-                class="w-9 h-9 rounded-full"
-              />
-              <h1>Anne Buissink</h1>
-            </div>
+  <!-- wrapper start  p2  -->
+  <div class="w-full lg:block hidden">
+    <main class="">
+      <!-- top filter p3 -->
+      <section
+        class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-10 border-b-1 border-brand-mid-dark">
+        <!-- left side -->
+        <div class="flex flex-row items-center gap-4">
+          <img src="./assets/img/homepage_careers_card_avater.png" alt="homepage_careers_card_avater"
+            class="w-9 h-9 rounded-full" />
+          <h1>Anne Buissink</h1>
+        </div>
 
-            <!-- right side -->
-            <div class="flex items-center space-x-7">
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full overflow-hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="19"
-                  viewBox="0 0 19 19"
-                >
-                  <g id="user" transform="translate(-2 -2)">
-                    <path
-                      id="Path_144"
-                      data-name="Path 144"
-                      d="M11.5,2A9.5,9.5,0,1,0,21,11.5,9.5,9.5,0,0,0,11.5,2Zm0,1.357a8.143,8.143,0,0,1,6.284,13.314A7.607,7.607,0,0,0,11.5,13.536a7.614,7.614,0,0,0-6.284,3.142A8.143,8.143,0,0,1,11.5,3.357Zm-5.306,14.3A6.223,6.223,0,0,1,11.5,14.893a6.3,6.3,0,0,1,5.306,2.769,8.1,8.1,0,0,1-10.613,0Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      id="Path_145"
-                      data-name="Path 145"
-                      d="M14.571,15.143A3.571,3.571,0,1,0,11,11.571,3.571,3.571,0,0,0,14.571,15.143Zm0-5.714a2.143,2.143,0,1,1-2.143,2.143A2.143,2.143,0,0,1,14.571,9.429Z"
-                      transform="translate(-3.071 -2.048)"
-                      fill="currentColor"
-                    />
-                  </g>
-                </svg>
-              </button>
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] text-brand-dark hover:text-brand-dark overflow-hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17.83"
-                  height="17.83"
-                  viewBox="0 0 17.83 17.83"
-                >
-                  <path
-                    id="calendar"
-                    d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
-                    transform="translate(-1 -1)"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16.83"
-                  height="16.83"
-                  viewBox="0 0 16.83 16.83"
-                >
-                  <g id="o" transform="translate(-2.25 -2.25)">
-                    <g
-                      id="Group_91"
-                      data-name="Group 91"
-                      transform="translate(2.25 2.25)"
-                    >
-                      <path
-                        id="Path_138"
-                        data-name="Path 138"
-                        d="M5.486,2.25H3.76A1.518,1.518,0,0,0,2.25,3.76V5.486A1.518,1.518,0,0,0,3.76,7H5.486A1.518,1.518,0,0,0,7,5.486V3.76A1.518,1.518,0,0,0,5.486,2.25ZM5.7,5.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V3.76a.214.214,0,0,1,.216-.216H5.486A.214.214,0,0,1,5.7,3.76Z"
-                        transform="translate(-2.25 -2.25)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_139"
-                        data-name="Path 139"
-                        d="M5.486,9.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,14H5.486A1.518,1.518,0,0,0,7,12.486V10.76A1.518,1.518,0,0,0,5.486,9.25ZM5.7,12.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V10.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
-                        transform="translate(-2.25 -3.209)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_140"
-                        data-name="Path 140"
-                        d="M5.486,16.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,21H5.486A1.518,1.518,0,0,0,7,19.486V17.76A1.518,1.518,0,0,0,5.486,16.25ZM5.7,19.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V17.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
-                        transform="translate(-2.25 -4.167)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_141"
-                        data-name="Path 141"
-                        d="M9.9,5.545h9.494a.647.647,0,0,0,0-1.295H9.9a.647.647,0,1,0,0,1.295Z"
-                        transform="translate(-3.209 -2.524)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_142"
-                        data-name="Path 142"
-                        d="M19.391,11.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
-                        transform="translate(-3.209 -3.482)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_143"
-                        data-name="Path 143"
-                        d="M19.391,18.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
-                        transform="translate(-3.209 -4.441)"
-                        fill="currentColor"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13.999"
-                  height="17.611"
-                  viewBox="0 0 13.999 17.611"
-                >
-                  <g id="j" transform="translate(-4.25 -2.25)">
-                    <g
-                      id="Group_92"
-                      data-name="Group 92"
-                      transform="translate(4.25 2.25)"
-                    >
-                      <path
-                        id="Path_146"
-                        data-name="Path 146"
-                        d="M18.249,7.443a.621.621,0,0,0-.045-.217,3.432,3.432,0,0,0-.948-1.96L15.232,3.243A3.321,3.321,0,0,0,13.263,2.3a.773.773,0,0,0-.208-.045.213.213,0,0,0-.072.018c-.054,0-.1-.018-.145-.018h-5.2A3.388,3.388,0,0,0,4.25,5.637V16.475a3.388,3.388,0,0,0,3.387,3.387h7.225a3.388,3.388,0,0,0,3.387-3.387V7.66a.79.79,0,0,0-.018-.145c0-.027.018-.045.018-.072ZM16.3,6.224a2.088,2.088,0,0,1,.379.542H13.959a.224.224,0,0,1-.226-.226V3.821a2.025,2.025,0,0,1,.542.379ZM14.862,18.507H7.637A2.035,2.035,0,0,1,5.6,16.475V5.637A2.035,2.035,0,0,1,7.637,3.6h4.742V6.54A1.588,1.588,0,0,0,13.959,8.12h2.935v8.354A2.035,2.035,0,0,1,14.862,18.507Z"
-                        transform="translate(-4.25 -2.25)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_147"
-                        data-name="Path 147"
-                        d="M15.153,10.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,1,0,0-1.355Z"
-                        transform="translate(-4.541 -3.025)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_148"
-                        data-name="Path 148"
-                        d="M15.153,13.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,0,0,0-1.355Z"
-                        transform="translate(-4.541 -3.315)"
-                        fill="currentColor"
-                      />
-                      <path
-                        id="Path_149"
-                        data-name="Path 149"
-                        d="M11.54,16.25H7.927a.677.677,0,1,0,0,1.355H11.54a.677.677,0,0,0,0-1.355Z"
-                        transform="translate(-4.541 -3.606)"
-                        fill="currentColor"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <button
-                type="button"
-                class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18.111"
-                  height="18.111"
-                  viewBox="0 0 18.111 18.111"
-                >
-                  <path
-                    id="Path_150"
-                    data-name="Path 150"
-                    d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
-                    transform="translate(-2.25 -2.25)"
-                    fill="currentColor"
-                  />
-                </svg>
-              </button>
-              <div class="relative inline-block" bis_skin_checked="1">
+        <!-- right side -->
+        <div class="flex items-center space-x-7">
+          <button type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+              <g id="user" transform="translate(-2 -2)">
+                <path id="Path_144" data-name="Path 144"
+                  d="M11.5,2A9.5,9.5,0,1,0,21,11.5,9.5,9.5,0,0,0,11.5,2Zm0,1.357a8.143,8.143,0,0,1,6.284,13.314A7.607,7.607,0,0,0,11.5,13.536a7.614,7.614,0,0,0-6.284,3.142A8.143,8.143,0,0,1,11.5,3.357Zm-5.306,14.3A6.223,6.223,0,0,1,11.5,14.893a6.3,6.3,0,0,1,5.306,2.769,8.1,8.1,0,0,1-10.613,0Z"
+                  fill="currentColor" />
+                <path id="Path_145" data-name="Path 145"
+                  d="M14.571,15.143A3.571,3.571,0,1,0,11,11.571,3.571,3.571,0,0,0,14.571,15.143Zm0-5.714a2.143,2.143,0,1,1-2.143,2.143A2.143,2.143,0,0,1,14.571,9.429Z"
+                  transform="translate(-3.071 -2.048)" fill="currentColor" />
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-dark hover:text-brand-dark ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.83" height="17.83" viewBox="0 0 17.83 17.83">
+              <path id="calendar"
+                d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
+                transform="translate(-1 -1)" fill="currentColor" />
+            </svg>
+          </button>
+          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.83" height="16.83" viewBox="0 0 16.83 16.83">
+              <g id="o" transform="translate(-2.25 -2.25)">
+                <g id="Group_91" data-name="Group 91" transform="translate(2.25 2.25)">
+                  <path id="Path_138" data-name="Path 138"
+                    d="M5.486,2.25H3.76A1.518,1.518,0,0,0,2.25,3.76V5.486A1.518,1.518,0,0,0,3.76,7H5.486A1.518,1.518,0,0,0,7,5.486V3.76A1.518,1.518,0,0,0,5.486,2.25ZM5.7,5.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V3.76a.214.214,0,0,1,.216-.216H5.486A.214.214,0,0,1,5.7,3.76Z"
+                    transform="translate(-2.25 -2.25)" fill="currentColor" />
+                  <path id="Path_139" data-name="Path 139"
+                    d="M5.486,9.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,14H5.486A1.518,1.518,0,0,0,7,12.486V10.76A1.518,1.518,0,0,0,5.486,9.25ZM5.7,12.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V10.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                    transform="translate(-2.25 -3.209)" fill="currentColor" />
+                  <path id="Path_140" data-name="Path 140"
+                    d="M5.486,16.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,21H5.486A1.518,1.518,0,0,0,7,19.486V17.76A1.518,1.518,0,0,0,5.486,16.25ZM5.7,19.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V17.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                    transform="translate(-2.25 -4.167)" fill="currentColor" />
+                  <path id="Path_141" data-name="Path 141"
+                    d="M9.9,5.545h9.494a.647.647,0,0,0,0-1.295H9.9a.647.647,0,1,0,0,1.295Z"
+                    transform="translate(-3.209 -2.524)" fill="currentColor" />
+                  <path id="Path_142" data-name="Path 142"
+                    d="M19.391,11.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                    transform="translate(-3.209 -3.482)" fill="currentColor" />
+                  <path id="Path_143" data-name="Path 143"
+                    d="M19.391,18.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                    transform="translate(-3.209 -4.441)" fill="currentColor" />
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.999" height="17.611" viewBox="0 0 13.999 17.611">
+              <g id="j" transform="translate(-4.25 -2.25)">
+                <g id="Group_92" data-name="Group 92" transform="translate(4.25 2.25)">
+                  <path id="Path_146" data-name="Path 146"
+                    d="M18.249,7.443a.621.621,0,0,0-.045-.217,3.432,3.432,0,0,0-.948-1.96L15.232,3.243A3.321,3.321,0,0,0,13.263,2.3a.773.773,0,0,0-.208-.045.213.213,0,0,0-.072.018c-.054,0-.1-.018-.145-.018h-5.2A3.388,3.388,0,0,0,4.25,5.637V16.475a3.388,3.388,0,0,0,3.387,3.387h7.225a3.388,3.388,0,0,0,3.387-3.387V7.66a.79.79,0,0,0-.018-.145c0-.027.018-.045.018-.072ZM16.3,6.224a2.088,2.088,0,0,1,.379.542H13.959a.224.224,0,0,1-.226-.226V3.821a2.025,2.025,0,0,1,.542.379ZM14.862,18.507H7.637A2.035,2.035,0,0,1,5.6,16.475V5.637A2.035,2.035,0,0,1,7.637,3.6h4.742V6.54A1.588,1.588,0,0,0,13.959,8.12h2.935v8.354A2.035,2.035,0,0,1,14.862,18.507Z"
+                    transform="translate(-4.25 -2.25)" fill="currentColor" />
+                  <path id="Path_147" data-name="Path 147"
+                    d="M15.153,10.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,1,0,0-1.355Z"
+                    transform="translate(-4.541 -3.025)" fill="currentColor" />
+                  <path id="Path_148" data-name="Path 148"
+                    d="M15.153,13.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,0,0,0-1.355Z"
+                    transform="translate(-4.541 -3.315)" fill="currentColor" />
+                  <path id="Path_149" data-name="Path 149"
+                    d="M11.54,16.25H7.927a.677.677,0,1,0,0,1.355H11.54a.677.677,0,0,0,0-1.355Z"
+                    transform="translate(-4.541 -3.606)" fill="currentColor" />
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18.111" height="18.111" viewBox="0 0 18.111 18.111">
+              <path id="Path_150" data-name="Path 150"
+                d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
+                transform="translate(-2.25 -2.25)" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- main content p4 -->
+      <section class="pt-8.5 pb-10 px-5 w-full">
+        <div class="w-full xl:max-w-[1200px] mx-auto rounded-lg bg-white pt-3 pb-7 min-h-[366px] px-4 md:px-6 lg:px-0">
+          <div class="flex justify-between items-center px-[14px]">
+            <!-- header -->
+            <span class="text-xl font-bold text-brand-dark">Roster template</span>
+            <!-- menu -->
+            <div class="flex flex-row gap-[13px]">
+              <div class="flex items-center gap-1">
+                <span class="text-brand-dark text-xs font-bold">Starting date:</span>
+
+                <div
+                  class="custom-date-picker w-[100px] h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer">
+                  <input type="date" class="date-input absolute opacity-0 w-0 h-0" value="2025-12-31" />
+                  <span class="date-display text-xs font-semibold text-brand-dark">
+                    31-12-2025
+                  </span>
+                  <img src="./assets/svg/calendar.svg" alt="calendar" class="w-[13px] h-[13px]" />
+                </div>
+              </div>
+              <div class="relative inline-block w-[114px] min-h-[27px]" bis_skin_checked="1">
                 <!-- Hidden toggle -->
-                <input
-                  type="checkbox"
-                  id="settingDropdown"
-                  class="dropdown-toggle hidden peer"
-                />
+                <input type="checkbox" id="shiftDropdown" class="dropdown-toggle hidden peer" />
 
-                <!-- Label (acts as toggle button) -->
-                <label
-                  for="settingDropdown"
-                  class="flex items-center justify-center hover:bg-brand-light w-[27px] h-[27px] text-xs text-brand-mid-gray hover:text-brand-dark cursor-pointer select-none rounded-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="4"
-                    viewBox="0 0 16 4"
-                  >
-                    <g
-                      id="Group_84"
-                      data-name="Group 84"
-                      transform="translate(-984 -93)"
-                    >
-                      <circle
-                        id="Ellipse_483"
-                        data-name="Ellipse 483"
-                        cx="2"
-                        cy="2"
-                        r="2"
-                        transform="translate(984 93)"
-                        fill="currentColor"
-                      />
-                      <circle
-                        id="Ellipse_484"
-                        data-name="Ellipse 484"
-                        cx="2"
-                        cy="2"
-                        r="2"
-                        transform="translate(990 93)"
-                        fill="currentColor"
-                      />
-                      <circle
-                        id="Ellipse_485"
-                        data-name="Ellipse 485"
-                        cx="2"
-                        cy="2"
-                        r="2"
-                        transform="translate(996 93)"
-                        fill="currentColor"
-                      />
-                    </g>
-                  </svg>
+                <!-- Label (acts like the button) -->
+                <label for="shiftDropdown"
+                  class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden">
+                  <!-- Left content -->
+                  <span class="flex items-center gap-[7px] px-2 py-[6px]">
+                    Template
+                  </span>
+
+                  <!-- Right icon section (dark background full height) -->
+                  <span class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" class="fill-white">
+                      <path d="M1 1l3 3 3-3" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                    </svg>
+                  </span>
                 </label>
 
-                <!-- Dropdown -->
+                <!-- Dropdown menu -->
                 <ul
-                  class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[142px]"
-                >
+                  class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden">
                   <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <img
-                      src="./assets/svg/Undo.svg"
-                      alt="Undo"
-                      class="w-[14px] h-[14px]"
-                    />
-                    <span>Reset data</span>
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg">
+                    Template
                   </li>
                   <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] border-y border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <img
-                      src="./assets/svg/Add.svg"
-                      alt="add"
-                      class="w-[14px] h-[14px]"
-                    />
-                    <span>Add new position</span>
+                    class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg">
+                    Template
                   </li>
                   <li
-                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs"
-                  >
-                    <img
-                      src="./assets/svg/date-from.svg"
-                      alt="date"
-                      class="w-[14px] h-[14px]"
-                    />
-                    <span>Export roster</span>
+                    class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg">
+                    Template
                   </li>
                 </ul>
               </div>
             </div>
-          </section>
-          <!-- main content -->
-          <section class="pt-8.5 pb-10 px-5 w-full">
-            <div
-              class="w-full xl:max-w-[1200px] mx-auto rounded-lg bg-white pt-3 pb-7 min-h-[366px] px-4 md:px-6 lg:px-0"
-            >
-              <div class="flex justify-between items-center px-[14px]">
-                <!-- header -->
-                <span class="text-xl font-bold text-brand-dark"
-                  >Roster template</span
-                >
-                <!-- menu -->
-                <div class="flex flex-row gap-[13px]">
-                  <div class="flex items-center gap-1">
-                    <span class="text-brand-dark text-xs font-bold"
-                      >Starting date:</span
-                    >
+          </div>
 
-                <div
-  class="custom-date-picker w-[100px] h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
->
-  <input
-    type="date"
-    class="date-input absolute opacity-0 w-0 h-0"
-    value="2025-12-31"
-  />
-  <span class="date-display text-xs font-semibold text-brand-dark">
-    31-12-2025
-  </span>
-  <img
-    src="./assets/svg/calendar.svg"
-    alt="calendar"
-    class="w-[13px] h-[13px]"
-  />
-</div>
-                  </div>
-                  <div
-                    class="relative inline-block w-[114px] min-h-[27px]"
-                    bis_skin_checked="1"
-                  >
-                    <!-- Hidden toggle -->
-                    <input
-                      type="checkbox"
-                      id="shiftDropdown"
-                      class="dropdown-toggle hidden peer"
-                    />
+          <div class="pt-[30px] overflow-x-auto w-full scrollbar-cst">
+            <div class="xl:w-[936px] xl:min-w-[1200px]">
+              <table class="w-full border-collapse text-center text-sm">
+                <thead class="mb-[3px]">
+                  <tr>
+                    <th class="w-20 text-left px-2"></th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Sunday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Monday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Tuesday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Wednesday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Thursday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Friday
+                    </th>
+                    <th
+                      class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0">
+                      Saturday
+                    </th>
+                    <th class="py-2"></th>
+                  </tr>
+                </thead>
+                <!-- Table Body -->
+                <tbody class="">
+                  <!-- Week 1 -->
+                  <tr class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group">
+                    <td class="text-left font-bold text-brand-dark text-sm px-2">
+                      Week 1
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-                    <!-- Label (acts like the button) -->
-                    <label
-                      for="shiftDropdown"
-                      class="flex items-stretch justify-between border border-brand-light rounded-md bg-white text-xs text-brand-dark font-semibold cursor-pointer select-none overflow-hidden"
-                    >
-                      <!-- Left content -->
-                      <span class="flex items-center gap-[7px] px-2 py-[6px]">
-                        Template
-                      </span>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17.572" height="9.462"
+                            viewBox="0 0 17.572 9.462">
+                            <g id="s" transform="translate(1)">
+                              <g id="Group_2" data-name="Group 2" transform="translate(-1 0)">
+                                <path id="Path_10" data-name="Path 10"
+                                  d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
+                                  transform="translate(-2.744 -6.744)" fill="#fff" />
+                                <path id="Path_11" data-name="Path 11"
+                                  d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
+                                  transform="translate(-3.629 -6.511)" fill="#fff" />
+                                <path id="Path_12" data-name="Path 12"
+                                  d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
+                                  transform="translate(-2.511 -6.511)" fill="#fff" />
+                                <path id="Path_13" data-name="Path 13"
+                                  d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
+                                  transform="translate(-3.14 -6.25)" fill="#fff" />
+                                <path id="Path_14" data-name="Path 14"
+                                  d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-3.832 -7.14)" fill="#fff" />
+                                <path id="Path_15" data-name="Path 15"
+                                  d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-2.25 -7.14)" fill="#fff" />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17.572" height="9.462"
+                            viewBox="0 0 17.572 9.462">
+                            <g id="s" transform="translate(1)">
+                              <g id="Group_2" data-name="Group 2" transform="translate(-1 0)">
+                                <path id="Path_10" data-name="Path 10"
+                                  d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
+                                  transform="translate(-2.744 -6.744)" fill="#fff" />
+                                <path id="Path_11" data-name="Path 11"
+                                  d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
+                                  transform="translate(-3.629 -6.511)" fill="#fff" />
+                                <path id="Path_12" data-name="Path 12"
+                                  d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
+                                  transform="translate(-2.511 -6.511)" fill="#fff" />
+                                <path id="Path_13" data-name="Path 13"
+                                  d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
+                                  transform="translate(-3.14 -6.25)" fill="#fff" />
+                                <path id="Path_14" data-name="Path 14"
+                                  d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-3.832 -7.14)" fill="#fff" />
+                                <path id="Path_15" data-name="Path 15"
+                                  d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-2.25 -7.14)" fill="#fff" />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17.572" height="9.462"
+                            viewBox="0 0 17.572 9.462">
+                            <g id="s" transform="translate(1)">
+                              <g id="Group_2" data-name="Group 2" transform="translate(-1 0)">
+                                <path id="Path_10" data-name="Path 10"
+                                  d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
+                                  transform="translate(-2.744 -6.744)" fill="#fff" />
+                                <path id="Path_11" data-name="Path 11"
+                                  d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
+                                  transform="translate(-3.629 -6.511)" fill="#fff" />
+                                <path id="Path_12" data-name="Path 12"
+                                  d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
+                                  transform="translate(-2.511 -6.511)" fill="#fff" />
+                                <path id="Path_13" data-name="Path 13"
+                                  d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
+                                  transform="translate(-3.14 -6.25)" fill="#fff" />
+                                <path id="Path_14" data-name="Path 14"
+                                  d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-3.832 -7.14)" fill="#fff" />
+                                <path id="Path_15" data-name="Path 15"
+                                  d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-2.25 -7.14)" fill="#fff" />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="17.572" height="9.462"
+                            viewBox="0 0 17.572 9.462">
+                            <g id="s" transform="translate(1)">
+                              <g id="Group_2" data-name="Group 2" transform="translate(-1 0)">
+                                <path id="Path_10" data-name="Path 10"
+                                  d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
+                                  transform="translate(-2.744 -6.744)" fill="#fff" />
+                                <path id="Path_11" data-name="Path 11"
+                                  d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
+                                  transform="translate(-3.629 -6.511)" fill="#fff" />
+                                <path id="Path_12" data-name="Path 12"
+                                  d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
+                                  transform="translate(-2.511 -6.511)" fill="#fff" />
+                                <path id="Path_13" data-name="Path 13"
+                                  d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
+                                  transform="translate(-3.14 -6.25)" fill="#fff" />
+                                <path id="Path_14" data-name="Path 14"
+                                  d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-3.832 -7.14)" fill="#fff" />
+                                <path id="Path_15" data-name="Path 15"
+                                  d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
+                                  transform="translate(-2.25 -7.14)" fill="#fff" />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#36BE84] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14.111" height="14.111"
+                            viewBox="0 0 14.111 14.111">
+                            <path id="Path_155" data-name="Path 155"
+                              d="M15.84,11.433A1.39,1.39,0,0,0,14.1,9.262L12.656,10.42a2.357,2.357,0,0,1-1.469.514H9.848V7.677h3.835a1.229,1.229,0,0,0,1.23-1.23,4.2,4.2,0,0,0-4.2-4.2H7.9a4.2,4.2,0,0,0-4.2,4.2,1.229,1.229,0,0,0,1.23,1.23H8.77v3.256H3.639A1.39,1.39,0,0,0,2.25,12.323V12.8A1.39,1.39,0,0,0,3.639,14.19H4.674l-.883,1.324a.54.54,0,0,0,.152.753.577.577,0,0,0,.3.094.544.544,0,0,0,.449-.239L5.984,14.19h5.21l1.288,1.932a.526.526,0,0,0,.449.239.536.536,0,0,0,.3-.094.547.547,0,0,0,.152-.753l-1.02-1.534a3.486,3.486,0,0,0,.977-.543l2.5-2ZM8.314,4.53a4.255,4.255,0,0,1,.991-1.078A4.137,4.137,0,0,1,10.3,4.53a4.281,4.281,0,0,1,.644,2.062H7.677A4.281,4.281,0,0,1,8.321,4.53Zm5.514,1.918a.145.145,0,0,1-.145.145H12.019a5.357,5.357,0,0,0-.81-2.641,5.387,5.387,0,0,0-.463-.608,3.12,3.12,0,0,1,3.083,3.112Zm-9.046,0A3.12,3.12,0,0,1,7.866,3.335a6.128,6.128,0,0,0-.463.608,5.357,5.357,0,0,0-.81,2.641H4.928a.145.145,0,0,1-.145-.145Zm6.4,6.658H3.639a.306.306,0,0,1-.3-.3v-.478a.306.306,0,0,1,.3-.3h7.548a3.468,3.468,0,0,0,2.149-.753l1.447-1.158a.308.308,0,0,1,.326-.036.3.3,0,0,1,.174.275.305.305,0,0,1-.116.239h0l-2.5,2a2.357,2.357,0,0,1-1.469.514Z"
+                              transform="translate(-2.25 -2.25)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-                      <!-- Right icon section (dark background full height) -->
-                      <span
-                        class="flex items-center justify-center px-[8px] bg-[#1a1a1a] rounded-r-md"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="8"
-                          height="5"
-                          viewBox="0 0 8 5"
-                          class="fill-white"
-                        >
-                          <path
-                            d="M1 1l3 3 3-3"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                          ></path>
+                    <td class="flex flex-row justify-center items-center gap-2 p-2">
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12.253" height="13.295"
+                          viewBox="0 0 12.253 13.295">
+                          <g id="h" transform="translate(-3.25 -2.753)">
+                            <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+                              <path id="Path_134" data-name="Path 134"
+                                d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
+                                transform="translate(-3.25 -2.753)" fill="currentColor" />
+                              <path id="Path_135" data-name="Path 135"
+                                d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
+                                transform="translate(-3.7 -5.3)" fill="currentColor" />
+                              <path id="Path_136" data-name="Path 136"
+                                d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
+                                transform="translate(-4.75 -5.304)" fill="currentColor" />
+                              <path id="Path_137" data-name="Path 137"
+                                d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
+                                transform="translate(-6.299 -5.3)" fill="currentColor" />
+                            </g>
+                          </g>
                         </svg>
-                      </span>
-                    </label>
+                      </button>
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.843" height="11.067"
+                          viewBox="0 0 7.843 11.067">
+                          <g id="Group_96" data-name="Group 96" transform="translate(0 1)">
+                            <path id="Path_151" data-name="Path 151" d="M3.921,0,0,3.921H7.843Z"
+                              transform="translate(0 -1)" fill="currentColor" />
+                            <path id="Path_152" data-name="Path 152" d="M0,3.5,3.921,7.421,7.842,3.5Z"
+                              transform="translate(0 2.645)" fill="currentColor" />
+                          </g>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- Week 2 -->
+                  <tr class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group">
+                    <td class="text-left font-bold text-brand-dark text-sm px-2">
+                      Week 2
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]">
+                          <svg id="n" xmlns="http://www.w3.org/2000/svg" width="16.545" height="14"
+                            viewBox="0 0 16.545 14">
+                            <path id="Path_38" data-name="Path 38"
+                              d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
+                              transform="translate(-2.25 -3.24)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-                    <!-- Dropdown menu -->
-                    <ul
-                      class="dropdown-menu hidden absolute left-0 mt-3 w-full bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden"
-                    >
-                      <li
-                        class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
-                      >
-                        Template
-                      </li>
-                      <li
-                        class="inline-flex items-center gap-2 px-3 py-[7px] border-y-1 border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
-                      >
-                        Template
-                      </li>
-                      <li
-                        class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs first:rounded-t-lg last:rounded-b-lg"
-                      >
-                        Template
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]">
+                          <svg id="n" xmlns="http://www.w3.org/2000/svg" width="16.545" height="14"
+                            viewBox="0 0 16.545 14">
+                            <path id="Path_38" data-name="Path 38"
+                              d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
+                              transform="translate(-2.25 -3.24)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]">
+                          <svg id="n" xmlns="http://www.w3.org/2000/svg" width="16.545" height="14"
+                            viewBox="0 0 16.545 14">
+                            <path id="Path_38" data-name="Path 38"
+                              d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
+                              transform="translate(-2.25 -3.24)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]">
+                          <svg id="n" xmlns="http://www.w3.org/2000/svg" width="16.545" height="14"
+                            viewBox="0 0 16.545 14">
+                            <path id="Path_38" data-name="Path 38"
+                              d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
+                              transform="translate(-2.25 -3.24)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#36BE84] rounded-[3px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14.111" height="14.111"
+                            viewBox="0 0 14.111 14.111">
+                            <path id="Path_155" data-name="Path 155"
+                              d="M15.84,11.433A1.39,1.39,0,0,0,14.1,9.262L12.656,10.42a2.357,2.357,0,0,1-1.469.514H9.848V7.677h3.835a1.229,1.229,0,0,0,1.23-1.23,4.2,4.2,0,0,0-4.2-4.2H7.9a4.2,4.2,0,0,0-4.2,4.2,1.229,1.229,0,0,0,1.23,1.23H8.77v3.256H3.639A1.39,1.39,0,0,0,2.25,12.323V12.8A1.39,1.39,0,0,0,3.639,14.19H4.674l-.883,1.324a.54.54,0,0,0,.152.753.577.577,0,0,0,.3.094.544.544,0,0,0,.449-.239L5.984,14.19h5.21l1.288,1.932a.526.526,0,0,0,.449.239.536.536,0,0,0,.3-.094.547.547,0,0,0,.152-.753l-1.02-1.534a3.486,3.486,0,0,0,.977-.543l2.5-2ZM8.314,4.53a4.255,4.255,0,0,1,.991-1.078A4.137,4.137,0,0,1,10.3,4.53a4.281,4.281,0,0,1,.644,2.062H7.677A4.281,4.281,0,0,1,8.321,4.53Zm5.514,1.918a.145.145,0,0,1-.145.145H12.019a5.357,5.357,0,0,0-.81-2.641,5.387,5.387,0,0,0-.463-.608,3.12,3.12,0,0,1,3.083,3.112Zm-9.046,0A3.12,3.12,0,0,1,7.866,3.335a6.128,6.128,0,0,0-.463.608,5.357,5.357,0,0,0-.81,2.641H4.928a.145.145,0,0,1-.145-.145Zm6.4,6.658H3.639a.306.306,0,0,1-.3-.3v-.478a.306.306,0,0,1,.3-.3h7.548a3.468,3.468,0,0,0,2.149-.753l1.447-1.158a.308.308,0,0,1,.326-.036.3.3,0,0,1,.174.275.305.305,0,0,1-.116.239h0l-2.5,2a2.357,2.357,0,0,1-1.469.514Z"
+                              transform="translate(-2.25 -2.25)" fill="#fff" />
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-              <div class="pt-[30px] overflow-x-auto w-full scrollbar-cst">
-                <div class="w-[936px] xl:min-w-[1200px]">
-                  <table
-                    class="min-w-[1200px] w-full border-collapse text-center text-sm"
-                  >
-                    <thead class="mb-[3px]">
-                      <tr>
-                        <th class="w-20 text-left px-2"></th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Sunday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Monday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Tuesday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Wednesday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Thursday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Friday
-                        </th>
-                        <th
-                          class="py-2 text-brand-dark text-sm px-[10px] relative after:content-[''] after:absolute after:w-[136px] after:h-[1px] after:bg-brand-light after:left-1/2 after:-translate-x-1/2 after:bottom-0"
-                        >
-                          Saturday
-                        </th>
-                        <th class="py-2"></th>
-                      </tr>
-                    </thead>
-                    <!-- Table Body -->
-                    <tbody class="">
-                      <!-- Week 1 -->
-                      <tr
-                        class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group"
-                      >
-                        <td
-                          class="text-left font-bold text-brand-dark text-sm px-2"
-                        >
-                          Week 1
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
+                    <td class="flex flex-row justify-center items-center gap-2 p-2">
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12.253" height="13.295"
+                          viewBox="0 0 12.253 13.295">
+                          <g id="h" transform="translate(-3.25 -2.753)">
+                            <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+                              <path id="Path_134" data-name="Path 134"
+                                d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
+                                transform="translate(-3.25 -2.753)" fill="currentColor" />
+                              <path id="Path_135" data-name="Path 135"
+                                d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
+                                transform="translate(-3.7 -5.3)" fill="currentColor" />
+                              <path id="Path_136" data-name="Path 136"
+                                d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
+                                transform="translate(-4.75 -5.304)" fill="currentColor" />
+                              <path id="Path_137" data-name="Path 137"
+                                d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
+                                transform="translate(-6.299 -5.3)" fill="currentColor" />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.843" height="11.067"
+                          viewBox="0 0 7.843 11.067">
+                          <g id="Group_96" data-name="Group 96" transform="translate(0 1)">
+                            <path id="Path_151" data-name="Path 151" d="M3.921,0,0,3.921H7.843Z"
+                              transform="translate(0 -1)" fill="currentColor" />
+                            <path id="Path_152" data-name="Path 152" d="M0,3.5,3.921,7.421,7.842,3.5Z"
+                              transform="translate(0 2.645)" fill="currentColor" />
+                          </g>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- Week 3 -->
+                  <tr class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group">
+                    <td class="text-left font-bold text-brand-dark text-sm px-2">
+                      Week 3
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
 
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="17.572"
-                                height="9.462"
-                                viewBox="0 0 17.572 9.462"
-                              >
-                                <g id="s" transform="translate(1)">
-                                  <g
-                                    id="Group_2"
-                                    data-name="Group 2"
-                                    transform="translate(-1 0)"
-                                  >
-                                    <path
-                                      id="Path_10"
-                                      data-name="Path 10"
-                                      d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
-                                      transform="translate(-2.744 -6.744)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_11"
-                                      data-name="Path 11"
-                                      d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
-                                      transform="translate(-3.629 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_12"
-                                      data-name="Path 12"
-                                      d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
-                                      transform="translate(-2.511 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_13"
-                                      data-name="Path 13"
-                                      d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
-                                      transform="translate(-3.14 -6.25)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_14"
-                                      data-name="Path 14"
-                                      d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-3.832 -7.14)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_15"
-                                      data-name="Path 15"
-                                      d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-2.25 -7.14)"
-                                      fill="#fff"
-                                    />
-                                  </g>
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="17.572"
-                                height="9.462"
-                                viewBox="0 0 17.572 9.462"
-                              >
-                                <g id="s" transform="translate(1)">
-                                  <g
-                                    id="Group_2"
-                                    data-name="Group 2"
-                                    transform="translate(-1 0)"
-                                  >
-                                    <path
-                                      id="Path_10"
-                                      data-name="Path 10"
-                                      d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
-                                      transform="translate(-2.744 -6.744)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_11"
-                                      data-name="Path 11"
-                                      d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
-                                      transform="translate(-3.629 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_12"
-                                      data-name="Path 12"
-                                      d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
-                                      transform="translate(-2.511 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_13"
-                                      data-name="Path 13"
-                                      d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
-                                      transform="translate(-3.14 -6.25)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_14"
-                                      data-name="Path 14"
-                                      d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-3.832 -7.14)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_15"
-                                      data-name="Path 15"
-                                      d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-2.25 -7.14)"
-                                      fill="#fff"
-                                    />
-                                  </g>
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="17.572"
-                                height="9.462"
-                                viewBox="0 0 17.572 9.462"
-                              >
-                                <g id="s" transform="translate(1)">
-                                  <g
-                                    id="Group_2"
-                                    data-name="Group 2"
-                                    transform="translate(-1 0)"
-                                  >
-                                    <path
-                                      id="Path_10"
-                                      data-name="Path 10"
-                                      d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
-                                      transform="translate(-2.744 -6.744)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_11"
-                                      data-name="Path 11"
-                                      d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
-                                      transform="translate(-3.629 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_12"
-                                      data-name="Path 12"
-                                      d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
-                                      transform="translate(-2.511 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_13"
-                                      data-name="Path 13"
-                                      d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
-                                      transform="translate(-3.14 -6.25)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_14"
-                                      data-name="Path 14"
-                                      d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-3.832 -7.14)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_15"
-                                      data-name="Path 15"
-                                      d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-2.25 -7.14)"
-                                      fill="#fff"
-                                    />
-                                  </g>
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#EA6608] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="17.572"
-                                height="9.462"
-                                viewBox="0 0 17.572 9.462"
-                              >
-                                <g id="s" transform="translate(1)">
-                                  <g
-                                    id="Group_2"
-                                    data-name="Group 2"
-                                    transform="translate(-1 0)"
-                                  >
-                                    <path
-                                      id="Path_10"
-                                      data-name="Path 10"
-                                      d="M11.53,11.25a4.284,4.284,0,0,0-4.28,4.28.681.681,0,0,0,.676.676h7.209a.681.681,0,0,0,.676-.676A4.284,4.284,0,0,0,11.53,11.25Zm-2.848,3.6a2.926,2.926,0,0,1,5.7,0h-5.7Z"
-                                      transform="translate(-2.744 -6.744)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_11"
-                                      data-name="Path 11"
-                                      d="M18.624,9.088a.68.68,0,0,0-.955,0L16.4,10.359a.68.68,0,0,0,0,.955.674.674,0,0,0,.955,0l1.271-1.271A.68.68,0,0,0,18.624,9.088Z"
-                                      transform="translate(-3.629 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_12"
-                                      data-name="Path 12"
-                                      d="M7.314,10.359,6.044,9.088a.675.675,0,0,0-.955.955l1.271,1.271a.674.674,0,0,0,.955,0A.68.68,0,0,0,7.314,10.359Z"
-                                      transform="translate(-2.511 -6.511)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_13"
-                                      data-name="Path 13"
-                                      d="M11.926,9.4a.681.681,0,0,0,.676-.676v-1.8a.676.676,0,0,0-1.352,0v1.8A.681.681,0,0,0,11.926,9.4Z"
-                                      transform="translate(-3.14 -6.25)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_14"
-                                      data-name="Path 14"
-                                      d="M20.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-3.832 -7.14)"
-                                      fill="#fff"
-                                    />
-                                    <path
-                                      id="Path_15"
-                                      data-name="Path 15"
-                                      d="M4.728,15.25h-1.8a.676.676,0,0,0,0,1.352h1.8a.676.676,0,0,0,0-1.352Z"
-                                      transform="translate(-2.25 -7.14)"
-                                      fill="#fff"
-                                    />
-                                  </g>
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#36BE84] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14.111"
-                                height="14.111"
-                                viewBox="0 0 14.111 14.111"
-                              >
-                                <path
-                                  id="Path_155"
-                                  data-name="Path 155"
-                                  d="M15.84,11.433A1.39,1.39,0,0,0,14.1,9.262L12.656,10.42a2.357,2.357,0,0,1-1.469.514H9.848V7.677h3.835a1.229,1.229,0,0,0,1.23-1.23,4.2,4.2,0,0,0-4.2-4.2H7.9a4.2,4.2,0,0,0-4.2,4.2,1.229,1.229,0,0,0,1.23,1.23H8.77v3.256H3.639A1.39,1.39,0,0,0,2.25,12.323V12.8A1.39,1.39,0,0,0,3.639,14.19H4.674l-.883,1.324a.54.54,0,0,0,.152.753.577.577,0,0,0,.3.094.544.544,0,0,0,.449-.239L5.984,14.19h5.21l1.288,1.932a.526.526,0,0,0,.449.239.536.536,0,0,0,.3-.094.547.547,0,0,0,.152-.753l-1.02-1.534a3.486,3.486,0,0,0,.977-.543l2.5-2ZM8.314,4.53a4.255,4.255,0,0,1,.991-1.078A4.137,4.137,0,0,1,10.3,4.53a4.281,4.281,0,0,1,.644,2.062H7.677A4.281,4.281,0,0,1,8.321,4.53Zm5.514,1.918a.145.145,0,0,1-.145.145H12.019a5.357,5.357,0,0,0-.81-2.641,5.387,5.387,0,0,0-.463-.608,3.12,3.12,0,0,1,3.083,3.112Zm-9.046,0A3.12,3.12,0,0,1,7.866,3.335a6.128,6.128,0,0,0-.463.608,5.357,5.357,0,0,0-.81,2.641H4.928a.145.145,0,0,1-.145-.145Zm6.4,6.658H3.639a.306.306,0,0,1-.3-.3v-.478a.306.306,0,0,1,.3-.3h7.548a3.468,3.468,0,0,0,2.149-.753l1.447-1.158a.308.308,0,0,1,.326-.036.3.3,0,0,1,.174.275.305.305,0,0,1-.116.239h0l-2.5,2a2.357,2.357,0,0,1-1.469.514Z"
-                                  transform="translate(-2.25 -2.25)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-                        <td
-                          class="flex flex-row justify-center items-center gap-2 p-2"
-                        >
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12.253"
-                              height="13.295"
-                              viewBox="0 0 12.253 13.295"
-                            >
-                              <g id="h" transform="translate(-3.25 -2.753)">
-                                <g
-                                  id="Group_90"
-                                  data-name="Group 90"
-                                  transform="translate(3.25 2.753)"
-                                >
-                                  <path
-                                    id="Path_134"
-                                    data-name="Path 134"
-                                    d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
-                                    transform="translate(-3.25 -2.753)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_135"
-                                    data-name="Path 135"
-                                    d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
-                                    transform="translate(-3.7 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_136"
-                                    data-name="Path 136"
-                                    d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
-                                    transform="translate(-4.75 -5.304)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_137"
-                                    data-name="Path 137"
-                                    d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
-                                    transform="translate(-6.299 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="7.843"
-                              height="11.067"
-                              viewBox="0 0 7.843 11.067"
-                            >
-                              <g
-                                id="Group_96"
-                                data-name="Group 96"
-                                transform="translate(0 1)"
-                              >
-                                <path
-                                  id="Path_151"
-                                  data-name="Path 151"
-                                  d="M3.921,0,0,3.921H7.843Z"
-                                  transform="translate(0 -1)"
-                                  fill="currentColor"
-                                />
-                                <path
-                                  id="Path_152"
-                                  data-name="Path 152"
-                                  d="M0,3.5,3.921,7.421,7.842,3.5Z"
-                                  transform="translate(0 2.645)"
-                                  fill="currentColor"
-                                />
-                              </g>
-                            </svg>
-                          </button>
-                        </td>
-                      </tr>
-                      <!-- Week 2 -->
-                      <tr
-                        class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group"
-                      >
-                        <td
-                          class="text-left font-bold text-brand-dark text-sm px-2"
-                        >
-                          Week 2
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]"
-                            >
-                              <svg
-                                id="n"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.545"
-                                height="14"
-                                viewBox="0 0 16.545 14"
-                              >
-                                <path
-                                  id="Path_38"
-                                  data-name="Path 38"
-                                  d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
-                                  transform="translate(-2.25 -3.24)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]">
+                          <svg id="u" xmlns="http://www.w3.org/2000/svg" width="16.543" height="16.543"
+                            viewBox="0 0 16.543 16.543">
+                            <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+                              <path id="Path_1" data-name="Path 1"
+                                d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
+                                transform="translate(-3.009 -3.009)" fill="#fff" />
+                              <path id="Path_2" data-name="Path 2"
+                                d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
+                                transform="translate(-4.366 -2.651)" fill="#fff" />
+                              <path id="Path_3" data-name="Path 3"
+                                d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
+                                transform="translate(-4.366 -4.366)" fill="#fff" />
+                              <path id="Path_4" data-name="Path 4"
+                                d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
+                                transform="translate(-2.651 -4.366)" fill="#fff" />
+                              <path id="Path_5" data-name="Path 5"
+                                d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
+                                transform="translate(-2.651 -2.651)" fill="#fff" />
+                              <path id="Path_6" data-name="Path 6"
+                                d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
+                                transform="translate(-3.615 -2.25)" fill="#fff" />
+                              <path id="Path_7" data-name="Path 7"
+                                d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
+                                transform="translate(-4.676 -3.615)" fill="#fff" />
+                              <path id="Path_8" data-name="Path 8"
+                                d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
+                                transform="translate(-3.615 -4.676)" fill="#fff" />
+                              <path id="Path_9" data-name="Path 9"
+                                d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
+                                transform="translate(-2.25 -3.615)" fill="#fff" />
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]">
+                          <svg id="u" xmlns="http://www.w3.org/2000/svg" width="16.543" height="16.543"
+                            viewBox="0 0 16.543 16.543">
+                            <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+                              <path id="Path_1" data-name="Path 1"
+                                d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
+                                transform="translate(-3.009 -3.009)" fill="#fff" />
+                              <path id="Path_2" data-name="Path 2"
+                                d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
+                                transform="translate(-4.366 -2.651)" fill="#fff" />
+                              <path id="Path_3" data-name="Path 3"
+                                d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
+                                transform="translate(-4.366 -4.366)" fill="#fff" />
+                              <path id="Path_4" data-name="Path 4"
+                                d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
+                                transform="translate(-2.651 -4.366)" fill="#fff" />
+                              <path id="Path_5" data-name="Path 5"
+                                d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
+                                transform="translate(-2.651 -2.651)" fill="#fff" />
+                              <path id="Path_6" data-name="Path 6"
+                                d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
+                                transform="translate(-3.615 -2.25)" fill="#fff" />
+                              <path id="Path_7" data-name="Path 7"
+                                d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
+                                transform="translate(-4.676 -3.615)" fill="#fff" />
+                              <path id="Path_8" data-name="Path 8"
+                                d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
+                                transform="translate(-3.615 -4.676)" fill="#fff" />
+                              <path id="Path_9" data-name="Path 9"
+                                d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
+                                transform="translate(-2.25 -3.615)" fill="#fff" />
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]">
+                          <svg id="u" xmlns="http://www.w3.org/2000/svg" width="16.543" height="16.543"
+                            viewBox="0 0 16.543 16.543">
+                            <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+                              <path id="Path_1" data-name="Path 1"
+                                d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
+                                transform="translate(-3.009 -3.009)" fill="#fff" />
+                              <path id="Path_2" data-name="Path 2"
+                                d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
+                                transform="translate(-4.366 -2.651)" fill="#fff" />
+                              <path id="Path_3" data-name="Path 3"
+                                d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
+                                transform="translate(-4.366 -4.366)" fill="#fff" />
+                              <path id="Path_4" data-name="Path 4"
+                                d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
+                                transform="translate(-2.651 -4.366)" fill="#fff" />
+                              <path id="Path_5" data-name="Path 5"
+                                d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
+                                transform="translate(-2.651 -2.651)" fill="#fff" />
+                              <path id="Path_6" data-name="Path 6"
+                                d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
+                                transform="translate(-3.615 -2.25)" fill="#fff" />
+                              <path id="Path_7" data-name="Path 7"
+                                d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
+                                transform="translate(-4.676 -3.615)" fill="#fff" />
+                              <path id="Path_8" data-name="Path 8"
+                                d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
+                                transform="translate(-3.615 -4.676)" fill="#fff" />
+                              <path id="Path_9" data-name="Path 9"
+                                d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
+                                transform="translate(-2.25 -3.615)" fill="#fff" />
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]">
+                          <svg id="u" xmlns="http://www.w3.org/2000/svg" width="16.543" height="16.543"
+                            viewBox="0 0 16.543 16.543">
+                            <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+                              <path id="Path_1" data-name="Path 1"
+                                d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
+                                transform="translate(-3.009 -3.009)" fill="#fff" />
+                              <path id="Path_2" data-name="Path 2"
+                                d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
+                                transform="translate(-4.366 -2.651)" fill="#fff" />
+                              <path id="Path_3" data-name="Path 3"
+                                d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
+                                transform="translate(-4.366 -4.366)" fill="#fff" />
+                              <path id="Path_4" data-name="Path 4"
+                                d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
+                                transform="translate(-2.651 -4.366)" fill="#fff" />
+                              <path id="Path_5" data-name="Path 5"
+                                d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
+                                transform="translate(-2.651 -2.651)" fill="#fff" />
+                              <path id="Path_6" data-name="Path 6"
+                                d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
+                                transform="translate(-3.615 -2.25)" fill="#fff" />
+                              <path id="Path_7" data-name="Path 7"
+                                d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
+                                transform="translate(-4.676 -3.615)" fill="#fff" />
+                              <path id="Path_8" data-name="Path 8"
+                                d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
+                                transform="translate(-3.615 -4.676)" fill="#fff" />
+                              <path id="Path_9" data-name="Path 9"
+                                d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
+                                transform="translate(-2.25 -3.615)" fill="#fff" />
+                            </g>
+                          </svg>
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-[3px] py-2">
+                      <div class="flex flex-row items-center justify-center space-x-[7px]">
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                        <div
+                          class="w-5 h-5 xl:h-7 xl:w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]">
+                        </div>
+                      </div>
+                    </td>
 
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]"
-                            >
-                              <svg
-                                id="n"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.545"
-                                height="14"
-                                viewBox="0 0 16.545 14"
-                              >
-                                <path
-                                  id="Path_38"
-                                  data-name="Path 38"
-                                  d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
-                                  transform="translate(-2.25 -3.24)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]"
-                            >
-                              <svg
-                                id="n"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.545"
-                                height="14"
-                                viewBox="0 0 16.545 14"
-                              >
-                                <path
-                                  id="Path_38"
-                                  data-name="Path 38"
-                                  d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
-                                  transform="translate(-2.25 -3.24)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#7554D4] rounded-[3px]"
-                            >
-                              <svg
-                                id="n"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.545"
-                                height="14"
-                                viewBox="0 0 16.545 14"
-                              >
-                                <path
-                                  id="Path_38"
-                                  data-name="Path 38"
-                                  d="M17.455,11.479A4.884,4.884,0,0,0,18.7,9.1a.6.6,0,0,0-.127-.518.673.673,0,0,0-.475-.246,3.889,3.889,0,0,1-2.834-1.451,3.79,3.79,0,0,1-.721-2.9.637.637,0,0,0-.144-.518.629.629,0,0,0-.484-.229A4.885,4.885,0,0,0,9.038,8.119a3.846,3.846,0,0,0,.025.441A4.9,4.9,0,0,0,6.2,10.978a3.248,3.248,0,0,0-.764-.1,3.182,3.182,0,1,0,0,6.364H15.614a3.177,3.177,0,0,0,1.841-5.77ZM10.311,8.127a3.606,3.606,0,0,1,2.919-3.538,5.032,5.032,0,0,0,1.035,3.08A5.1,5.1,0,0,0,17.251,9.51a3.552,3.552,0,0,1-1.095,1.434A2.917,2.917,0,0,0,14.85,11a4.866,4.866,0,0,0-4.327-2.647,1.271,1.271,0,0,0-.187.017c0-.076-.025-.153-.025-.229Zm5.3,7.848H5.432a1.909,1.909,0,1,1,0-3.818,1.89,1.89,0,0,1,.832.187H6.3c.008,0,.017.008.025.017a.289.289,0,0,0,.119.017c.025,0,.059.017.085.017h.008a.5.5,0,0,0,.2-.034c.025-.008.051-.025.076-.034a.481.481,0,0,0,.11-.068.549.549,0,0,0,.076-.068l.076-.1c.008-.017.034-.034.042-.051A.051.051,0,0,1,7.12,12a.085.085,0,0,0,.008-.025A3.611,3.611,0,0,1,10.523,9.6a3.541,3.541,0,0,1,3.326,2.206c.008.025.034.042.042.068a.622.622,0,0,0,.042.17.638.638,0,0,0,.848.3,1.838,1.838,0,0,1,.832-.187,1.909,1.909,0,1,1,0,3.818Z"
-                                  transform="translate(-2.25 -3.24)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#36BE84] rounded-[3px]"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="14.111"
-                                height="14.111"
-                                viewBox="0 0 14.111 14.111"
-                              >
-                                <path
-                                  id="Path_155"
-                                  data-name="Path 155"
-                                  d="M15.84,11.433A1.39,1.39,0,0,0,14.1,9.262L12.656,10.42a2.357,2.357,0,0,1-1.469.514H9.848V7.677h3.835a1.229,1.229,0,0,0,1.23-1.23,4.2,4.2,0,0,0-4.2-4.2H7.9a4.2,4.2,0,0,0-4.2,4.2,1.229,1.229,0,0,0,1.23,1.23H8.77v3.256H3.639A1.39,1.39,0,0,0,2.25,12.323V12.8A1.39,1.39,0,0,0,3.639,14.19H4.674l-.883,1.324a.54.54,0,0,0,.152.753.577.577,0,0,0,.3.094.544.544,0,0,0,.449-.239L5.984,14.19h5.21l1.288,1.932a.526.526,0,0,0,.449.239.536.536,0,0,0,.3-.094.547.547,0,0,0,.152-.753l-1.02-1.534a3.486,3.486,0,0,0,.977-.543l2.5-2ZM8.314,4.53a4.255,4.255,0,0,1,.991-1.078A4.137,4.137,0,0,1,10.3,4.53a4.281,4.281,0,0,1,.644,2.062H7.677A4.281,4.281,0,0,1,8.321,4.53Zm5.514,1.918a.145.145,0,0,1-.145.145H12.019a5.357,5.357,0,0,0-.81-2.641,5.387,5.387,0,0,0-.463-.608,3.12,3.12,0,0,1,3.083,3.112Zm-9.046,0A3.12,3.12,0,0,1,7.866,3.335a6.128,6.128,0,0,0-.463.608,5.357,5.357,0,0,0-.81,2.641H4.928a.145.145,0,0,1-.145-.145Zm6.4,6.658H3.639a.306.306,0,0,1-.3-.3v-.478a.306.306,0,0,1,.3-.3h7.548a3.468,3.468,0,0,0,2.149-.753l1.447-1.158a.308.308,0,0,1,.326-.036.3.3,0,0,1,.174.275.305.305,0,0,1-.116.239h0l-2.5,2a2.357,2.357,0,0,1-1.469.514Z"
-                                  transform="translate(-2.25 -2.25)"
-                                  fill="#fff"
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-
-                        <td
-                          class="flex flex-row justify-center items-center gap-2 p-2"
-                        >
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12.253"
-                              height="13.295"
-                              viewBox="0 0 12.253 13.295"
-                            >
-                              <g id="h" transform="translate(-3.25 -2.753)">
-                                <g
-                                  id="Group_90"
-                                  data-name="Group 90"
-                                  transform="translate(3.25 2.753)"
-                                >
-                                  <path
-                                    id="Path_134"
-                                    data-name="Path 134"
-                                    d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
-                                    transform="translate(-3.25 -2.753)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_135"
-                                    data-name="Path 135"
-                                    d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
-                                    transform="translate(-3.7 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_136"
-                                    data-name="Path 136"
-                                    d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
-                                    transform="translate(-4.75 -5.304)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_137"
-                                    data-name="Path 137"
-                                    d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
-                                    transform="translate(-6.299 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="7.843"
-                              height="11.067"
-                              viewBox="0 0 7.843 11.067"
-                            >
-                              <g
-                                id="Group_96"
-                                data-name="Group 96"
-                                transform="translate(0 1)"
-                              >
-                                <path
-                                  id="Path_151"
-                                  data-name="Path 151"
-                                  d="M3.921,0,0,3.921H7.843Z"
-                                  transform="translate(0 -1)"
-                                  fill="currentColor"
-                                />
-                                <path
-                                  id="Path_152"
-                                  data-name="Path 152"
-                                  d="M0,3.5,3.921,7.421,7.842,3.5Z"
-                                  transform="translate(0 2.645)"
-                                  fill="currentColor"
-                                />
-                              </g>
-                            </svg>
-                          </button>
-                        </td>
-                      </tr>
-                      <!-- Week 3 -->
-                      <tr
-                        class="hover:bg-[#EDF0F2]/30 transition-all duration-150 py-2 group"
-                      >
-                        <td
-                          class="text-left font-bold text-brand-dark text-sm px-2"
-                        >
-                          Week 3
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]"
-                            >
-                              <svg
-                                id="u"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.543"
-                                height="16.543"
-                                viewBox="0 0 16.543 16.543"
-                              >
-                                <g
-                                  id="Group_1"
-                                  data-name="Group 1"
-                                  transform="translate(0 0)"
-                                >
-                                  <path
-                                    id="Path_1"
-                                    data-name="Path 1"
-                                    d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
-                                    transform="translate(-3.009 -3.009)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_2"
-                                    data-name="Path 2"
-                                    d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
-                                    transform="translate(-4.366 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_3"
-                                    data-name="Path 3"
-                                    d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
-                                    transform="translate(-4.366 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_4"
-                                    data-name="Path 4"
-                                    d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
-                                    transform="translate(-2.651 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_5"
-                                    data-name="Path 5"
-                                    d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
-                                    transform="translate(-2.651 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_6"
-                                    data-name="Path 6"
-                                    d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
-                                    transform="translate(-3.615 -2.25)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_7"
-                                    data-name="Path 7"
-                                    d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
-                                    transform="translate(-4.676 -3.615)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_8"
-                                    data-name="Path 8"
-                                    d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
-                                    transform="translate(-3.615 -4.676)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_9"
-                                    data-name="Path 9"
-                                    d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
-                                    transform="translate(-2.25 -3.615)"
-                                    fill="#fff"
-                                  />
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]"
-                            >
-                              <svg
-                                id="u"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.543"
-                                height="16.543"
-                                viewBox="0 0 16.543 16.543"
-                              >
-                                <g
-                                  id="Group_1"
-                                  data-name="Group 1"
-                                  transform="translate(0 0)"
-                                >
-                                  <path
-                                    id="Path_1"
-                                    data-name="Path 1"
-                                    d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
-                                    transform="translate(-3.009 -3.009)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_2"
-                                    data-name="Path 2"
-                                    d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
-                                    transform="translate(-4.366 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_3"
-                                    data-name="Path 3"
-                                    d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
-                                    transform="translate(-4.366 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_4"
-                                    data-name="Path 4"
-                                    d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
-                                    transform="translate(-2.651 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_5"
-                                    data-name="Path 5"
-                                    d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
-                                    transform="translate(-2.651 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_6"
-                                    data-name="Path 6"
-                                    d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
-                                    transform="translate(-3.615 -2.25)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_7"
-                                    data-name="Path 7"
-                                    d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
-                                    transform="translate(-4.676 -3.615)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_8"
-                                    data-name="Path 8"
-                                    d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
-                                    transform="translate(-3.615 -4.676)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_9"
-                                    data-name="Path 9"
-                                    d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
-                                    transform="translate(-2.25 -3.615)"
-                                    fill="#fff"
-                                  />
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]"
-                            >
-                              <svg
-                                id="u"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.543"
-                                height="16.543"
-                                viewBox="0 0 16.543 16.543"
-                              >
-                                <g
-                                  id="Group_1"
-                                  data-name="Group 1"
-                                  transform="translate(0 0)"
-                                >
-                                  <path
-                                    id="Path_1"
-                                    data-name="Path 1"
-                                    d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
-                                    transform="translate(-3.009 -3.009)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_2"
-                                    data-name="Path 2"
-                                    d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
-                                    transform="translate(-4.366 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_3"
-                                    data-name="Path 3"
-                                    d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
-                                    transform="translate(-4.366 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_4"
-                                    data-name="Path 4"
-                                    d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
-                                    transform="translate(-2.651 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_5"
-                                    data-name="Path 5"
-                                    d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
-                                    transform="translate(-2.651 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_6"
-                                    data-name="Path 6"
-                                    d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
-                                    transform="translate(-3.615 -2.25)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_7"
-                                    data-name="Path 7"
-                                    d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
-                                    transform="translate(-4.676 -3.615)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_8"
-                                    data-name="Path 8"
-                                    d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
-                                    transform="translate(-3.615 -4.676)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_9"
-                                    data-name="Path 9"
-                                    d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
-                                    transform="translate(-2.25 -3.615)"
-                                    fill="#fff"
-                                  />
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] bg-[#01A0D2] rounded-[3px]"
-                            >
-                              <svg
-                                id="u"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16.543"
-                                height="16.543"
-                                viewBox="0 0 16.543 16.543"
-                              >
-                                <g
-                                  id="Group_1"
-                                  data-name="Group 1"
-                                  transform="translate(0 0)"
-                                >
-                                  <path
-                                    id="Path_1"
-                                    data-name="Path 1"
-                                    d="M14.13,8.43a4.03,4.03,0,1,0,0,5.7,4.04,4.04,0,0,0,0-5.7Zm-.9,4.8a2.757,2.757,0,1,1,0-3.9A2.76,2.76,0,0,1,13.231,13.231Z"
-                                    transform="translate(-3.009 -3.009)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_2"
-                                    data-name="Path 2"
-                                    d="M16.837,7.359a.629.629,0,0,0,.45-.187l1.2-1.2a.636.636,0,0,0-.9-.9l-1.2,1.2a.64.64,0,0,0,0,.9A.629.629,0,0,0,16.837,7.359Z"
-                                    transform="translate(-4.366 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_3"
-                                    data-name="Path 3"
-                                    d="M17.286,16.387a.636.636,0,0,0-.9.9l1.2,1.2a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2Z"
-                                    transform="translate(-4.366 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_4"
-                                    data-name="Path 4"
-                                    d="M6.273,16.387l-1.2,1.2a.64.64,0,0,0,0,.9.635.635,0,0,0,.9,0l1.2-1.2a.636.636,0,0,0-.9-.9Z"
-                                    transform="translate(-2.651 -4.366)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_5"
-                                    data-name="Path 5"
-                                    d="M6.273,7.172a.635.635,0,0,0,.9,0,.64.64,0,0,0,0-.9l-1.2-1.2a.636.636,0,0,0-.9.9Z"
-                                    transform="translate(-2.651 -2.651)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_6"
-                                    data-name="Path 6"
-                                    d="M11.886,5.219a.641.641,0,0,0,.636-.636v-1.7a.636.636,0,0,0-1.273,0v1.7A.641.641,0,0,0,11.886,5.219Z"
-                                    transform="translate(-3.615 -2.25)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_7"
-                                    data-name="Path 7"
-                                    d="M20.583,11.25h-1.7a.636.636,0,0,0,0,1.273h1.7a.636.636,0,0,0,0-1.273Z"
-                                    transform="translate(-4.676 -3.615)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_8"
-                                    data-name="Path 8"
-                                    d="M11.886,18.25a.641.641,0,0,0-.636.636v1.7a.636.636,0,0,0,1.273,0v-1.7A.641.641,0,0,0,11.886,18.25Z"
-                                    transform="translate(-3.615 -4.676)"
-                                    fill="#fff"
-                                  />
-                                  <path
-                                    id="Path_9"
-                                    data-name="Path 9"
-                                    d="M5.219,11.886a.641.641,0,0,0-.636-.636h-1.7a.636.636,0,0,0,0,1.273h1.7A.641.641,0,0,0,5.219,11.886Z"
-                                    transform="translate(-2.25 -3.615)"
-                                    fill="#fff"
-                                  />
-                                </g>
-                              </svg>
-                            </div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-                        <td class="px-[3px] py-2">
-                          <div
-                            class="flex flex-row items-center justify-center space-x-[7px]"
-                          >
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                            <div
-                              class="h-7 w-7 inline-flex items-center justify-center ring ring-[#EDF0F2] rounded-[3px]"
-                            ></div>
-                          </div>
-                        </td>
-
-                        <td
-                          class="flex flex-row justify-center items-center gap-2 p-2"
-                        >
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12.253"
-                              height="13.295"
-                              viewBox="0 0 12.253 13.295"
-                            >
-                              <g id="h" transform="translate(-3.25 -2.753)">
-                                <g
-                                  id="Group_90"
-                                  data-name="Group 90"
-                                  transform="translate(3.25 2.753)"
-                                >
-                                  <path
-                                    id="Path_134"
-                                    data-name="Path 134"
-                                    d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
-                                    transform="translate(-3.25 -2.753)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_135"
-                                    data-name="Path 135"
-                                    d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
-                                    transform="translate(-3.7 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_136"
-                                    data-name="Path 136"
-                                    d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
-                                    transform="translate(-4.75 -5.304)"
-                                    fill="currentColor"
-                                  />
-                                  <path
-                                    id="Path_137"
-                                    data-name="Path 137"
-                                    d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
-                                    transform="translate(-6.299 -5.3)"
-                                    fill="currentColor"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </button>
-                          <button
-                            class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="7.843"
-                              height="11.067"
-                              viewBox="0 0 7.843 11.067"
-                            >
-                              <g
-                                id="Group_96"
-                                data-name="Group 96"
-                                transform="translate(0 1)"
-                              >
-                                <path
-                                  id="Path_151"
-                                  data-name="Path 151"
-                                  d="M3.921,0,0,3.921H7.843Z"
-                                  transform="translate(0 -1)"
-                                  fill="currentColor"
-                                />
-                                <path
-                                  id="Path_152"
-                                  data-name="Path 152"
-                                  d="M0,3.5,3.921,7.421,7.842,3.5Z"
-                                  transform="translate(0 2.645)"
-                                  fill="currentColor"
-                                />
-                              </g>
-                            </svg>
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!-- Add week -->
-              <button
-                class="mt-4 flex items-center gap-2 text-[#A4B5BF] text-xs hover:text-gray-700 cursor-pointer mx-[14px]"
-              >
-                <img src="./assets/svg/add-plus.svg" alt="add" />
-                Add week
-              </button>
+                    <td class="flex flex-row justify-center items-center gap-2 p-2">
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12.253" height="13.295"
+                          viewBox="0 0 12.253 13.295">
+                          <g id="h" transform="translate(-3.25 -2.753)">
+                            <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+                              <path id="Path_134" data-name="Path 134"
+                                d="M13.928,4.5H12.352l-1.82-1.365a1.933,1.933,0,0,0-2.311,0L6.4,4.5H4.825a1.575,1.575,0,1,0,0,3.151h9.1a1.575,1.575,0,1,0,0-3.151ZM8.852,3.976a.882.882,0,0,1,1.05,0l.7.525H8.151ZM13.928,6.6h-9.1a.525.525,0,1,1,0-1.05h9.1a.525.525,0,1,1,0,1.05Z"
+                                transform="translate(-3.25 -2.753)" fill="currentColor" />
+                              <path id="Path_135" data-name="Path 135"
+                                d="M14.462,11.257a.523.523,0,0,0-.6.434L13.1,16.235a1.567,1.567,0,0,1-1.554,1.316H8.1A1.572,1.572,0,0,1,6.55,16.235l-.756-4.544a.525.525,0,0,0-1.036.168L5.514,16.4A2.612,2.612,0,0,0,8.1,18.595h3.445A2.619,2.619,0,0,0,14.14,16.4l.756-4.544a.523.523,0,0,0-.434-.6Z"
+                                transform="translate(-3.7 -5.3)" fill="currentColor" />
+                              <path id="Path_136" data-name="Path 136"
+                                d="M9.357,15.8h.084a.532.532,0,0,0,.434-.6l-.581-3.5a.525.525,0,0,0-1.036.168l.581,3.5a.525.525,0,0,0,.518.441Z"
+                                transform="translate(-4.75 -5.304)" fill="currentColor" />
+                              <path id="Path_137" data-name="Path 137"
+                                d="M13.945,15.8a.525.525,0,0,0,.518-.441l.581-3.5a.525.525,0,1,0-1.036-.168l-.581,3.5a.523.523,0,0,0,.434.6h.084Z"
+                                transform="translate(-6.299 -5.3)" fill="currentColor" />
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                      <button
+                        class="cursor-pointer text-[#A4B5BF] hover:text-brand-dark transition-all duration-150 mt-[6px] opacity-0 group-hover:opacity-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.843" height="11.067"
+                          viewBox="0 0 7.843 11.067">
+                          <g id="Group_96" data-name="Group 96" transform="translate(0 1)">
+                            <path id="Path_151" data-name="Path 151" d="M3.921,0,0,3.921H7.843Z"
+                              transform="translate(0 -1)" fill="currentColor" />
+                            <path id="Path_152" data-name="Path 152" d="M0,3.5,3.921,7.421,7.842,3.5Z"
+                              transform="translate(0 2.645)" fill="currentColor" />
+                          </g>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <!-- old -->
-          </section>
-        </main>
-      </div>
-      <!-- bottom -->
-      <div
-        class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex flex-row justify-end items-center px-5 gap-2"
-        bis_skin_checked="1"
-      >
-        <button
-          type="button"
-          class="group inline-flex items-center gap-2 cursor-pointer transition-all duration-150 mr-[16px]"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="12.744"
-            height="13.828"
-            viewBox="0 0 12.744 13.828"
-          >
-            <g id="h" transform="translate(-3.25 -2.753)">
-              <g
-                id="Group_90"
-                data-name="Group 90"
-                transform="translate(3.25 2.753)"
-              >
-                <path
-                  id="Path_134"
-                  data-name="Path 134"
-                  d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
-                  transform="translate(-3.25 -2.753)"
-                  fill="#e4223c"
-                ></path>
-                <path
-                  id="Path_135"
-                  data-name="Path 135"
-                  d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
-                  transform="translate(-3.658 -5.061)"
-                  fill="#e4223c"
-                ></path>
-                <path
-                  id="Path_136"
-                  data-name="Path 136"
-                  d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
-                  transform="translate(-4.609 -5.065)"
-                  fill="#e4223c"
-                ></path>
-                <path
-                  id="Path_137"
-                  data-name="Path 137"
-                  d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
-                  transform="translate(-6.013 -5.061)"
-                  fill="#e4223c"
-                ></path>
-              </g>
-            </g>
-          </svg>
-          <span class="text-xs text-[#E4223C] group-hover:underline"
-            >Delete</span
-          >
-        </button>
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Save
-        </button>
-        <button
-          type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
-        >
-          Cancel
-        </button>
-      </div>
+          </div>
+          <!-- Add week -->
+          <button
+            class="mt-4 flex items-center gap-2 text-[#A4B5BF] text-xs hover:text-gray-700 cursor-pointer mx-[14px]">
+            <img src="./assets/svg/add-plus.svg" alt="add" />
+            Add week
+          </button>
+        </div>
+        <!-- old -->
+      </section>
+      <!-- main content end -->
+    </main>
+  </div>
+  <!-- wrapper end -->
+
+
+  <!-- bottom -->
+  <div
+    class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex-row justify-end items-center px-5 gap-2 lg:flex hidden">
+    <button type="button"
+      class="group inline-flex items-center gap-2 cursor-pointer transition-all duration-150 mr-[16px]">
+      <svg xmlns="http://www.w3.org/2000/svg" width="12.744" height="13.828" viewBox="0 0 12.744 13.828">
+        <g id="h" transform="translate(-3.25 -2.753)">
+          <g id="Group_90" data-name="Group 90" transform="translate(3.25 2.753)">
+            <path id="Path_134" data-name="Path 134"
+              d="M14.356,4.571H12.717l-1.893-1.42a2.01,2.01,0,0,0-2.4,0L6.527,4.571H4.889a1.639,1.639,0,1,0,0,3.277h9.467a1.639,1.639,0,1,0,0-3.277Zm-5.28-.546a.918.918,0,0,1,1.092,0l.728.546H8.348Zm5.28,2.731H4.889a.546.546,0,1,1,0-1.092h9.467a.546.546,0,1,1,0,1.092Z"
+              transform="translate(-3.25 -2.753)" fill="#e4223c" />
+            <path id="Path_135" data-name="Path 135"
+              d="M14.851,11.257a.544.544,0,0,0-.626.452l-.787,4.726A1.629,1.629,0,0,1,11.822,17.8H8.239a1.635,1.635,0,0,1-1.617-1.369l-.787-4.726a.546.546,0,0,0-1.078.175l.787,4.726a2.717,2.717,0,0,0,2.695,2.279h3.583a2.724,2.724,0,0,0,2.695-2.279l.787-4.726a.544.544,0,0,0-.452-.626Z"
+              transform="translate(-3.658 -5.061)" fill="#e4223c" />
+            <path id="Path_136" data-name="Path 136"
+              d="M9.4,15.987h.087a.554.554,0,0,0,.452-.626l-.6-3.641a.546.546,0,0,0-1.078.175l.6,3.641a.546.546,0,0,0,.539.459Z"
+              transform="translate(-4.609 -5.065)" fill="#e4223c" />
+            <path id="Path_137" data-name="Path 137"
+              d="M13.966,15.983a.546.546,0,0,0,.539-.459l.6-3.641a.546.546,0,1,0-1.078-.175l-.6,3.641a.544.544,0,0,0,.452.626h.087Z"
+              transform="translate(-6.013 -5.061)" fill="#e4223c" />
+          </g>
+        </g>
+      </svg>
+      <span class="text-xs text-[#E4223C] group-hover:underline">Delete</span>
+    </button>
+    <button type="button"
+      class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+      Save
+    </button>
+    <button type="button"
+      class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
+      Cancel
+    </button>
+  </div>
+  <!-- right side bar  end -->
+  <div class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5">
+    <div class="flex flex-col justify-center items-center text-center space-y-2">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F04C46"
+        class="size-12">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+      </svg>
+      <span class="text-lg font-bold capitalize">user is requested to show on a larger screen</span>
     </div>
-    <div
-      class="flex items-center justify-center min-h-screen md:hidden capitalize px-5"
-    >
-      <div
-        class="flex flex-col justify-center items-center text-center space-y-2"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="#F04C46"
-          class="size-12"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
-          />
-        </svg>
-        <span class="text-lg font-bold capitalize"
-          >user is requested to show on a larger screen</span
-        >
-      </div>
-    </div>
-    <script src="./js/dateinput.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+  </div>
+  <!-- modal p8 -->
+
+  <!-- js p9 -->
+  <script src="./js/dateinput.js"></script>
+</body>
+
 </html>
