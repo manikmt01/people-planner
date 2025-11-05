@@ -1,525 +1,924 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee – Rules (dialog)</title>
+    <!-- facicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <!-- font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Employee – Rules (dialog)</title>
-  <!-- facicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-  <!-- font -->
-  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
 
-  <!-- css -->
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./css/style.min.css" />
-</head>
+  <body class="bg-brand-gray-bg relative">
+    <!-- Header p1 -->
+    <header
+      class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 flex"
+    >
+      <div class="w-full mx-auto px-5 flex items-center justify-between">
+        <!-- Left section -->
+        <a href="#" class="flex items-center space-x-3 xl:space-x-5">
+          <!-- Icon -->
+          <img
+            src="./assets/svg/logo.svg"
+            alt="logo"
+            class="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6"
+          />
+          <span class="font-bold text-base lg:text-xl xl:text-2xl"
+            >People planner</span
+          >
+        </a>
 
-<body class="bg-brand-gray-bg relative">
-  <!-- Header p1 -->
-  <header
-    class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 lg:flex hidden">
-    <div class="w-full mx-auto px-5 flex items-center justify-between">
-      <!-- Left section -->
-      <a href="#" class="flex items-center space-x-3 xl:space-x-5">
-        <!-- Icon -->
-        <img src="./assets/svg/logo.svg" alt="logo" class="w-5 h-5 xl:w-6 xl:h-6" />
-        <span class="font-bold text-xl xl:text-2xl">People planner</span>
-      </a>
+        <!-- Center navigation -->
+        <nav class="hidden lg:flex items-center space-x-5 xl:space-x-9 text-sm">
+          <a
+            href="./production-roster.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >Production</a
+          >
 
-      <!-- Center navigation -->
-      <nav class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm">
-        <a href="./production-roster.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
+          <a
+            href="./maintenance-position.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >Maintenance</a
+          >
 
-        <a href="./maintenance-position.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Maintenance</a>
+          <a
+            href="./people-roster.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >People Roster</a
+          >
 
-        <a href="./people-roster.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">People
-          Roster</a>
+          <a
+            href="./employee-edit-shift.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold"
+            >Employee</a
+          >
 
-        <a href="./employee-edit-shift.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold">Employee</a>
+          <a
+            href="./leave-requests.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >Leave Requests</a
+          >
 
-        <a href="./leave-requests.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Leave
-          Requests</a>
+          <a
+            href="./report-export.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >Report</a
+          >
 
-        <a href="./report-export.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Report</a>
+          <a
+            href="./log.html"
+            class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300"
+            >Log</a
+          >
+        </nav>
 
-        <a href="./log.html"
-          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Log</a>
-      </nav>
-
-      <!-- Right user section -->
-      <div class="flex items-center space-x-2">
-        <button type="button" class="flex items-center space-x-2">
-          <img src="./assets/img/avaters-demos.png" alt="User"
-            class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
-          <div class="flex flex-col text-start leading-tight">
-            <span class="text-[8px] font-normal text-gray-200 uppercase">Welcome</span>
-            <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
-          </div>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- wrapper start  p2  -->
-  <div class="w-full lg:block hidden">
-    <main class="">
-      <!-- top filter p3 -->
-      <section
-        class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-10 border-b-1 border-brand-mid-dark">
-        <!-- left side -->
-        <div class="flex flex-row items-center gap-4">
-          <img src="./assets/img/homepage_careers_card_avater.png" alt="homepage_careers_card_avater"
-            class="w-9 h-9 rounded-full" />
-          <h1>Anne Buissink</h1>
+        <!-- Right user section -->
+        <div class="flex items-center space-x-0">
+          <button type="button" class="flex items-center space-x-2">
+            <img
+              src="./assets/img/avaters-demos.png"
+              alt="User"
+              class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full"
+            />
+            <div class="lg:flex flex-col text-start leading-tight hidden">
+              <span class="text-[8px] font-normal text-gray-200 uppercase"
+                >Welcome</span
+              >
+              <span class="text-sm xl:text-base font-normal"
+                >Bas Meijerink</span
+              >
+            </div>
+          </button>
+          <!-- Open button (label toggles checkbox) -->
+          <button class="px-2 py-2 transition inline-block lg:hidden menu-open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+          <!-- Open button 2 (label toggles checkbox) -->
+          <button
+            class="px-2 py-2 transition inline-block lg:hidden menu-open-two"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
+    </header>
 
-        <!-- right side -->
-        <div class="flex items-center space-x-7">
-          <a href="" type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-              <g id="user" transform="translate(-2 -2)">
-                <path id="Path_144" data-name="Path 144"
-                  d="M11.5,2A9.5,9.5,0,1,0,21,11.5,9.5,9.5,0,0,0,11.5,2Zm0,1.357a8.143,8.143,0,0,1,6.284,13.314A7.607,7.607,0,0,0,11.5,13.536a7.614,7.614,0,0,0-6.284,3.142A8.143,8.143,0,0,1,11.5,3.357Zm-5.306,14.3A6.223,6.223,0,0,1,11.5,14.893a6.3,6.3,0,0,1,5.306,2.769,8.1,8.1,0,0,1-10.613,0Z"
-                  fill="currentColor" />
-                <path id="Path_145" data-name="Path 145"
-                  d="M14.571,15.143A3.571,3.571,0,1,0,11,11.571,3.571,3.571,0,0,0,14.571,15.143Zm0-5.714a2.143,2.143,0,1,1-2.143,2.143A2.143,2.143,0,0,1,14.571,9.429Z"
-                  transform="translate(-3.071 -2.048)" fill="currentColor" />
-              </g>
-            </svg>
-          </a>
-          <a href="" type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17.83" height="17.83" viewBox="0 0 17.83 17.83">
-              <path id="calendar"
-                d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
-                transform="translate(-1 -1)" fill="currentColor" />
-            </svg>
-          </a>
-          <a href="" type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16.83" height="16.83" viewBox="0 0 16.83 16.83">
-              <g id="o" transform="translate(-2.25 -2.25)">
-                <g id="Group_91" data-name="Group 91" transform="translate(2.25 2.25)">
-                  <path id="Path_138" data-name="Path 138"
-                    d="M5.486,2.25H3.76A1.518,1.518,0,0,0,2.25,3.76V5.486A1.518,1.518,0,0,0,3.76,7H5.486A1.518,1.518,0,0,0,7,5.486V3.76A1.518,1.518,0,0,0,5.486,2.25ZM5.7,5.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V3.76a.214.214,0,0,1,.216-.216H5.486A.214.214,0,0,1,5.7,3.76Z"
-                    transform="translate(-2.25 -2.25)" fill="currentColor" />
-                  <path id="Path_139" data-name="Path 139"
-                    d="M5.486,9.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,14H5.486A1.518,1.518,0,0,0,7,12.486V10.76A1.518,1.518,0,0,0,5.486,9.25ZM5.7,12.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V10.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
-                    transform="translate(-2.25 -3.209)" fill="currentColor" />
-                  <path id="Path_140" data-name="Path 140"
-                    d="M5.486,16.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,21H5.486A1.518,1.518,0,0,0,7,19.486V17.76A1.518,1.518,0,0,0,5.486,16.25ZM5.7,19.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V17.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
-                    transform="translate(-2.25 -4.167)" fill="currentColor" />
-                  <path id="Path_141" data-name="Path 141"
-                    d="M9.9,5.545h9.494a.647.647,0,0,0,0-1.295H9.9a.647.647,0,1,0,0,1.295Z"
-                    transform="translate(-3.209 -2.524)" fill="currentColor" />
-                  <path id="Path_142" data-name="Path 142"
-                    d="M19.391,11.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
-                    transform="translate(-3.209 -3.482)" fill="currentColor" />
-                  <path id="Path_143" data-name="Path 143"
-                    d="M19.391,18.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
-                    transform="translate(-3.209 -4.441)" fill="currentColor" />
-                </g>
-              </g>
-            </svg>
-          </a>
-          <a href="" type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-dark hover:text-brand-dark overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13.999" height="17.611" viewBox="0 0 13.999 17.611">
-              <g id="j" transform="translate(-4.25 -2.25)">
-                <g id="Group_92" data-name="Group 92" transform="translate(4.25 2.25)">
-                  <path id="Path_146" data-name="Path 146"
-                    d="M18.249,7.443a.621.621,0,0,0-.045-.217,3.432,3.432,0,0,0-.948-1.96L15.232,3.243A3.321,3.321,0,0,0,13.263,2.3a.773.773,0,0,0-.208-.045.213.213,0,0,0-.072.018c-.054,0-.1-.018-.145-.018h-5.2A3.388,3.388,0,0,0,4.25,5.637V16.475a3.388,3.388,0,0,0,3.387,3.387h7.225a3.388,3.388,0,0,0,3.387-3.387V7.66a.79.79,0,0,0-.018-.145c0-.027.018-.045.018-.072ZM16.3,6.224a2.088,2.088,0,0,1,.379.542H13.959a.224.224,0,0,1-.226-.226V3.821a2.025,2.025,0,0,1,.542.379ZM14.862,18.507H7.637A2.035,2.035,0,0,1,5.6,16.475V5.637A2.035,2.035,0,0,1,7.637,3.6h4.742V6.54A1.588,1.588,0,0,0,13.959,8.12h2.935v8.354A2.035,2.035,0,0,1,14.862,18.507Z"
-                    transform="translate(-4.25 -2.25)" fill="currentColor" />
-                  <path id="Path_147" data-name="Path 147"
-                    d="M15.153,10.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,1,0,0-1.355Z"
-                    transform="translate(-4.541 -3.025)" fill="currentColor" />
-                  <path id="Path_148" data-name="Path 148"
-                    d="M15.153,13.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,0,0,0-1.355Z"
-                    transform="translate(-4.541 -3.315)" fill="currentColor" />
-                  <path id="Path_149" data-name="Path 149"
-                    d="M11.54,16.25H7.927a.677.677,0,1,0,0,1.355H11.54a.677.677,0,0,0,0-1.355Z"
-                    transform="translate(-4.541 -3.606)" fill="currentColor" />
-                </g>
-              </g>
-            </svg>
-          </a>
-          <a href="" type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18.111" height="18.111" viewBox="0 0 18.111 18.111">
-              <path id="Path_150" data-name="Path 150"
-                d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
-                transform="translate(-2.25 -2.25)" fill="currentColor" />
-            </svg>
-          </a>
-          <div class="relative inline-block" bis_skin_checked="1">
-            <!-- Hidden toggle -->
-            <input type="checkbox" id="settingDropdown" class="dropdown-toggle hidden peer" />
+    <!-- wrapper start  p2  -->
+    <div class="w-full">
+      <main class="">
+        <!-- top filter p3 -->
+          <section
+          class="bg-white min-h-[4.375rem] w-full flex flex-col sm:flex-row justify-between items-center px-5 lg:px-10 pr-5 border-b-1 border-brand-mid-dark py-3 lg:py-0 gap-4"
+        >
+          <!-- left side -->
+          <div class="flex flex-row items-center gap-2 lg:gap-4">
+            <img
+              src="./assets/img/homepage_careers_card_avater.png"
+              alt="homepage_careers_card_avater"
+              class="w-6 lg:w-9 h-6 lg:h-9 rounded-full"
+            />
+            <h1 class="text-base lg:text-lg">Anne Buissink</h1>
+          </div>
 
-            <!-- Label (acts as toggle button) -->
-            <label for="settingDropdown"
-              class="flex items-center justify-center hover:bg-brand-light w-[27px] h-[27px] text-xs text-brand-mid-gray hover:text-brand-dark cursor-pointer select-none rounded-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="4" viewBox="0 0 16 4">
-                <g id="Group_84" data-name="Group 84" transform="translate(-984 -93)">
-                  <circle id="Ellipse_483" data-name="Ellipse 483" cx="2" cy="2" r="2" transform="translate(984 93)"
-                    fill="currentColor" />
-                  <circle id="Ellipse_484" data-name="Ellipse 484" cx="2" cy="2" r="2" transform="translate(990 93)"
-                    fill="currentColor" />
-                  <circle id="Ellipse_485" data-name="Ellipse 485" cx="2" cy="2" r="2" transform="translate(996 93)"
-                    fill="currentColor" />
+          <!-- right side -->
+          <div class="flex items-center space-x-4 lg:space-x-7">
+            <button
+              onclick="window.location.href='./employee-general-info.html'"
+              type="button"
+              class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+              >
+                <g id="user" transform="translate(-2 -2)">
+                  <path
+                    id="Path_144"
+                    data-name="Path 144"
+                    d="M11.5,2A9.5,9.5,0,1,0,21,11.5,9.5,9.5,0,0,0,11.5,2Zm0,1.357a8.143,8.143,0,0,1,6.284,13.314A7.607,7.607,0,0,0,11.5,13.536a7.614,7.614,0,0,0-6.284,3.142A8.143,8.143,0,0,1,11.5,3.357Zm-5.306,14.3A6.223,6.223,0,0,1,11.5,14.893a6.3,6.3,0,0,1,5.306,2.769,8.1,8.1,0,0,1-10.613,0Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    id="Path_145"
+                    data-name="Path 145"
+                    d="M14.571,15.143A3.571,3.571,0,1,0,11,11.571,3.571,3.571,0,0,0,14.571,15.143Zm0-5.714a2.143,2.143,0,1,1-2.143,2.143A2.143,2.143,0,0,1,14.571,9.429Z"
+                    transform="translate(-3.071 -2.048)"
+                    fill="currentColor"
+                  />
                 </g>
               </svg>
-            </label>
+            </button>
+            <button
+              onclick="window.location.href='./employee-roster-template.html'"
+              type="button"
+              class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17.83"
+                height="17.83"
+                viewBox="0 0 17.83 17.83"
+              >
+                <path
+                  id="calendar"
+                  d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
+                  transform="translate(-1 -1)"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              onclick="window.location.href='./employee-log.html'"
+              type="button"
+              class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16.83"
+                height="16.83"
+                viewBox="0 0 16.83 16.83"
+              >
+                <g id="o" transform="translate(-2.25 -2.25)">
+                  <g
+                    id="Group_91"
+                    data-name="Group 91"
+                    transform="translate(2.25 2.25)"
+                  >
+                    <path
+                      id="Path_138"
+                      data-name="Path 138"
+                      d="M5.486,2.25H3.76A1.518,1.518,0,0,0,2.25,3.76V5.486A1.518,1.518,0,0,0,3.76,7H5.486A1.518,1.518,0,0,0,7,5.486V3.76A1.518,1.518,0,0,0,5.486,2.25ZM5.7,5.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V3.76a.214.214,0,0,1,.216-.216H5.486A.214.214,0,0,1,5.7,3.76Z"
+                      transform="translate(-2.25 -2.25)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_139"
+                      data-name="Path 139"
+                      d="M5.486,9.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,14H5.486A1.518,1.518,0,0,0,7,12.486V10.76A1.518,1.518,0,0,0,5.486,9.25ZM5.7,12.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V10.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                      transform="translate(-2.25 -3.209)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_140"
+                      data-name="Path 140"
+                      d="M5.486,16.25H3.76a1.518,1.518,0,0,0-1.51,1.51v1.726A1.518,1.518,0,0,0,3.76,21H5.486A1.518,1.518,0,0,0,7,19.486V17.76A1.518,1.518,0,0,0,5.486,16.25ZM5.7,19.486a.214.214,0,0,1-.216.216H3.76a.214.214,0,0,1-.216-.216V17.76a.214.214,0,0,1,.216-.216H5.486a.214.214,0,0,1,.216.216Z"
+                      transform="translate(-2.25 -4.167)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_141"
+                      data-name="Path 141"
+                      d="M9.9,5.545h9.494a.647.647,0,0,0,0-1.295H9.9a.647.647,0,1,0,0,1.295Z"
+                      transform="translate(-3.209 -2.524)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_142"
+                      data-name="Path 142"
+                      d="M19.391,11.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                      transform="translate(-3.209 -3.482)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_143"
+                      data-name="Path 143"
+                      d="M19.391,18.25H9.9a.647.647,0,1,0,0,1.295h9.494a.647.647,0,0,0,0-1.295Z"
+                      transform="translate(-3.209 -4.441)"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button
+              onclick="window.location.href='./employee-rules-dialog.html'"
+              type="button"
+              class="cursor-pointer w-[25px] h-[25px] text-brand-dark overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13.999"
+                height="17.611"
+                viewBox="0 0 13.999 17.611"
+              >
+                <g id="j" transform="translate(-4.25 -2.25)">
+                  <g
+                    id="Group_92"
+                    data-name="Group 92"
+                    transform="translate(4.25 2.25)"
+                  >
+                    <path
+                      id="Path_146"
+                      data-name="Path 146"
+                      d="M18.249,7.443a.621.621,0,0,0-.045-.217,3.432,3.432,0,0,0-.948-1.96L15.232,3.243A3.321,3.321,0,0,0,13.263,2.3a.773.773,0,0,0-.208-.045.213.213,0,0,0-.072.018c-.054,0-.1-.018-.145-.018h-5.2A3.388,3.388,0,0,0,4.25,5.637V16.475a3.388,3.388,0,0,0,3.387,3.387h7.225a3.388,3.388,0,0,0,3.387-3.387V7.66a.79.79,0,0,0-.018-.145c0-.027.018-.045.018-.072ZM16.3,6.224a2.088,2.088,0,0,1,.379.542H13.959a.224.224,0,0,1-.226-.226V3.821a2.025,2.025,0,0,1,.542.379ZM14.862,18.507H7.637A2.035,2.035,0,0,1,5.6,16.475V5.637A2.035,2.035,0,0,1,7.637,3.6h4.742V6.54A1.588,1.588,0,0,0,13.959,8.12h2.935v8.354A2.035,2.035,0,0,1,14.862,18.507Z"
+                      transform="translate(-4.25 -2.25)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_147"
+                      data-name="Path 147"
+                      d="M15.153,10.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,1,0,0-1.355Z"
+                      transform="translate(-4.541 -3.025)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_148"
+                      data-name="Path 148"
+                      d="M15.153,13.25H7.927a.677.677,0,0,0,0,1.355h7.225a.677.677,0,0,0,0-1.355Z"
+                      transform="translate(-4.541 -3.315)"
+                      fill="currentColor"
+                    />
+                    <path
+                      id="Path_149"
+                      data-name="Path 149"
+                      d="M11.54,16.25H7.927a.677.677,0,1,0,0,1.355H11.54a.677.677,0,0,0,0-1.355Z"
+                      transform="translate(-4.541 -3.606)"
+                      fill="currentColor"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button
+              onclick="window.location.href='./employee-leave-request.html'"
+              type="button"
+              class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18.111"
+                height="18.111"
+                viewBox="0 0 18.111 18.111"
+              >
+                <path
+                  id="Path_150"
+                  data-name="Path 150"
+                  d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
+                  transform="translate(-2.25 -2.25)"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
 
-            <!-- Dropdown -->
+          </div>
+        </section>
+        <!-- main content p4 -->
+
+        <!-- main content end -->
+      </main>
+    </div>
+    <!-- wrapper end -->
+
+    <!-- Right Sidebar p5 -->
+
+    <!-- bottom -->
+
+    <!-- right side bar  end -->
+
+    <!-- modal p8 -->
+    <div
+      class="fixed inset-0 bg-[#2B2D41]/30 justify-center items-center z-[100] flex p-4"
+    >
+      <div
+        class="bg-white px-[12px] py-[10px] rounded-lg border border-brand-light max-w-[653px] w-full"
+      >
+        <div class="flex justify-between items-center px-[4px]">
+          <span class="text-xl font-bold">Add rule</span>
+          <button class="text-[#A4B5BF] hover:text-[#2B2D41] cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="9.613"
+              height="9.613"
+              viewBox="0 0 9.613 9.613"
+              class=""
+            >
+              <path
+                id="Path_close"
+                data-name="Path / close"
+                d="M14.613,5.968,13.645,5,9.807,8.838,5.968,5,5,5.968,8.838,9.807,5,13.645l.968.968,3.838-3.838,3.838,3.838.968-.968L10.775,9.807Z"
+                transform="translate(-5 -5)"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-[50px] pt-4 pb-[30px]">
+          <div class="w-full lg:w-1/2">
+            <!-- Soort -->
+            <div class="flex flex-row gap-7">
+              <div class="min-w-[74px] text-xs font-bold text-brand-dark">
+                Soort
+              </div>
+              <div class="w-full">
+                <ul
+                  class="flex-1 border border-brand-light rounded-[5px] p-[6px] min-h-[70px]"
+                >
+                  <li
+                    tabindex="0"
+                    class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between"
+                  >
+                    <p>Uitsluiting</p>
+                    <button
+                      class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="9.222"
+                        height="6.514"
+                        viewBox="0 0 9.222 6.514"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect
+                              id="Rectangle_1279"
+                              data-name="Rectangle 1279"
+                              width="9.222"
+                              height="6.514"
+                              fill="#2bc083"
+                            />
+                          </clipPath>
+                        </defs>
+                        <g
+                          id="Group_98"
+                          data-name="Group 98"
+                          transform="translate(0 0)"
+                        >
+                          <g
+                            id="Group_97"
+                            data-name="Group 97"
+                            transform="translate(0 0)"
+                            clip-path="url(#clip-path)"
+                          >
+                            <path
+                              id="Path_156"
+                              data-name="Path 156"
+                              d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
+                              transform="translate(0 0)"
+                              fill="#2bc083"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                  <li
+                    tabindex="0"
+                    class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between"
+                  >
+                    <p>Verplichting</p>
+                    <button
+                      class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="9.222"
+                        height="6.514"
+                        viewBox="0 0 9.222 6.514"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect
+                              id="Rectangle_1279"
+                              data-name="Rectangle 1279"
+                              width="9.222"
+                              height="6.514"
+                              fill="#2bc083"
+                            />
+                          </clipPath>
+                        </defs>
+                        <g
+                          id="Group_98"
+                          data-name="Group 98"
+                          transform="translate(0 0)"
+                        >
+                          <g
+                            id="Group_97"
+                            data-name="Group 97"
+                            transform="translate(0 0)"
+                            clip-path="url(#clip-path)"
+                          >
+                            <path
+                              id="Path_156"
+                              data-name="Path 156"
+                              d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
+                              transform="translate(0 0)"
+                              fill="#2bc083"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                  <li
+                    tabindex="0"
+                    class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between"
+                  >
+                    <p>Voorrang</p>
+                    <button
+                      class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="9.222"
+                        height="6.514"
+                        viewBox="0 0 9.222 6.514"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect
+                              id="Rectangle_1279"
+                              data-name="Rectangle 1279"
+                              width="9.222"
+                              height="6.514"
+                              fill="#2bc083"
+                            />
+                          </clipPath>
+                        </defs>
+                        <g
+                          id="Group_98"
+                          data-name="Group 98"
+                          transform="translate(0 0)"
+                        >
+                          <g
+                            id="Group_97"
+                            data-name="Group 97"
+                            transform="translate(0 0)"
+                            clip-path="url(#clip-path)"
+                          >
+                            <path
+                              id="Path_156"
+                              data-name="Path 156"
+                              d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
+                              transform="translate(0 0)"
+                              fill="#2bc083"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Onderwerp -->
+            <div class="flex flex-row pt-5 gap-7">
+              <div class="min-w-[74px] text-xs font-bold text-brand-dark">
+                Onderwerp
+              </div>
+              <div class="w-full">
+                <ul
+                  class="flex-1 border border-brand-light rounded-[5px] p-[6px] min-h-[52px]"
+                >
+                  <li
+                    tabindex="0"
+                    class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between"
+                  >
+                    <p>Divisie</p>
+                    <button
+                      class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="9.222"
+                        height="6.514"
+                        viewBox="0 0 9.222 6.514"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect
+                              id="Rectangle_1279"
+                              data-name="Rectangle 1279"
+                              width="9.222"
+                              height="6.514"
+                              fill="#2bc083"
+                            />
+                          </clipPath>
+                        </defs>
+                        <g
+                          id="Group_98"
+                          data-name="Group 98"
+                          transform="translate(0 0)"
+                        >
+                          <g
+                            id="Group_97"
+                            data-name="Group 97"
+                            transform="translate(0 0)"
+                            clip-path="url(#clip-path)"
+                          >
+                            <path
+                              id="Path_156"
+                              data-name="Path 156"
+                              d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
+                              transform="translate(0 0)"
+                              fill="#2bc083"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                  <li
+                    tabindex="0"
+                    class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between"
+                  >
+                    <p>Positie</p>
+                    <button
+                      class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="9.222"
+                        height="6.514"
+                        viewBox="0 0 9.222 6.514"
+                      >
+                        <defs>
+                          <clipPath id="clip-path">
+                            <rect
+                              id="Rectangle_1279"
+                              data-name="Rectangle 1279"
+                              width="9.222"
+                              height="6.514"
+                              fill="#2bc083"
+                            />
+                          </clipPath>
+                        </defs>
+                        <g
+                          id="Group_98"
+                          data-name="Group 98"
+                          transform="translate(0 0)"
+                        >
+                          <g
+                            id="Group_97"
+                            data-name="Group 97"
+                            transform="translate(0 0)"
+                            clip-path="url(#clip-path)"
+                          >
+                            <path
+                              id="Path_156"
+                              data-name="Path 156"
+                              d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
+                              transform="translate(0 0)"
+                              fill="#2bc083"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Starting date -->
+            <div class="flex flex-row items-center pt-5 gap-7">
+              <div class="min-w-[74px] text-xs font-bold text-brand-dark">
+                Starting date
+              </div>
+              <div class="w-full">
+                <div
+                  class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
+                >
+                  <input
+                    type="date"
+                    class="date-input absolute opacity-0 w-0 h-0"
+                    value="2025-12-31"
+                  />
+                  <span
+                    class="date-display text-xs font-semibold text-brand-dark"
+                  >
+                    31-12-2025
+                  </span>
+                  <img
+                    src="./assets/svg/calendar.svg"
+                    alt="calendar"
+                    class="w-[13px] h-[13px]"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End date -->
+            <div class="flex flex-row items-start pt-5 gap-7">
+              <div class="min-w-[74px] text-xs font-bold text-brand-dark mt-2">
+                End date
+              </div>
+              <div class="w-full">
+                <div
+                  class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer"
+                >
+                  <input
+                    type="date"
+                    class="date-input absolute opacity-0 w-0 h-0"
+                    value="2025-12-31"
+                  />
+                  <span
+                    class="date-display text-xs font-semibold text-brand-dark"
+                  >
+                    31-12-2025
+                  </span>
+                  <img
+                    src="./assets/svg/calendar.svg"
+                    alt="calendar"
+                    class="w-[13px] h-[13px]"
+                  />
+                </div>
+                <label
+                  class="inline-flex items-center cursor-pointer select-none gap-2 mt-2"
+                >
+                  <!-- hidden native checkbox but still focusable -->
+                  <input type="checkbox" class="peer sr-only" />
+
+                  <!-- visual box that reacts to the input (peer) -->
+                  <span
+                    class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
+                    aria-hidden="true"
+                  >
+                    <!-- checkmark: hidden by default, shown when peer is checked -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6 text-white"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 12.75 6 6 9-13.5"
+                      ></path>
+                    </svg>
+                  </span>
+                  <p>Limitless</p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
             <ul
-              class="dropdown-menu hidden absolute right-0 mt-3 bg-white border border-brand-light rounded-lg [box-shadow:2px_2px_8px_rgba(43,45,65,0.08)] z-10 overflow-hidden min-w-[142px]">
-              <li class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
-                <img src="./assets/svg/Undo.svg" alt="Undo" class="w-[14px] h-[14px]" />
-                <span>Reset data</span>
+              class="flex-1 border border-brand-light rounded-[5px] p-[6px] max-h-[155px] lg:max-h-[255px] overflow-y-auto scrollbar-csts"
+            >
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>FLM PC</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
               </li>
               <li
-                class="inline-flex items-center gap-2 px-3 py-[7px] border-y border-brand-light hover:bg-gray-100 w-full cursor-pointer text-xs">
-                <img src="./assets/svg/Add.svg" alt="add" class="w-[14px] h-[14px]" />
-                <span>Add new position</span>
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Tester</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
               </li>
-              <li class="inline-flex items-center gap-2 px-3 py-[7px] hover:bg-gray-100 w-full cursor-pointer text-xs">
-                <img src="./assets/svg/date-from.svg" alt="date" class="w-[14px] h-[14px]" />
-                <span>Export roster</span>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Aardappelontvangst</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Aardappelontvangst opleiding</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>2de Packer wissel bij 6/7 packers SNX</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AGV</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AGV opleiding</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AO Decks</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AO Decks Stapelaar</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AO P&D Opleiding</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>AO Palletizer</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Positie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Divisie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Positie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Divisie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Positie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Divisie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
+              </li>
+              <li
+                class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between"
+              >
+                <p>Positie</p>
+                <button
+                  class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"
+                ></button>
               </li>
             </ul>
           </div>
         </div>
-      </section>
-      <!-- main content p4 -->
-
-      <!-- main content end -->
-    </main>
-  </div>
-  <!-- wrapper end -->
-
-  <!-- Right Sidebar p5 -->
-
-  <!-- bottom -->
-
-  <!-- right side bar  end -->
-  <div class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5">
-    <div class="flex flex-col justify-center items-center text-center space-y-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F04C46"
-        class="size-12">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-      </svg>
-      <span class="text-lg font-bold capitalize">user is requested to show on a larger screen</span>
-    </div>
-  </div>
-  <!-- modal p8 -->
-  <div class="fixed inset-0 bg-[#2B2D41]/30 justify-center items-center z-[100] lg:flex hidden">
-    <div class="bg-white px-[12px] py-[10px] rounded-lg border border-brand-light max-w-[653px] w-full">
-      <div class="flex justify-between items-center px-[4px]">
-        <span class="text-xl font-bold">Add rule</span>
-        <button class="text-[#A4B5BF] hover:text-[#2B2D41] cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="9.613" height="9.613" viewBox="0 0 9.613 9.613" class="">
-            <path id="Path_close" data-name="Path / close"
-              d="M14.613,5.968,13.645,5,9.807,8.838,5.968,5,5,5.968,8.838,9.807,5,13.645l.968.968,3.838-3.838,3.838,3.838.968-.968L10.775,9.807Z"
-              transform="translate(-5 -5)" fill="currentColor" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-row gap-[50px] pt-4 pb-[30px]">
-        <div class="w-1/2">
-          <!-- Soort -->
-          <div class="flex flex-row gap-7">
-            <div class="min-w-[74px] text-xs font-bold text-brand-dark">
-              Soort
-            </div>
-            <div class="w-full">
-              <ul class="flex-1 border border-brand-light rounded-[5px] p-[6px] min-h-[70px]">
-                <li tabindex="0"
-                  class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between">
-                  <p>Uitsluiting</p>
-                  <button
-                    class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.222"
-                      height="6.514" viewBox="0 0 9.222 6.514">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <rect id="Rectangle_1279" data-name="Rectangle 1279" width="9.222" height="6.514"
-                            fill="#2bc083" />
-                        </clipPath>
-                      </defs>
-                      <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
-                        <g id="Group_97" data-name="Group 97" transform="translate(0 0)" clip-path="url(#clip-path)">
-                          <path id="Path_156" data-name="Path 156"
-                            d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
-                            transform="translate(0 0)" fill="#2bc083" />
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </li>
-                <li tabindex="0"
-                  class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between">
-                  <p>Verplichting</p>
-                  <button
-                    class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.222"
-                      height="6.514" viewBox="0 0 9.222 6.514">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <rect id="Rectangle_1279" data-name="Rectangle 1279" width="9.222" height="6.514"
-                            fill="#2bc083" />
-                        </clipPath>
-                      </defs>
-                      <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
-                        <g id="Group_97" data-name="Group 97" transform="translate(0 0)" clip-path="url(#clip-path)">
-                          <path id="Path_156" data-name="Path 156"
-                            d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
-                            transform="translate(0 0)" fill="#2bc083" />
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </li>
-                <li tabindex="0"
-                  class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between">
-                  <p>Voorrang</p>
-                  <button
-                    class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.222"
-                      height="6.514" viewBox="0 0 9.222 6.514">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <rect id="Rectangle_1279" data-name="Rectangle 1279" width="9.222" height="6.514"
-                            fill="#2bc083" />
-                        </clipPath>
-                      </defs>
-                      <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
-                        <g id="Group_97" data-name="Group 97" transform="translate(0 0)" clip-path="url(#clip-path)">
-                          <path id="Path_156" data-name="Path 156"
-                            d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
-                            transform="translate(0 0)" fill="#2bc083" />
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Onderwerp -->
-          <div class="flex flex-row pt-5 gap-7">
-            <div class="min-w-[74px] text-xs font-bold text-brand-dark">
-              Onderwerp
-            </div>
-            <div class="w-full">
-              <ul class="flex-1 border border-brand-light rounded-[5px] p-[6px] min-h-[52px]">
-                <li tabindex="0"
-                  class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between">
-                  <p>Divisie</p>
-                  <button
-                    class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.222"
-                      height="6.514" viewBox="0 0 9.222 6.514">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <rect id="Rectangle_1279" data-name="Rectangle 1279" width="9.222" height="6.514"
-                            fill="#2bc083" />
-                        </clipPath>
-                      </defs>
-                      <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
-                        <g id="Group_97" data-name="Group 97" transform="translate(0 0)" clip-path="url(#clip-path)">
-                          <path id="Path_156" data-name="Path 156"
-                            d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
-                            transform="translate(0 0)" fill="#2bc083" />
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </li>
-                <li tabindex="0"
-                  class="px-2 py-[2px] hover:bg-[#EDF0F2]/60 focus-within:bg-[#EDF0F2]/60 group flex items-center justify-between">
-                  <p>Positie</p>
-                  <button
-                    class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer opacity-0 group-focus:opacity-100 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.222"
-                      height="6.514" viewBox="0 0 9.222 6.514">
-                      <defs>
-                        <clipPath id="clip-path">
-                          <rect id="Rectangle_1279" data-name="Rectangle 1279" width="9.222" height="6.514"
-                            fill="#2bc083" />
-                        </clipPath>
-                      </defs>
-                      <g id="Group_98" data-name="Group 98" transform="translate(0 0)">
-                        <g id="Group_97" data-name="Group 97" transform="translate(0 0)" clip-path="url(#clip-path)">
-                          <path id="Path_156" data-name="Path 156"
-                            d="M3.342,6.514a.541.541,0,0,1-.376-.152L.164,3.655A.542.542,0,1,1,.92,2.876L3.335,5.21,8.278.178a.542.542,0,0,1,.8.727A.422.422,0,0,1,9.05.936L3.728,6.352a.541.541,0,0,1-.387.162"
-                            transform="translate(0 0)" fill="#2bc083" />
-                        </g>
-                      </g>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Starting date -->
-          <div class="flex flex-row items-center pt-5 gap-7">
-            <div class="min-w-[74px] text-xs font-bold text-brand-dark">
-              Starting date
-            </div>
-            <div class="w-full">
-              <div
-                class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer">
-                <input type="date" class="date-input absolute opacity-0 w-0 h-0" value="2025-12-31" />
-                <span class="date-display text-xs font-semibold text-brand-dark">
-                  31-12-2025
-                </span>
-                <img src="./assets/svg/calendar.svg" alt="calendar" class="w-[13px] h-[13px]" />
-              </div>
-            </div>
-          </div>
-          <!-- End date -->
-          <div class="flex flex-row items-start pt-5 gap-7">
-            <div class="min-w-[74px] text-xs font-bold text-brand-dark mt-2">
-              End date
-            </div>
-            <div class="w-full">
-              <div
-                class="custom-date-picker w-full h-[27px] border border-[#EDF0F2] rounded-[5px] flex items-center justify-between px-2 bg-white cursor-pointer">
-                <input type="date" class="date-input absolute opacity-0 w-0 h-0" value="2025-12-31" />
-                <span class="date-display text-xs font-semibold text-brand-dark">
-                  31-12-2025
-                </span>
-                <img src="./assets/svg/calendar.svg" alt="calendar" class="w-[13px] h-[13px]" />
-              </div>
-              <label class="inline-flex items-center cursor-pointer select-none gap-2 mt-2">
-                <!-- hidden native checkbox but still focusable -->
-                <input type="checkbox" class="peer sr-only" />
-
-                <!-- visual box that reacts to the input (peer) -->
-                <span
-                  class="h-[18px] w-[18px] inline-flex items-center justify-center border border-brand-light rounded-[3px] peer-checked:bg-brand-blue-teal peer-checked:border-brand-blue-teal transition-all duration-150"
-                  aria-hidden="true">
-                  <!-- checkmark: hidden by default, shown when peer is checked -->
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
-                  </svg>
-                </span>
-                <p>Limitless</p>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="w-1/2">
-          <ul
-            class="flex-1 border border-brand-light rounded-[5px] p-[6px] max-h-[255px] overflow-y-auto scrollbar-csts">
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>FLM PC</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Tester</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Aardappelontvangst</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Aardappelontvangst opleiding
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>2de Packer wissel bij 6/7 packers SNX
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AGV</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AGV opleiding
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AO Decks
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AO Decks Stapelaar
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AO P&D Opleiding
-              </p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>AO Palletizer</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Positie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Divisie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Positie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Divisie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Positie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Divisie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-            <li class="px-2 py-[3px] hover:bg-[#EDF0F2]/60 group flex items-center justify-between">
-              <p>Positie</p>
-              <button class="text-[#A4B5BF] group-hover:text-brand-dark cursor-pointer"></button>
-            </li>
-          </ul>
+        <div class="flex flex-row justify-end items-center gap-2">
+          <button
+            type="button"
+            class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]"
+          >
+            Cancel
+          </button>
         </div>
       </div>
-      <div class="flex flex-row justify-end items-center gap-2">
-        <button type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-white bg-[#36BE84] hover:bg-[#3AA5A0] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
-          Save
-        </button>
-        <button type="button"
-          class="w-full py-2 inline-block text-xs font-bold text-[#2B2D41] hover:text-white bg-[#EDF0F2] hover:bg-[#2B2D41] rounded-[5px] hover:underline cursor-pointer transition-all duration-150 max-w-[89px]">
-          Cancel
-        </button>
-      </div>
     </div>
-  </div>
-  <!-- js p9 -->
-  <script src="./js/dateinput.js"></script>
-</body>
-
+    <!-- js p9 -->
+    <script src="./js/dateinput.js"></script>
+  </body>
 </html>

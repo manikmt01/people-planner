@@ -20,18 +20,17 @@
 
 <body class="bg-brand-gray-bg relative">
   <!-- Header p1 -->
-  <header
-    class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 lg:flex hidden">
+  <header class="bg-brand-teals text-white min-h-[3.875rem] justify-center items-center z-50 sticky top-0 flex">
     <div class="w-full mx-auto px-5 flex items-center justify-between">
       <!-- Left section -->
       <a href="#" class="flex items-center space-x-3 xl:space-x-5">
         <!-- Icon -->
-        <img src="./assets/svg/logo.svg" alt="logo" class="w-5 h-5 xl:w-6 xl:h-6" />
-        <span class="font-bold text-xl xl:text-2xl">People planner</span>
+        <img src="./assets/svg/logo.svg" alt="logo" class="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6" />
+        <span class="font-bold text-base lg:text-xl xl:text-2xl">People planner</span>
       </a>
 
       <!-- Center navigation -->
-      <nav class="hidden md:flex items-center space-x-5 xl:space-x-9 text-sm">
+      <nav class="hidden lg:flex items-center space-x-5 xl:space-x-9 text-sm">
         <a href="./production-roster.html"
           class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
 
@@ -57,36 +56,44 @@
       </nav>
 
       <!-- Right user section -->
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-0">
         <button type="button" class="flex items-center space-x-2">
           <img src="./assets/img/avaters-demos.png" alt="User"
             class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
-          <div class="flex flex-col text-start leading-tight">
+          <div class="lg:flex flex-col text-start leading-tight hidden">
             <span class="text-[8px] font-normal text-gray-200 uppercase">Welcome</span>
             <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
           </div>
         </button>
+        <!-- Open button (label toggles checkbox) -->
+        <button class="px-2 py-2 transition inline-block lg:hidden menu-open">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+
       </div>
     </div>
   </header>
 
   <!-- wrapper start  p2  -->
-  <div class="w-full lg:block hidden">
+  <div class="w-full ">
     <main class="">
       <!-- top filter p3 -->
       <section
-        class="bg-white min-h-[4.375rem] w-full flex flex-row justify-between items-center px-10 border-b-1 border-brand-mid-dark">
+        class="bg-white min-h-[4.375rem] w-full flex flex-col sm:flex-row justify-between items-center px-5 lg:px-10 pr-5 border-b-1 border-brand-mid-dark py-3 lg:py-0 gap-4">
         <!-- left side -->
-        <div class="flex flex-row items-center gap-4">
+        <div class="flex flex-row items-center gap-2 lg:gap-4">
           <img src="./assets/img/homepage_careers_card_avater.png" alt="homepage_careers_card_avater"
-            class="w-9 h-9 rounded-full" />
-          <h1>Anne Buissink</h1>
+            class="w-6 lg:w-9 h-6 lg:h-9 rounded-full" />
+          <h1 class="text-base lg:text-lg">Anne Buissink</h1>
         </div>
 
         <!-- right side -->
-        <div class="flex items-center space-x-7">
-          <button type="button"
-            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full ">
+        <div class="flex items-center space-x-4 lg:space-x-7">
+          <button onclick="window.location.href='./employee-general-info.html'" type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark rounded-full overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
               <g id="user" transform="translate(-2 -2)">
                 <path id="Path_144" data-name="Path 144"
@@ -98,14 +105,16 @@
               </g>
             </svg>
           </button>
-          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-dark hover:text-brand-dark ">
+          <button onclick="window.location.href='./employee-roster-template.html'" type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-dark overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="17.83" height="17.83" viewBox="0 0 17.83 17.83">
               <path id="calendar"
                 d="M3.743,1V2.372H3.057A2.065,2.065,0,0,0,1,4.429V16.772A2.065,2.065,0,0,0,3.057,18.83H16.772a2.065,2.065,0,0,0,2.057-2.057V4.429a2.065,2.065,0,0,0-2.057-2.057h-.686V1H14.715V2.372h-9.6V1ZM3.057,3.743h.686V5.115H5.115V3.743h9.6V5.115h1.372V3.743h.686a.677.677,0,0,1,.686.686V6.486H2.372V4.429A.677.677,0,0,1,3.057,3.743ZM2.372,7.858H17.458v8.915a.677.677,0,0,1-.686.686H3.057a.677.677,0,0,1-.686-.686ZM6.486,9.229V10.6H7.858V9.229Zm2.743,0V10.6H10.6V9.229Zm2.743,0V10.6h1.372V9.229Zm2.743,0V10.6h1.372V9.229ZM3.743,11.972v1.372H5.115V11.972Zm2.743,0v1.372H7.858V11.972Zm2.743,0v1.372H10.6V11.972Zm2.743,0v1.372h1.372V11.972Zm2.743,0v1.372h1.372V11.972ZM3.743,14.715v1.372H5.115V14.715Zm2.743,0v1.372H7.858V14.715Zm2.743,0v1.372H10.6V14.715Z"
                 transform="translate(-1 -1)" fill="currentColor" />
             </svg>
           </button>
-          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+          <button onclick="window.location.href='./employee-log.html'" type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="16.83" height="16.83" viewBox="0 0 16.83 16.83">
               <g id="o" transform="translate(-2.25 -2.25)">
                 <g id="Group_91" data-name="Group 91" transform="translate(2.25 2.25)">
@@ -131,7 +140,8 @@
               </g>
             </svg>
           </button>
-          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+          <button onclick="window.location.href='./employee-rules-dialog.html'" type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="13.999" height="17.611" viewBox="0 0 13.999 17.611">
               <g id="j" transform="translate(-4.25 -2.25)">
                 <g id="Group_92" data-name="Group 92" transform="translate(4.25 2.25)">
@@ -151,19 +161,21 @@
               </g>
             </svg>
           </button>
-          <button type="button" class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark ">
+          <button onclick="window.location.href='./employee-leave-request.html'" type="button"
+            class="cursor-pointer w-[25px] h-[25px] text-brand-mid-gray hover:text-brand-dark overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="18.111" height="18.111" viewBox="0 0 18.111 18.111">
               <path id="Path_150" data-name="Path 150"
                 d="M19.693,14.036a1.784,1.784,0,0,0-2.229-2.786l-1.858,1.486a3.025,3.025,0,0,1-1.885.659H12V9.216h4.923A1.578,1.578,0,0,0,18.5,7.637,5.391,5.391,0,0,0,13.117,2.25H9.5A5.391,5.391,0,0,0,4.117,7.637,1.578,1.578,0,0,0,5.7,9.216h4.923V13.4H4.033A1.784,1.784,0,0,0,2.25,15.179v.613a1.784,1.784,0,0,0,1.783,1.783H5.361l-1.133,1.7a.693.693,0,0,0,.2.966.741.741,0,0,0,.39.121.7.7,0,0,0,.576-.306l1.653-2.48H13.73l1.653,2.48a.675.675,0,0,0,.576.306.688.688,0,0,0,.39-.121.7.7,0,0,0,.2-.966l-1.31-1.969a4.475,4.475,0,0,0,1.254-.7L19.7,14.036ZM10.033,5.176a5.461,5.461,0,0,1,1.272-1.384,5.309,5.309,0,0,1,1.272,1.384A5.494,5.494,0,0,1,13.4,7.823H9.216a5.494,5.494,0,0,1,.827-2.647Zm7.077,2.461a.186.186,0,0,1-.186.186H14.789a6.875,6.875,0,0,0-1.04-3.39,6.914,6.914,0,0,0-.594-.78,4,4,0,0,1,3.957,3.994Zm-11.61,0A4,4,0,0,1,9.457,3.643a7.865,7.865,0,0,0-.594.78,6.875,6.875,0,0,0-1.04,3.39H5.687A.186.186,0,0,1,5.5,7.628Zm8.22,8.545H4.033a.392.392,0,0,1-.39-.39v-.613a.392.392,0,0,1,.39-.39h9.687a4.451,4.451,0,0,0,2.758-.966l1.858-1.486a.4.4,0,0,1,.418-.046.378.378,0,0,1,.223.353.392.392,0,0,1-.149.306h0l-3.214,2.573a3.025,3.025,0,0,1-1.885.659Z"
                 transform="translate(-2.25 -2.25)" fill="currentColor" />
             </svg>
           </button>
+
         </div>
       </section>
       <!-- main content p4 -->
       <section class="pt-8.5 pb-10 px-5 w-full">
         <div class="w-full xl:max-w-[1200px] mx-auto rounded-lg bg-white pt-3 pb-7 min-h-[366px] px-4 md:px-6 lg:px-0">
-          <div class="flex justify-between items-center px-[14px]">
+          <div class="flex flex-col gap-4 md:flex-row justify-between items-center px-[14px]">
             <!-- header -->
             <span class="text-xl font-bold text-brand-dark">Roster template</span>
             <!-- menu -->
@@ -221,7 +233,7 @@
           </div>
 
           <div class="pt-[30px] overflow-x-auto w-full scrollbar-cst">
-            <div class="xl:w-[936px] xl:min-w-[1200px]">
+            <div class="min-w-[950px] xl:w-[936px] xl:min-w-[1200px]">
               <table class="w-full border-collapse text-center text-sm">
                 <thead class="mb-[3px]">
                   <tr>
@@ -1009,11 +1021,72 @@
     </main>
   </div>
   <!-- wrapper end -->
+  <!-- OVERLAY -->
+  <div class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 overlay z-30">
+  </div>
+  <div class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300 overlay-two z-30">
+  </div>
 
+  <!-- OFF-CANVAS MENU (Right side) -->
+  <aside
+    class="fixed top-0 right-0 h-screen w-[228px] translate-x-full transition-transform duration-300 text-white bg-brand-teals shadow-lg z-50 flex flex-col justify-between sidebar">
+    <!-- MENU HEADER -->
+    <div class="flex justify-between items-center min-h-[3.875rem] px-5 border-b border-white/30">
+      <h2 class="text-lg font-medium">Menu</h2>
+      <button class="text-white px-2 py-1 rounded hover:bg-white/10 menu-close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
 
+    <!-- MENU CONTENT (nav + footer) -->
+    <div class="flex flex-col justify-between flex-1">
+      <!-- NAVIGATION -->
+      <nav class="flex flex-col items-start space-y-5 xl:space-y-9 text-sm p-5">
+        <a href="./production-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Production</a>
+
+        <a href="./maintenance-position.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Maintenance</a>
+
+        <a href="./people-roster.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">People
+          Roster</a>
+
+        <a href="./employee-edit-shift.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:rounded-full after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300 font-bold">Employee</a>
+
+        <a href="./leave-requests.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Leave
+          Requests</a>
+
+        <a href="./report-export.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Report</a>
+
+        <a href="./log.html"
+          class="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:rounded-full after:bg-white hover:after:w-full after:transition-all after:duration-300">Log</a>
+      </nav>
+
+      <!-- USER BUTTON AT BOTTOM -->
+      <div class="p-5 border-t border-white/20">
+        <button type="button" class="flex items-center space-x-2 w-full">
+          <img src="./assets/img/avaters-demos.png" alt="User"
+            class="w-[30px] h-[30px] xl:w-[35px] xl:h-[35px] rounded-full" />
+          <div class="flex flex-col text-start leading-tight">
+            <span class="text-[8px] font-normal text-gray-200 uppercase">
+              Welcome
+            </span>
+            <span class="text-sm xl:text-base font-normal">Bas Meijerink</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </aside>
   <!-- bottom -->
   <div
-    class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex-row justify-end items-center px-5 gap-2 lg:flex hidden">
+    class="fixed bottom-0 w-full min-h-[54px] bg-white border-t border-brand-light flex-row justify-end items-center px-5 gap-2 flex">
     <button type="button"
       class="group inline-flex items-center gap-2 cursor-pointer transition-all duration-150 mr-[16px]">
       <svg xmlns="http://www.w3.org/2000/svg" width="12.744" height="13.828" viewBox="0 0 12.744 13.828">
@@ -1046,20 +1119,12 @@
     </button>
   </div>
   <!-- right side bar  end -->
-  <div class="flex items-center justify-center min-h-screen lg:hidden capitalize px-5">
-    <div class="flex flex-col justify-center items-center text-center space-y-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F04C46"
-        class="size-12">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-      </svg>
-      <span class="text-lg font-bold capitalize">user is requested to show on a larger screen</span>
-    </div>
-  </div>
+
   <!-- modal p8 -->
 
   <!-- js p9 -->
   <script src="./js/dateinput.js"></script>
+  <script src="./js/toggle-menu.js"></script>
 </body>
 
 </html>
